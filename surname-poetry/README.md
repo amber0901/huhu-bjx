@@ -8,7 +8,7 @@
 
 ## 本地体验
 
-要求 Node.js 22.9+，无第三方依赖，无需 npm install。
+要求 Node.js 22.9+。服务端无第三方运行依赖，已提交打包后的浏览器文件，部署时无需 npm install。
 
 ```sh
 cp .env.example .env
@@ -84,6 +84,8 @@ docker compose up -d --build
 
 新增素材后须在制作电脑运行 `python3 material-workshop/scripts/optimize_runtime_assets.py`（工作区根目录），提交生成的 `public/media/`、`public/home-background.css` 与 `data/runtime-assets.json`。课堂端采用 WebP 图片、共享配乐、内容版本地址与长期缓存；HTTPS 或 localhost 另启用本机持久素材缓存。识别请求和笔迹不缓存。
 
-接口：`GET /api/health`、`GET /api/config`（不含密钥）、`GET /api/catalog`、`GET /api/materials`（含时间轴）、`GET /api/cache-manifest`、`POST /api/session`、`POST /api/recognize`。识别请求为 `{ "image": "data:image/png;base64,..." }`；响应为 `recognized + surname + supported` 或 `unclear`。
+接口：`GET /api/health`、`GET /api/config`（不含密钥）、`GET /api/catalog`（`?brief=1`为精简名册）、`GET /api/poem?id=...`（单首含时间轴）、`GET /api/materials`（含时间轴）、`GET /api/cache-manifest`、`POST /api/session`、`POST /api/recognize`。识别请求为 `{ "image": "data:image/png;base64,..." }`；响应为 `recognized + surname + supported` 或 `unclear`。
+
+加载优化、按需缓存与较低配乐音量见 [docs/LOADING_REVIEW.md](docs/LOADING_REVIEW.md)。前端源码修改后，在开发电脑执行 `npm ci`、`npm run build`，并提交 `public/build/` 与更新后的HTML；Docker只使用生成文件，不安装打包工具。素材检查会核对源码与打包文件，防止漏打包。
 
 互动第7版统一使用单一灯泡提示，新增直接拖动与手势示范；逐姓复查、优化与试用关注点见 `docs/INTERACTION_REVIEW.md`。

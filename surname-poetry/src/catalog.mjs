@@ -62,3 +62,13 @@ export async function loadCatalog({optimized=true}={}) {
   })();
   return optimizedCatalog;
 }
+
+const materialPromises=new Map();
+export async function loadPoem(id) {
+  const poems=await loadCatalog(),poem=poems.find(item=>item.id===id);
+  if(!poem)return null;
+  if(!materialPromises.has(id))materialPromises.set(id,(async()=>({
+    ...poem,timing:JSON.parse(await readFile(path.resolve(publicRoot,'.'+poem.assets.timing),'utf8')),
+  }))().catch(error=>{materialPromises.delete(id);throw error;}));
+  return materialPromises.get(id);
+}

@@ -66,11 +66,11 @@ def main():
     mix=source/'narration-with-music-preview.mp3'
     voice_duration=float(media(narration)['format']['duration'])
     end=voice_duration+.9
-    mix_graph=(f'[1:a]volume=0.45,afade=t=out:st={voice_duration}:d=0.9[bg];'
+    mix_graph=(f'[1:a]volume=0.35,afade=t=out:st={voice_duration}:d=0.9[bg];'
                f'[0:a][bg]amix=inputs=2:duration=longest:normalize=0,atrim=0:{end},alimiter=limit=0.89:level=false[out]')
     subprocess.run(['ffmpeg','-v','error','-y','-i',str(narration),'-i',str(target),'-filter_complex',mix_graph,
                     '-map','[out]','-ar','44100','-ac','2','-c:a','libmp3lame','-b:a','192k',str(mix)],check=True)
-    report['narrationPreview']={'file':mix.name,'poemAudioUnmodified':True,'musicGain':.45,'durationSeconds':end}
+    report['narrationPreview']={'file':mix.name,'poemAudioUnmodified':True,'musicGain':.35,'durationSeconds':end}
     json_write(source/'mastering.json',report)
     print(json.dumps(report,ensure_ascii=False,indent=2))
 

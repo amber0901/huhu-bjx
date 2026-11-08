@@ -43,10 +43,11 @@ docker compose up -d --build
 
 ## 本地开发与验收
 
-应用使用Node.js 22.9+，无第三方npm依赖。在 `surname-poetry/` 中执行 `npm test`、`npm run check:assets` 和 `npm start`；默认入口为 `http://localhost:3000/`。本工作区的现有本地预览使用 `http://127.0.0.1:8899/`，教师素材入口为 `/materials.html`。
+应用使用Node.js 22.9+，无第三方服务端运行依赖，部署直接使用已提交的前端打包文件。在 `surname-poetry/` 中执行 `npm test`、`npm run check:assets` 和 `npm start`；默认入口为 `http://localhost:3000/`。本工作区的现有本地预览使用 `http://127.0.0.1:8899/`，教师素材入口为 `/materials.html`。
 
 - [26姓素材清单](surname-poetry/docs/CLASS_MATERIALS.md)
 - [互动复查记录](surname-poetry/docs/INTERACTION_REVIEW.md)
+- [加载优化与配乐音量](surname-poetry/docs/LOADING_REVIEW.md)
 - [界面与缓存说明](surname-poetry/docs/UI_CACHE_REVIEW.md)
 - [确认版配乐制作记录](material-workshop/WANG_MUSIC_V3.md)
 - [素材制作流程](material-workshop/WORKFLOW.md)

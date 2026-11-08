@@ -12,10 +12,15 @@ test('optimized catalog preserves speech and shares identical music content addr
   for(const poem of optimized){assert.equal(poem.musicVersion,3);assert.equal(poem.musicReviewStatus,'approved-by-user');}
   for(const poem of optimized){
     assert.ok(poem.assets.background.endsWith('.webp'));
-    for(const kind of ['narration','music','timing']){
+    for(const kind of ['music','timing']){
       const source=original.find(item=>item.id===poem.id).assets[kind];
       assert.equal(manifest.assets[source].sourceSha256,manifest.assets[source].sha256);
     }
+    const narration=manifest.assets[original.find(item=>item.id===poem.id).assets.narration];
+    assert.ok(poem.assets.narration.endsWith('.mp3'));
+    assert.ok(narration.bytes<narration.sourceBytes*.4,'课堂播放文件应显著小于原始WAV');
+    assert.equal(narration.encoding.bitrate,96000);
+    assert.ok(Math.abs(narration.encoding.encodedDurationSeconds-narration.encoding.sourceDurationSeconds)<.12);
   }
   assert.ok(manifest.totals.optimizedPoemBytes<manifest.totals.originalPoemBytes*.4);
 });

@@ -12,7 +12,7 @@ let poems = [], poem, surname, phase = 'idle', found = false, atHome = false;
 const companionLabel = () => poem?.interaction.companionLabel || '小燕子';
 const isBuildGame = () => poem?.interaction.game === 'assemble-character';
 const isSceneGame = () => poem?.interactionMode === 'surname-poem-play';
-let playground;
+let playground,preloadTimer,loadRun=0;
 const placedParts = new Set();
 let partDrag = null, partClickUntil = 0;
 let raf, fadeRaf, flightTimer, hintTimer, hintButtonTimer, feedbackTimer, generation = 0;
@@ -312,7 +312,7 @@ $('music-toggle').onchange = () => {
 $('music-volume').oninput = () => {cancelAnimationFrame(fadeRaf); music.volume = Number($('music-volume').value);};
 $('seek').oninput = () => {narration.currentTime = Number($('seek').value); paint();};
 $('seek').onchange = () => {if (!['narrating', 'paused'].includes(phase)) start(Number($('seek').value));};
-window.addEventListener('pagehide', () => {clearTimeout(hintButtonTimer); playground?.destroy(); stopAudio(); clearTimeout(flightTimer); clearTimeout(hintTimer); clearTimeout(feedbackTimer);});
+window.addEventListener('pagehide', () => {loadRun++;clearTimeout(preloadTimer);clearTimeout(hintButtonTimer); playground?.destroy(); stopAudio(); clearTimeout(flightTimer); clearTimeout(hintTimer); clearTimeout(feedbackTimer);});
 
 function verseNode(text) {
   const line = document.createElement('div');
@@ -345,25 +345,49 @@ function choosePoem(id) {
   document.title = `百家姓 · ${surname}`;
   $('title').textContent = poem.title;
   $('author').textContent = `${poem.dynasty} · ${poem.author}`;
-  $('background').src = poem.assets.background;
+  let prepared=false;
+  const prepareAudio=()=>{
+    if(prepared)return;prepared=true;clearTimeout(preloadTimer);
+    narration.preload='auto';music.preload='auto';
+    if(!['loading','narrating','paused'].includes(phase)){narration.load();music.load();}
+    cacheMaterials([poem],$('cache-status'));
+  };
+  const background=$('background');background.hidden=true;
+  background.onload=()=>{background.hidden=false;$('scene-loading').hidden=true;scene.setAttribute('aria-busy','false');prepareAudio();};
+  background.onerror=()=>{$('scene-loading').dataset.error='true';$('load-retry').hidden=false;scene.setAttribute('aria-busy','false');prepareAudio();};
+  background.src = poem.assets.background;
   $('background').alt = poem.interaction.backgroundAlt || (surname === '李' ? '柔和水墨橘园' : '小燕子、石桥和夕阳下的人家');
-  bird.hidden=isSceneGame()||!poem.assets.companion;
+  bird.hidden=true;
+  $('companion').onload=()=>{bird.hidden=isSceneGame()||!poem.assets.companion;};
   if(!isSceneGame()&&poem.assets.companion)$('companion').src = poem.assets.companion;else $('companion').removeAttribute('src');
   $('companion').alt = `柔和水墨风的${companionLabel()}`;
   narration.src = poem.assets.narration;
   music.src = poem.assets.music;
   $('verses').replaceChildren(...poem.lines.map(verseNode));
   reset();
+  scene.dataset.content='ready';
+  for(const id of ['play','help-home','reset'])$(id).disabled=false;
+  clearTimeout(preloadTimer);preloadTimer=setTimeout(prepareAudio,1600);
 }
-fetch('/api/materials').then(response => {if (!response.ok) throw Error(); return response.json();}).then(data => {
-  poems = data.poems;
-  cacheMaterials(poems,$('cache-status'));
-  const params = new URLSearchParams(location.search), requested = params.get('surname');
-  const matches = poems.filter(item => item.surnames.includes(requested));
-  const selected = matches.find(item => item.id === params.get('poem'));
-  if (!matches.length) throw Error();
-  choosePoem((selected || matches[Math.floor(Math.random()*matches.length)]).id);
-}).catch(() => {setPhase('error', '素材还没准备好，请老师帮忙'); $('play').disabled = true;});
+async function loadPoemPage(){
+  const run=++loadRun,controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),12000);
+  $('scene-loading').hidden=false;$('scene-loading').dataset.error='false';$('load-retry').hidden=true;scene.setAttribute('aria-busy','true');
+  const params=new URLSearchParams(location.search),query=new URLSearchParams();
+  if(params.get('poem'))query.set('id',params.get('poem'));
+  if(params.get('surname'))query.set('surname',params.get('surname'));
+  try{
+    const response=await fetch('/api/poem?'+query,{signal:controller.signal});if(!response.ok)throw Error();
+    const data=await response.json();if(run!==loadRun)return;
+    poems=[data.poem];choosePoem(data.poem.id);
+  }catch{
+    if(run!==loadRun)return;
+    setPhase('error','素材暂时没连上，请点重试');
+    for(const id of ['play','help-home','reset'])$(id).disabled=true;
+    $('scene-loading').dataset.error='true';$('load-retry').hidden=false;scene.setAttribute('aria-busy','false');
+  }finally{clearTimeout(timeout);}
+}
+$('load-retry').onclick=loadPoemPage;
+loadPoemPage();
 
 $('back-to-write').onclick = () => {
   stopAudio();

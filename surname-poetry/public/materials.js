@@ -15,5 +15,5 @@ try{
   const source=el('a','查看诗文出处','source');source.href=poem.source.url;source.target='_blank';source.rel='noopener';body.append(source);
   const link=el('a','打开互动','play');link.href='/poem/index.html?'+new URLSearchParams({surname:poem.surnames[0],poem:poem.id});body.append(link);card.append(body);document.getElementById('cards').append(card);
  }
- const cache=el('p',null,'note');document.body.append(cache);cacheMaterials(poems,cache);
+ const cache=el('p',null,'note');document.body.append(cache);cacheMaterials(poems,cache,{all:true});
 }catch{document.getElementById('summary').textContent='素材尚未连接，请检查本地服务。';}

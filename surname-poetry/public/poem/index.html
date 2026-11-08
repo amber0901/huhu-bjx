@@ -16,8 +16,9 @@
     <nav class="poem-navigation" aria-label="返回写字"><button id="back-to-write" class="icon-button" aria-label="再写一个姓" title="再写一个姓"><svg class="icon" aria-hidden="true"><use href="/icons.svg#back"></use></svg></button></nav>
   </header>
   <main>
-    <section id="scene" class="scene" aria-label="乌衣巷诗词画面" data-phase="idle">
-      <img id="background" class="background" alt="小燕子、石桥和夕阳下的人家">
+    <section id="scene" class="scene" aria-label="正在准备诗词画面" data-phase="idle" aria-busy="true">
+      <div id="scene-loading" class="scene-loading" role="status"><svg class="icon" aria-hidden="true"><use href="/icons.svg#hourglass"></use></svg><span class="sr-only">正在准备诗画</span><button id="load-retry" class="icon-button" aria-label="重新加载诗画" hidden><svg class="icon" aria-hidden="true"><use href="/icons.svg#retry"></use></svg></button></div>
+      <img id="background" class="background" alt="" fetchpriority="high" decoding="async" hidden>
       <div class="reading">
         <div id="verses" class="verses"></div>
         <div class="poem-credit"><h1 id="title"></h1><p id="author"></p></div>
@@ -29,23 +30,23 @@
         <button class="character-part part-mu" data-part="木" aria-label="木字部件，点按或拖到上面">木</button>
         <button class="character-part part-zi" data-part="子" aria-label="子字部件，点按或拖到下面">子</button>
       </div>
-      <button id="bird" class="bird" aria-label="小燕子，先在诗里找到你的姓"><img id="companion" alt="柔和水墨风的小燕子伙伴" draggable="false"></button>
+      <button id="bird" class="bird" aria-label="小燕子，先在诗里找到你的姓" hidden><img id="companion" alt="" draggable="false" fetchpriority="low" decoding="async"></button>
       <div id="celebration" class="celebration" aria-hidden="true"></div>
     </section>
     <section class="controls" aria-label="诗画互动">
-      <button id="play" class="primary icon-button" aria-label="听一听" title="听一听"><svg class="icon" aria-hidden="true"><use href="/icons.svg#speaker"></use></svg></button>
-      <button id="help-home" class="icon-button" aria-label="帮帮我" title="帮帮我"><svg class="icon" aria-hidden="true"><use href="/icons.svg#bulb"></use></svg></button>
-      <button id="reset" class="icon-button" aria-label="再玩一次" title="再玩一次"><svg class="icon" aria-hidden="true"><use href="/icons.svg#retry"></use></svg></button>
+      <button id="play" class="primary icon-button" aria-label="听一听" title="听一听" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#speaker"></use></svg></button>
+      <button id="help-home" class="icon-button" aria-label="帮帮我" title="帮帮我" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#bulb"></use></svg></button>
+      <button id="reset" class="icon-button" aria-label="再玩一次" title="再玩一次" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#retry"></use></svg></button>
     </section>
     <p id="phase" class="phase sr-only" aria-live="polite">先在诗里找到自己的姓</p>
     <details class="teacher-settings"><summary class="icon-summary" aria-label="老师设置" title="老师设置"><svg class="icon" aria-hidden="true"><use href="/icons.svg#gear"></use></svg><span class="sr-only">老师设置</span></summary><div class="settings-content">
       <label><input id="music-toggle" type="checkbox" checked>古风轻音乐</label>
-      <label>配乐音量<input id="music-volume" type="range" min="0" max="1" step="0.05" value="0.45"></label>
+      <label>配乐音量<input id="music-volume" type="range" min="0" max="1" step="0.05" value="0.35"></label>
       <label class="seek-label">朗诵进度<input id="seek" type="range" min="0" max="1" step="0.01" value="0"></label><output id="clock">0:00 / 0:00</output>
       <p id="cache-status"></p>
     </div></details>
   </main>
-  <audio id="narration" preload="auto"></audio><audio id="music" preload="auto" loop></audio>
-  <script src="app.js" type="module"></script>
+  <audio id="narration" preload="none"></audio><audio id="music" preload="none" loop></audio>
+  <script src="/build/poem-GSTUMUA7.js" type="module"></script>
 </body>
 </html>

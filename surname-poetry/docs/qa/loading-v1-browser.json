@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "wangArtworkAndText": true,
+    "wangMp3DurationSeconds": 5.271125,
+    "musicDefault": 0.35,
+    "wangInteractionCompleted": true,
+    "preloadBeforeConfirmation": true,
+    "confirmationUsesPreparedIframe": true,
+    "returnClearsIframe": true,
+    "errorShowsRetry": true,
+    "errorHidesUnsetImages": true,
+    "liMaWenBackgrounds": true,
+    "compressedNarrationUrls": true
+  },
+  "environment": {
+    "browser": "in-app Chromium",
+    "normalServer": "localhost:8899",
+    "delayedServer": "localhost:8898",
+    "delayedRequestsMs": 200,
+    "delayedWangBackgroundMs": 1800,
+    "recognition": "mocked on delayed server only; no paid recognition calls"
+  },
+  "limitation": "本地浏览器验证，不代表腾讯云真实网络或65寸设备上的实测耗时。"
+}

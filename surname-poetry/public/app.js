@@ -5,6 +5,17 @@ const views = ['write','result','message','loading','gate'];
 const canvas = $('handwriting'), context = canvas.getContext('2d');
 let strokes = [], activeStroke, pointerId, result, lastImage, request, run = 0, catalog = [];
 let retryAvailable = false, retryHandler;
+let preparedPoem;
+function clearPreparedPoem(){preparedPoem=undefined;$('poem-frame').removeAttribute('src');}
+function preparePoem(surname){
+  if(preparedPoem?.surname===surname)return preparedPoem;
+  const matches=catalog.filter(poem=>poem.surnames.includes(surname));
+  if(!matches.length){clearPreparedPoem();return;}
+  const selected=matches[Math.floor(Math.random()*matches.length)];
+  preparedPoem={id:selected.id,surname};
+  $('poem-frame').src=`/poem/index.html?surname=${encodeURIComponent(surname)}&poem=${encodeURIComponent(selected.id)}`;
+  return preparedPoem;
+}
 
 function show(name) {
   document.body.dataset.view = name;
@@ -105,7 +116,7 @@ async function recognize() {
     const data=await api('/api/recognize',{method:'POST',body:JSON.stringify({image}),signal:request.signal});
     if(current!==run)return;
     if(data.status==='unclear'){message('小精灵还没看清','把姓写大一点，我们再试一次吧。','',false,recognize,'question');return;}
-    result=data;$('recognized-character').textContent=data.surname;$('recognized-character').dataset.compound=String(data.surname.length>1);$('written-sample').src=image;show('result');
+    result=data;preparePoem(data.surname);$('recognized-character').textContent=data.surname;$('recognized-character').dataset.compound=String(data.surname.length>1);$('written-sample').src=image;show('result');
   } catch(error) {
     if(current!==run)return;
     if(error.status===401){show('gate');return;}
@@ -114,20 +125,17 @@ async function recognize() {
 }
 $('recognize').onclick=recognize;
 $('cancel').onclick=()=>{run++;request?.abort();request=undefined;show('write');};
-$('rewrite').onclick=()=>{strokes=[];redraw();show('write');};
+$('rewrite').onclick=()=>{clearPreparedPoem();strokes=[];redraw();show('write');};
 $('try-again').onclick=()=>{if(!retryAvailable){strokes=[];redraw();}show('write');};
 $('retry-network').onclick=()=>retryHandler?.();
 $('confirm').onclick=()=>{
-  const matches=catalog.filter(poem=>poem.surnames.includes(result.surname));
-  if(!matches.length){message(`${result.surname}的诗词还在路上`,'小精灵正在收集这个姓的诗，准备好就请你来玩。',result.surname);return;}
-  const selected=matches[Math.floor(Math.random()*matches.length)];
-  $('poem-frame').src=`/poem/index.html?surname=${encodeURIComponent(result.surname)}&poem=${encodeURIComponent(selected.id)}`;
+  if(!preparePoem(result.surname)){message(`${result.surname}的诗词还在路上`,'小精灵正在收集这个姓的诗，准备好就请你来玩。',result.surname);return;}
   $('poem-view').hidden=false;document.body.classList.add('poem-active');
   document.title=`百家姓 · ${result.surname}`;
 };
 window.addEventListener('message',event=>{
   if(event.origin!==location.origin || event.source!==$('poem-frame').contentWindow || event.data?.type!=='return-to-write')return;
-  $('poem-view').hidden=true;$('poem-frame').removeAttribute('src');document.body.classList.remove('poem-active');
+  $('poem-view').hidden=true;clearPreparedPoem();document.body.classList.remove('poem-active');
   strokes=[];result=undefined;lastImage=undefined;redraw();show('write');document.title='百家姓';
 });
 $('fullscreen').onclick=async()=>{
@@ -144,8 +152,8 @@ $('classroom-form').onsubmit=async event=>{
 async function connect() {
   $('refresh-status').disabled=true;
   try {
-    const [config,data]=await Promise.all([api('/api/config'),api('/api/catalog')]);catalog=data.poems;$('class-materials').textContent='本期素材：'+[...new Set(catalog.flatMap(p=>p.surnames))].join('、')+'。';
-    cacheMaterials(data.poems,$('cache-status'));
+    const [config,data]=await Promise.all([api('/api/config'),api('/api/catalog?brief=1')]);catalog=data.poems;$('class-materials').textContent='本期素材：'+[...new Set(catalog.flatMap(p=>p.surnames))].join('、')+'。';
+    cacheMaterials([],$('cache-status'));
     $('service-status').textContent=config.visionConfigured?'识别服务已配置，诗词素材已连接。':'识别尚未配置，请在服务端填写 TOKENHUB_API_KEY 后重启。';
     if(config.authRequired&&!config.authorized)show('gate');
     else if(!config.visionConfigured){message('请老师连接百家姓','识别服务还没准备好，配置完成后就能开始写字啦。','',false,connect,'cloud-off');}

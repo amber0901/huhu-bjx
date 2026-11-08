@@ -70,3 +70,8 @@ body.hinting .character-game:not([hidden]) .part-slot:not([data-filled=true]){an
 @media(min-width:2400px) and (min-height:1350px){.poem-game{gap:24px}.zheng-board{padding:28px 36px;border-radius:72px}.string-line{width:6px}.string-bead{width:60px;height:60px}.melody-progress{gap:24px}.melody-progress i{width:24px;height:24px}.poem-game button.melody-replay{width:108px;height:96px;min-height:96px}.melody-replay .icon{width:50px;height:50px}}
 
 [hidden]{display:none!important}
+.scene-loading{position:absolute;inset:0;z-index:6;display:flex;align-items:center;justify-content:center;gap:20px;background:#fff7e5e8;color:#8aa287}
+.scene-loading>.icon{animation:poem-loading 1.5s ease-in-out infinite}.scene-loading[data-error=true]>.icon{animation:none}
+.scene[data-content=ready] .scene-loading{left:63%;background:transparent}
+.scene[data-phase=loading]~.controls #play{animation:poem-loading 1.5s ease-in-out infinite}
+@keyframes poem-loading{50%{opacity:.45;transform:translateY(-6px)}}

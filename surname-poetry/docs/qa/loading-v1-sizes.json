@@ -1,0 +1,27 @@
+{
+  "brief": {
+    "uncompressedBytes": 1075,
+    "transferredBytes": 397,
+    "encoding": "gzip"
+  },
+  "single": {
+    "uncompressedBytes": 2618,
+    "transferredBytes": 1679,
+    "encoding": "gzip"
+  },
+  "all": {
+    "uncompressedBytes": 70500,
+    "transferredBytes": 15302,
+    "encoding": "gzip"
+  },
+  "poemScript": {
+    "uncompressedBytes": 41147,
+    "transferredBytes": 14554,
+    "browserModuleRequests": 1
+  },
+  "narration": {
+    "sourceBytes": 6607786,
+    "playbackBytes": 1678744
+  },
+  "runtimePoemBytes": 7412371
+}

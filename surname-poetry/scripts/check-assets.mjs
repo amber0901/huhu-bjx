@@ -1,5 +1,6 @@
 import { readFile, realpath, stat } from 'node:fs/promises';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import { assetNames, loadCatalog, publicRoot } from '../src/catalog.mjs';
 
 try {
@@ -23,6 +24,16 @@ try {
     });
   }
   await loadCatalog(); // Validate prepared content addresses and original hashes.
+  const frontend=JSON.parse(await readFile(path.join(publicRoot,'build/manifest.json'),'utf8'));
+  for(const item of Object.values(frontend)){
+    if(!/^\/build\/[a-z-]+-[A-Z0-9]{8}\.js$/i.test(item.url))throw Error('浏览器脚本地址错误');
+    const bytes=await readFile(path.join(publicRoot,item.url));
+    if(createHash('sha256').update(bytes).digest('hex')!==item.sha256)throw Error('浏览器脚本已改变，请运行 npm run build');
+    for(const [source,expected] of Object.entries(item.sourceHashes)){
+      const file=path.resolve(publicRoot,source);
+      if(!file.startsWith(publicRoot+path.sep)||createHash('sha256').update(await readFile(file)).digest('hex')!==expected)throw Error('前端源码已改变，请运行 npm run build');
+    }
+  }
   console.log(`素材结构检查通过：${poems.length} 首已发布诗歌。`);
   if (!poems.length) console.log('当前没有正式素材；这不代表素材制作已完成。');
 } catch (error) {

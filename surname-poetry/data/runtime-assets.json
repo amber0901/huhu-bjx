@@ -10,12 +10,19 @@
       "kind": "background"
     },
     "/assets/poems/chen-zhangfu/narration.wav": {
-      "url": "/media/aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe.wav",
+      "url": "/media/b91ab411700a040a181220be2c0d0bfc87940e2de69c7289eed770209f136cbf.mp3",
       "sourceSha256": "aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe",
-      "sha256": "aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe",
+      "sha256": "b91ab411700a040a181220be2c0d0bfc87940e2de69c7289eed770209f136cbf",
       "sourceBytes": 315684,
-      "bytes": 315684,
-      "kind": "narration"
+      "bytes": 79820,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 6.575125,
+        "encodedDurationSeconds": 6.575125
+      }
     },
     "/assets/poems/chen-zhangfu/timing.json": {
       "url": "/media/a7c69594d4db6521cc4d88fb8c109d585acfacd80a36ebb09d78269f17f550ad.json",
@@ -42,12 +49,19 @@
       "kind": "background"
     },
     "/assets/poems/deng-chenglou/narration.wav": {
-      "url": "/media/8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce.wav",
+      "url": "/media/9e19eda8da5f94675c1f60f7521ada89544023e048fa1a5865e3054d560df18d.mp3",
       "sourceSha256": "8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce",
-      "sha256": "8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce",
+      "sha256": "9e19eda8da5f94675c1f60f7521ada89544023e048fa1a5865e3054d560df18d",
       "sourceBytes": 279608,
-      "bytes": 279608,
-      "kind": "narration"
+      "bytes": 70892,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.823541666666666,
+        "encodedDurationSeconds": 5.823542
+      }
     },
     "/assets/poems/deng-chenglou/timing.json": {
       "url": "/media/9d432dafc6ec443e37049db96d55e391674eb9a66f5a40bf618bef599ce80bd7.json",
@@ -74,12 +88,19 @@
       "kind": "background"
     },
     "/assets/poems/guo-guren/narration.wav": {
-      "url": "/media/d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed.wav",
+      "url": "/media/922a07ed134b96995bb60f9262f1217f8e0cb3f3a5385b49476b2c863d17fc47.mp3",
       "sourceSha256": "d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed",
-      "sha256": "d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed",
+      "sha256": "922a07ed134b96995bb60f9262f1217f8e0cb3f3a5385b49476b2c863d17fc47",
       "sourceBytes": 226172,
-      "bytes": 226172,
-      "kind": "narration"
+      "bytes": 57644,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.7102916666666665,
+        "encodedDurationSeconds": 4.710292
+      }
     },
     "/assets/poems/guo-guren/timing.json": {
       "url": "/media/44a722e0ccb60b94aa48251a133a2ca0611531da1d455c41820ea85bbd8fca4b.json",
@@ -106,12 +127,19 @@
       "kind": "background"
     },
     "/assets/poems/he-huixiang/narration.wav": {
-      "url": "/media/4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d.wav",
+      "url": "/media/91f98fb336c214f200eb48a8756538f694d78fd1fd70cb5d88bfc267848d01b7.mp3",
       "sourceSha256": "4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d",
-      "sha256": "4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d",
+      "sha256": "91f98fb336c214f200eb48a8756538f694d78fd1fd70cb5d88bfc267848d01b7",
       "sourceBytes": 227314,
-      "bytes": 227314,
-      "kind": "narration"
+      "bytes": 57932,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.734083333333333,
+        "encodedDurationSeconds": 4.734083
+      }
     },
     "/assets/poems/he-huixiang/timing.json": {
       "url": "/media/b61b8d00b87bed2589461f6f8065bf13d85977ac54b4398f07a0b5e0b294acf6.json",
@@ -138,12 +166,19 @@
       "kind": "background"
     },
     "/assets/poems/he-saiqu/narration.wav": {
-      "url": "/media/de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68.wav",
+      "url": "/media/833165cec7f15a59bbf384c2444c54855bb6853d736051d826fc0e9d1f7aa401.mp3",
       "sourceSha256": "de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68",
-      "sha256": "de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68",
+      "sha256": "833165cec7f15a59bbf384c2444c54855bb6853d736051d826fc0e9d1f7aa401",
       "sourceBytes": 237218,
-      "bytes": 237218,
-      "kind": "narration"
+      "bytes": 60236,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.940416666666667,
+        "encodedDurationSeconds": 4.940417
+      }
     },
     "/assets/poems/he-saiqu/timing.json": {
       "url": "/media/82b736964d624dcd866ba0d0679576c29577e6ecbf76affd715e6715a3660d63.json",
@@ -170,12 +205,19 @@
       "kind": "background"
     },
     "/assets/poems/hong-canghai/narration.wav": {
-      "url": "/media/c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1.wav",
+      "url": "/media/037b030229d9a316411a8176dcc9870ea42e8b453b8fe1292a7c19a408cc2f3d.mp3",
       "sourceSha256": "c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1",
-      "sha256": "c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1",
+      "sha256": "037b030229d9a316411a8176dcc9870ea42e8b453b8fe1292a7c19a408cc2f3d",
       "sourceBytes": 220988,
-      "bytes": 220988,
-      "kind": "narration"
+      "bytes": 56204,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.602291666666667,
+        "encodedDurationSeconds": 4.602292
+      }
     },
     "/assets/poems/hong-canghai/timing.json": {
       "url": "/media/02e3d4e2bd0d81f47dde0400d937f5573fc9c82880b52ca3636cd66bd48033b7.json",
@@ -202,12 +244,19 @@
       "kind": "background"
     },
     "/assets/poems/jiang-jiande/narration.wav": {
-      "url": "/media/faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f.wav",
+      "url": "/media/f71ac467299ca9da754e4b9e17f09288f5c8aae88c67c209da837aa56e4cb029.mp3",
       "sourceSha256": "faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f",
-      "sha256": "faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f",
+      "sha256": "f71ac467299ca9da754e4b9e17f09288f5c8aae88c67c209da837aa56e4cb029",
       "sourceBytes": 228172,
-      "bytes": 228172,
-      "kind": "narration"
+      "bytes": 57932,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.7519583333333335,
+        "encodedDurationSeconds": 4.751958
+      }
     },
     "/assets/poems/jiang-jiande/timing.json": {
       "url": "/media/6d82497c29120631ea4743e0df6dcc23b3166aef4e162ea9964ab26b3b444050.json",
@@ -234,12 +283,19 @@
       "kind": "background"
     },
     "/assets/poems/lei-xiyu/narration.wav": {
-      "url": "/media/a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d.wav",
+      "url": "/media/2d636c11fea5ed98635282c444e207a81ebff1cfc7bd12706c6f0b13a7979b90.mp3",
       "sourceSha256": "a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d",
-      "sha256": "a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d",
+      "sha256": "2d636c11fea5ed98635282c444e207a81ebff1cfc7bd12706c6f0b13a7979b90",
       "sourceBytes": 294194,
-      "bytes": 294194,
-      "kind": "narration"
+      "bytes": 74636,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 6.127416666666667,
+        "encodedDurationSeconds": 6.127417
+      }
     },
     "/assets/poems/lei-xiyu/timing.json": {
       "url": "/media/2eb6494a04f5b9399dc0a686d7e426acdb430e36ff04260ec794b47d6d04f580.json",
@@ -266,12 +322,19 @@
       "kind": "background"
     },
     "/assets/poems/li-ganyu-jiangnan/narration.wav": {
-      "url": "/media/61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c.wav",
+      "url": "/media/78765184326d04233cc18a6c3af4522bd425d21e1c38a3b514f6e2c6d8aba48d.mp3",
       "sourceSha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
-      "sha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
+      "sha256": "78765184326d04233cc18a6c3af4522bd425d21e1c38a3b514f6e2c6d8aba48d",
       "sourceBytes": 271832,
-      "bytes": 271832,
-      "kind": "narration"
+      "bytes": 68876,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.6615416666666665,
+        "encodedDurationSeconds": 5.661542
+      }
     },
     "/assets/poems/li-ganyu-jiangnan/timing.json": {
       "url": "/media/e1d25084ffb42510625708505e87ea62286f86c5b1ef832f491607fee84b2146.json",
@@ -306,12 +369,19 @@
       "kind": "background"
     },
     "/assets/poems/li-nanlin/narration.wav": {
-      "url": "/media/5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c.wav",
+      "url": "/media/ef88aa57211ab43895aa4dbf9f278f0bc0d5e1d0dc318ffb5581b5106b640b5b.mp3",
       "sourceSha256": "5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c",
-      "sha256": "5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c",
+      "sha256": "ef88aa57211ab43895aa4dbf9f278f0bc0d5e1d0dc318ffb5581b5106b640b5b",
       "sourceBytes": 243438,
-      "bytes": 243438,
-      "kind": "narration"
+      "bytes": 61964,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.07,
+        "encodedDurationSeconds": 5.07
+      }
     },
     "/assets/poems/li-nanlin/timing.json": {
       "url": "/media/e21e39057ef9d87ecccf5c555cb57e58239f7151d311fb9d3730c1b4a4bfe2d5.json",
@@ -338,12 +408,19 @@
       "kind": "background"
     },
     "/assets/poems/liao-minglue/narration.wav": {
-      "url": "/media/d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2.wav",
+      "url": "/media/1660072a412760336e7d522db82e2393d37c065c1e8b1e0d78a4654456c54459.mp3",
       "sourceSha256": "d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2",
-      "sha256": "d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2",
+      "sha256": "1660072a412760336e7d522db82e2393d37c065c1e8b1e0d78a4654456c54459",
       "sourceBytes": 242100,
-      "bytes": 242100,
-      "kind": "narration"
+      "bytes": 61676,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.042125,
+        "encodedDurationSeconds": 5.042125
+      }
     },
     "/assets/poems/liao-minglue/timing.json": {
       "url": "/media/b6b521bb22a16f692e876c4d16fd9b2f9bfe87d338bf01b0b94da3953288b540.json",
@@ -370,12 +447,19 @@
       "kind": "background"
     },
     "/assets/poems/liu-xuandu/narration.wav": {
-      "url": "/media/abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a.wav",
+      "url": "/media/b883846915b1af715aac97acdf960f6847aa28ef5094104fb1e06e98bd5feab4.mp3",
       "sourceSha256": "abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a",
-      "sha256": "abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a",
+      "sha256": "b883846915b1af715aac97acdf960f6847aa28ef5094104fb1e06e98bd5feab4",
       "sourceBytes": 283530,
-      "bytes": 283530,
-      "kind": "narration"
+      "bytes": 72044,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.90525,
+        "encodedDurationSeconds": 5.905958
+      }
     },
     "/assets/poems/liu-xuandu/timing.json": {
       "url": "/media/d786361ac77061979fa014d718c0b6596f224124076b080f8d0018379208609e.json",
@@ -402,12 +486,19 @@
       "kind": "background"
     },
     "/assets/poems/ma-dengkehou/narration.wav": {
-      "url": "/media/7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22.wav",
+      "url": "/media/57ae83f7d6543025eec4a22c8bc9fc42ee90fd212d86d0ac367ab6d33d1d5ac2.mp3",
       "sourceSha256": "7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22",
-      "sha256": "7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22",
+      "sha256": "57ae83f7d6543025eec4a22c8bc9fc42ee90fd212d86d0ac367ab6d33d1d5ac2",
       "sourceBytes": 292100,
-      "bytes": 292100,
-      "kind": "narration"
+      "bytes": 74060,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 6.0837916666666665,
+        "encodedDurationSeconds": 6.083792
+      }
     },
     "/assets/poems/ma-dengkehou/timing.json": {
       "url": "/media/ede350529cd527e23b4b5539a7d4c49acf9b38ac02feedf1cd9901fab5941c6b.json",
@@ -442,12 +533,19 @@
       "kind": "background"
     },
     "/assets/poems/wang-wuyixiang/narration.wav": {
-      "url": "/media/0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331.wav",
+      "url": "/media/06abe66befe986347b66d317bbff15c320cdd426d19a6aa9545879c8bf5e6de4.mp3",
       "sourceSha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
-      "sha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
+      "sha256": "06abe66befe986347b66d317bbff15c320cdd426d19a6aa9545879c8bf5e6de4",
       "sourceBytes": 253092,
-      "bytes": 253092,
-      "kind": "narration"
+      "bytes": 64268,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.271125,
+        "encodedDurationSeconds": 5.271125
+      }
     },
     "/assets/poems/wang-wuyixiang/timing.json": {
       "url": "/media/3cfa387dcc32ee67c3f483ace6e48c58e2610a4fa0a445c0a8aa94c1ae03ab19.json",
@@ -482,12 +580,19 @@
       "kind": "background"
     },
     "/assets/poems/wang-zengwanglun/narration.wav": {
-      "url": "/media/0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06.wav",
+      "url": "/media/6f3b3fe865737986fbc8fb97339f132bba5d332e9f1cca34ed5468ead86a08bb.mp3",
       "sourceSha256": "0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06",
-      "sha256": "0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06",
+      "sha256": "6f3b3fe865737986fbc8fb97339f132bba5d332e9f1cca34ed5468ead86a08bb",
       "sourceBytes": 272234,
-      "bytes": 272234,
-      "kind": "narration"
+      "bytes": 69164,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.6699166666666665,
+        "encodedDurationSeconds": 5.669917
+      }
     },
     "/assets/poems/wang-zengwanglun/timing.json": {
       "url": "/media/2d512cb2d8dfe49255c76d31b50b4e57b46943eef7b599ed77805d88f7d8527e.json",
@@ -514,12 +619,19 @@
       "kind": "background"
     },
     "/assets/poems/wen-songzizhou/narration.wav": {
-      "url": "/media/9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5.wav",
+      "url": "/media/5c14d5a6464a2ac69f9f5d05af89bdb50000b544427403da63ca82df4c37888d.mp3",
       "sourceSha256": "9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5",
-      "sha256": "9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5",
+      "sha256": "5c14d5a6464a2ac69f9f5d05af89bdb50000b544427403da63ca82df4c37888d",
       "sourceBytes": 217084,
-      "bytes": 217084,
-      "kind": "narration"
+      "bytes": 55340,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.520958333333334,
+        "encodedDurationSeconds": 4.520958
+      }
     },
     "/assets/poems/wen-songzizhou/timing.json": {
       "url": "/media/d56a7996765eb7b4a856f44d2be0144818447f5a1406ea266c8647ba557464b4.json",
@@ -546,12 +658,19 @@
       "kind": "background"
     },
     "/assets/poems/weng-jiangxue/narration.wav": {
-      "url": "/media/86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d.wav",
+      "url": "/media/a1a7b89ce0c044744bc6f9644d82d5cfdc48a848d7fcce325b4f31c56b3b227f.mp3",
       "sourceSha256": "86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d",
-      "sha256": "86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d",
+      "sha256": "a1a7b89ce0c044744bc6f9644d82d5cfdc48a848d7fcce325b4f31c56b3b227f",
       "sourceBytes": 248722,
-      "bytes": 248722,
-      "kind": "narration"
+      "bytes": 63116,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.180083333333333,
+        "encodedDurationSeconds": 5.180083
+      }
     },
     "/assets/poems/weng-jiangxue/timing.json": {
       "url": "/media/21343717aad40e9bc99e276d3bac2240632e384d8d310a19b7102bd650bd46a9.json",
@@ -578,12 +697,19 @@
       "kind": "background"
     },
     "/assets/poems/wu-furong/narration.wav": {
-      "url": "/media/fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97.wav",
+      "url": "/media/b9a303d7b4c2baf3d159684b2f8ae8db07ba56e4b3ad7a24c9c609b34b7c5b31.mp3",
       "sourceSha256": "fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97",
-      "sha256": "fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97",
+      "sha256": "b9a303d7b4c2baf3d159684b2f8ae8db07ba56e4b3ad7a24c9c609b34b7c5b31",
       "sourceBytes": 307000,
-      "bytes": 307000,
-      "kind": "narration"
+      "bytes": 77804,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 6.394208333333333,
+        "encodedDurationSeconds": 6.394208
+      }
     },
     "/assets/poems/wu-furong/timing.json": {
       "url": "/media/703c9afcc5548aa5e30ca79d3f364682e306ac419bc2f198102a19c8e679f8fe.json",
@@ -610,12 +736,19 @@
       "kind": "background"
     },
     "/assets/poems/xiao-hongqiao/narration.wav": {
-      "url": "/media/00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac.wav",
+      "url": "/media/e61e01cfd99568205e1c62ac55d96b4feef5c0dfd043ee406ee9b86cbfbeaacf.mp3",
       "sourceSha256": "00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac",
-      "sha256": "00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac",
+      "sha256": "e61e01cfd99568205e1c62ac55d96b4feef5c0dfd043ee406ee9b86cbfbeaacf",
       "sourceBytes": 263192,
-      "bytes": 263192,
-      "kind": "narration"
+      "bytes": 66860,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.481541666666667,
+        "encodedDurationSeconds": 5.481542
+      }
     },
     "/assets/poems/xiao-hongqiao/timing.json": {
       "url": "/media/649b104bf1913c0bfdee6b42310934c4c64e3e0128740f913b13d3183ebee731.json",
@@ -642,12 +775,19 @@
       "kind": "background"
     },
     "/assets/poems/xing-chaou/narration.wav": {
-      "url": "/media/eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58.wav",
+      "url": "/media/4af163f715d985e40a45932f3d6b3cc04fe9f6b84d6de1acd51ab9a63accf17c.mp3",
       "sourceSha256": "eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58",
-      "sha256": "eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58",
+      "sha256": "4af163f715d985e40a45932f3d6b3cc04fe9f6b84d6de1acd51ab9a63accf17c",
       "sourceBytes": 171240,
-      "bytes": 171240,
-      "kind": "narration"
+      "bytes": 43820,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 3.565875,
+        "encodedDurationSeconds": 3.565875
+      }
     },
     "/assets/poems/xing-chaou/timing.json": {
       "url": "/media/7f114040c53976054630d8c5596e1311504b06d12cc2cbb4b49060a7d82e0c5b.json",
@@ -674,12 +814,19 @@
       "kind": "background"
     },
     "/assets/poems/xu-dingfengbo/narration.wav": {
-      "url": "/media/cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a.wav",
+      "url": "/media/11a45744643e678954e18e8103f9cfd5e97d1491e177c6de32a49a0915d0df95.mp3",
       "sourceSha256": "cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a",
-      "sha256": "cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a",
+      "sha256": "11a45744643e678954e18e8103f9cfd5e97d1491e177c6de32a49a0915d0df95",
       "sourceBytes": 253734,
-      "bytes": 253734,
-      "kind": "narration"
+      "bytes": 64556,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.2845,
+        "encodedDurationSeconds": 5.2845
+      }
     },
     "/assets/poems/xu-dingfengbo/timing.json": {
       "url": "/media/974c328f8e9a551085ea874e734519816f6323268ee4ff32c25e723a91e08706.json",
@@ -706,12 +853,19 @@
       "kind": "background"
     },
     "/assets/poems/yin-wangxiantai/narration.wav": {
-      "url": "/media/2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7.wav",
+      "url": "/media/adefd492911223e9c17a9a34616a62d9d3bcb02542786b482c7520e43cd32575.mp3",
       "sourceSha256": "2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7",
-      "sha256": "2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7",
+      "sha256": "adefd492911223e9c17a9a34616a62d9d3bcb02542786b482c7520e43cd32575",
       "sourceBytes": 322396,
-      "bytes": 322396,
-      "kind": "narration"
+      "bytes": 81548,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 6.714958333333334,
+        "encodedDurationSeconds": 6.714958
+      }
     },
     "/assets/poems/yin-wangxiantai/timing.json": {
       "url": "/media/f54ab08c225a937c1d5d7c36c46f8a2bf3e797d597f72558f8938c82ed514071.json",
@@ -738,12 +892,19 @@
       "kind": "background"
     },
     "/assets/poems/yu-shudao/narration.wav": {
-      "url": "/media/a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b.wav",
+      "url": "/media/bc068f351a8d73c3a21c24b7b9e9586e8097a95d7250c72c95b8312184191f21.mp3",
       "sourceSha256": "a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b",
-      "sha256": "a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b",
+      "sha256": "bc068f351a8d73c3a21c24b7b9e9586e8097a95d7250c72c95b8312184191f21",
       "sourceBytes": 168548,
-      "bytes": 168548,
-      "kind": "narration"
+      "bytes": 43244,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 3.5097916666666666,
+        "encodedDurationSeconds": 3.509792
+      }
     },
     "/assets/poems/yu-shudao/timing.json": {
       "url": "/media/f69927871242edd3b896c77eee3364e4cb269cc3936a2ab73f27cd5539404b6e.json",
@@ -770,12 +931,19 @@
       "kind": "background"
     },
     "/assets/poems/zhang-lushan/narration.wav": {
-      "url": "/media/f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13.wav",
+      "url": "/media/3348ba6d713e27ba816b73825fb4381fb7450f91a3fca25c1e730acc661de9f0.mp3",
       "sourceSha256": "f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13",
-      "sha256": "f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13",
+      "sha256": "3348ba6d713e27ba816b73825fb4381fb7450f91a3fca25c1e730acc661de9f0",
       "sourceBytes": 282038,
-      "bytes": 282038,
-      "kind": "narration"
+      "bytes": 71468,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.8741666666666665,
+        "encodedDurationSeconds": 5.874167
+      }
     },
     "/assets/poems/zhang-lushan/timing.json": {
       "url": "/media/78c328f61e8e0ac49826ccd20b9cfffbb5cd9d75532527e3398b15ce382bcd2e.json",
@@ -802,12 +970,19 @@
       "kind": "background"
     },
     "/assets/poems/zhou-tingzheng/narration.wav": {
-      "url": "/media/a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a.wav",
+      "url": "/media/77c5a4e8abcf45cfd1460060e9f3e826a9ec74377c388fe189be15e38b36f521.mp3",
       "sourceSha256": "a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a",
-      "sha256": "a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a",
+      "sha256": "77c5a4e8abcf45cfd1460060e9f3e826a9ec74377c388fe189be15e38b36f521",
       "sourceBytes": 216878,
-      "bytes": 216878,
-      "kind": "narration"
+      "bytes": 55340,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 4.516666666666667,
+        "encodedDurationSeconds": 4.516667
+      }
     },
     "/assets/poems/zhou-tingzheng/timing.json": {
       "url": "/media/32d63d38105cde7c737444ca9afd1699d94f407509b36b217cc8be8e660719c1.json",
@@ -834,12 +1009,19 @@
       "kind": "background"
     },
     "/assets/poems/zhu-wuyixiang/narration.wav": {
-      "url": "/media/798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6.wav",
+      "url": "/media/f2eca60a501e02c64c56cb773e2ac01c7afd3832972c6e0968f423a0ce61aad7.mp3",
       "sourceSha256": "798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6",
-      "sha256": "798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6",
+      "sha256": "f2eca60a501e02c64c56cb773e2ac01c7afd3832972c6e0968f423a0ce61aad7",
       "sourceBytes": 269278,
-      "bytes": 269278,
-      "kind": "narration"
+      "bytes": 68300,
+      "kind": "narration",
+      "encoding": {
+        "codec": "mp3",
+        "bitrate": 96000,
+        "sampleRate": 24000,
+        "sourceDurationSeconds": 5.608333333333333,
+        "encodedDurationSeconds": 5.608333
+      }
     },
     "/assets/poems/zhu-wuyixiang/timing.json": {
       "url": "/media/d8b0bcfde1d9f97d87e0aa424f0be41adf6d47aa2e862aebf6df9fcc88624992.json",
@@ -868,7 +1050,7 @@
   },
   "totals": {
     "originalPoemBytes": 80695285,
-    "optimizedPoemBytes": 12341413,
+    "optimizedPoemBytes": 7412371,
     "homeOriginalBytes": 255889,
     "homeOptimizedBytes": 163702
   }
