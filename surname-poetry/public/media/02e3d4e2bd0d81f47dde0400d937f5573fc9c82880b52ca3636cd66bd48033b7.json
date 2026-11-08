@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1",
+  "lines": [
+    {
+      "text": "秋风萧瑟，",
+      "start": 0.288,
+      "end": 2.05
+    },
+    {
+      "text": "洪波涌起。",
+      "start": 2.645,
+      "end": 4.355
+    }
+  ]
+}

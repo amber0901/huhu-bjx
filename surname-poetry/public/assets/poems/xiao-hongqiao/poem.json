@@ -1,0 +1,78 @@
+{
+  "id": "xiao-hongqiao",
+  "title": "再题文园狮子林十六景·其二·虹桥",
+  "author": "弘历",
+  "dynasty": "清",
+  "status": "ready",
+  "surnames": [
+    "肖"
+  ],
+  "lines": [
+    "石桥湖口长虹肖，",
+    "来往都凭镜影中。"
+  ],
+  "excerpt": {
+    "label": "选句",
+    "sourceText": "石桥湖口长虹肖，来往都凭镜影中。"
+  },
+  "source": {
+    "collection": "御制诗",
+    "url": "https://www.dpm.org.cn/Uploads/pdf/1939/T00046_00.pdf",
+    "note": "正文保留姓氏原字；用户已允许必要时扩展经典古诗词。游戏是诗意联想，不作姓氏起源解读。",
+    "secondaryUrl": "https://m.cidianwang.com/mingju/5/5bdeb1284425.htm"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3"
+  },
+  "materialVersion": 4,
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "followAlong": false,
+  "interactionVersion": 7,
+  "interactionMode": "surname-poem-play",
+  "interaction": {
+    "game": "bridge-mirror",
+    "targetSurname": "肖",
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "motif": "bridge-mirror",
+    "backgroundAlt": "an elegant small rainbow-shaped stone arch bridge over a still garden lake, perfect soft reflection, pastel flowers and rounded garden rocks, peaceful storybook light",
+    "description": "肖：挑选与石桥相肖的倒影，每轮改变正确选项的位置，感受相似；诗中肖读xiào、姓氏读xiāo。"
+  },
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "pronunciationNote": "姓氏肖读xiāo；诗句“长虹肖”表示相似，应读xiào。朗诵遵循诗句语境。",
+  "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

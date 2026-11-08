@@ -1,0 +1,76 @@
+{
+  "id": "he-saiqu",
+  "title": "塞下曲·其四",
+  "author": "卢纶",
+  "dynasty": "唐",
+  "status": "draft",
+  "surnames": [
+    "贺"
+  ],
+  "lines": [
+    "野幕敞琼筵，",
+    "羌戎贺劳旋。"
+  ],
+  "excerpt": {
+    "label": "选句",
+    "sourceText": "野幕敞琼筵，羌戎贺劳旋。"
+  },
+  "source": {
+    "collection": "唐诗三百首",
+    "url": "https://poetryh.com/F011Archives/02bOldChnCollections/唐詩三百首.pdf",
+    "note": "正文保留姓氏原字；用户已允许必要时扩展经典古诗词。游戏是诗意联想，不作姓氏起源解读。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3"
+  },
+  "materialVersion": 4,
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "followAlong": false,
+  "interactionVersion": 7,
+  "interactionMode": "surname-poem-play",
+  "interaction": {
+    "game": "drum-rhythm",
+    "targetSurname": "贺",
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "motif": "drum-rhythm",
+    "backgroundAlt": "a peaceful outdoor celebratory gathering near a rounded tent with colorful ribbons, small ceremonial drum and friendly smiling people, pastel mountains, no weapons alcohol or battle",
+    "description": "贺：看鼓面光圈示范后敲鼓庆贺，触摸会发出轻柔合成鼓音；鼓点分明，三次轻敲即可庆贺，不以毫秒误差扣分；不展示战斗与饮酒。"
+  },
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "teacherNote": "姓氏原字约束下，选句较少见且有生僻字，适合先听诗、看图互动，由老师补充解释；不声称幼儿能独立理解全文。",
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

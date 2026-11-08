@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c",
+  "lines": [
+    {
+      "text": "锦里先生乌角巾，",
+      "start": 0.277,
+      "end": 2.166
+    },
+    {
+      "text": "园收芋栗未全贫。",
+      "start": 2.715,
+      "end": 4.809
+    }
+  ]
+}

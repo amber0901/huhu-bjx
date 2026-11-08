@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "/assets/poems/chen-zhangfu/background.png": {
+      "url": "/media/1afbd7cb28db052010c4b6380ab7996bf989ba891d65b9b73f5ab7c563f42c97.webp",
+      "sourceSha256": "536af3f01ed3eb5b4848c4d8dfcc608a09ad99f7d203b20726a234eb9d7a2b3c",
+      "sha256": "1afbd7cb28db052010c4b6380ab7996bf989ba891d65b9b73f5ab7c563f42c97",
+      "sourceBytes": 2304766,
+      "bytes": 172626,
+      "kind": "background"
+    },
+    "/assets/poems/chen-zhangfu/narration.wav": {
+      "url": "/media/aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe.wav",
+      "sourceSha256": "aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe",
+      "sha256": "aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe",
+      "sourceBytes": 315684,
+      "bytes": 315684,
+      "kind": "narration"
+    },
+    "/assets/poems/chen-zhangfu/timing.json": {
+      "url": "/media/a7c69594d4db6521cc4d88fb8c109d585acfacd80a36ebb09d78269f17f550ad.json",
+      "sourceSha256": "a7c69594d4db6521cc4d88fb8c109d585acfacd80a36ebb09d78269f17f550ad",
+      "sha256": "a7c69594d4db6521cc4d88fb8c109d585acfacd80a36ebb09d78269f17f550ad",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/chen-zhangfu/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/deng-chenglou/background.png": {
+      "url": "/media/8d4830c010ed8bcfd4b94b7b033b033ede292ac2ddd9d022f7aecf1dd32b4acf.webp",
+      "sourceSha256": "50bea4316775cbb4e8b53fca8b3a07e6e649a4922ccea6ca0ec2011907311104",
+      "sha256": "8d4830c010ed8bcfd4b94b7b033b033ede292ac2ddd9d022f7aecf1dd32b4acf",
+      "sourceBytes": 2207476,
+      "bytes": 145300,
+      "kind": "background"
+    },
+    "/assets/poems/deng-chenglou/narration.wav": {
+      "url": "/media/8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce.wav",
+      "sourceSha256": "8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce",
+      "sha256": "8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce",
+      "sourceBytes": 279608,
+      "bytes": 279608,
+      "kind": "narration"
+    },
+    "/assets/poems/deng-chenglou/timing.json": {
+      "url": "/media/9d432dafc6ec443e37049db96d55e391674eb9a66f5a40bf618bef599ce80bd7.json",
+      "sourceSha256": "9d432dafc6ec443e37049db96d55e391674eb9a66f5a40bf618bef599ce80bd7",
+      "sha256": "9d432dafc6ec443e37049db96d55e391674eb9a66f5a40bf618bef599ce80bd7",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/deng-chenglou/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/guo-guren/background.png": {
+      "url": "/media/8cf582e683a215e32f34f356821133bd02b7e73d343c65c0bba4f0b2fbc50023.webp",
+      "sourceSha256": "92950927b57d822c94abf0f27d96c87a4793125e78fbd9d614e26b6e77ce4a9a",
+      "sha256": "8cf582e683a215e32f34f356821133bd02b7e73d343c65c0bba4f0b2fbc50023",
+      "sourceBytes": 2374207,
+      "bytes": 186244,
+      "kind": "background"
+    },
+    "/assets/poems/guo-guren/narration.wav": {
+      "url": "/media/d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed.wav",
+      "sourceSha256": "d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed",
+      "sha256": "d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed",
+      "sourceBytes": 226172,
+      "bytes": 226172,
+      "kind": "narration"
+    },
+    "/assets/poems/guo-guren/timing.json": {
+      "url": "/media/44a722e0ccb60b94aa48251a133a2ca0611531da1d455c41820ea85bbd8fca4b.json",
+      "sourceSha256": "44a722e0ccb60b94aa48251a133a2ca0611531da1d455c41820ea85bbd8fca4b",
+      "sha256": "44a722e0ccb60b94aa48251a133a2ca0611531da1d455c41820ea85bbd8fca4b",
+      "sourceBytes": 482,
+      "bytes": 482,
+      "kind": "timing"
+    },
+    "/assets/poems/guo-guren/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/he-huixiang/background.png": {
+      "url": "/media/baf684c3adc801fe5464318378b4911355af5571ec3ad80cb92782089f78ee43.webp",
+      "sourceSha256": "457ef3ea1bb686e68bf8b0fe85a13e97dd8be5071f66f7f6b344800bc88f1e98",
+      "sha256": "baf684c3adc801fe5464318378b4911355af5571ec3ad80cb92782089f78ee43",
+      "sourceBytes": 2373352,
+      "bytes": 195206,
+      "kind": "background"
+    },
+    "/assets/poems/he-huixiang/narration.wav": {
+      "url": "/media/4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d.wav",
+      "sourceSha256": "4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d",
+      "sha256": "4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d",
+      "sourceBytes": 227314,
+      "bytes": 227314,
+      "kind": "narration"
+    },
+    "/assets/poems/he-huixiang/timing.json": {
+      "url": "/media/b61b8d00b87bed2589461f6f8065bf13d85977ac54b4398f07a0b5e0b294acf6.json",
+      "sourceSha256": "b61b8d00b87bed2589461f6f8065bf13d85977ac54b4398f07a0b5e0b294acf6",
+      "sha256": "b61b8d00b87bed2589461f6f8065bf13d85977ac54b4398f07a0b5e0b294acf6",
+      "sourceBytes": 494,
+      "bytes": 494,
+      "kind": "timing"
+    },
+    "/assets/poems/he-huixiang/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/he-saiqu/background.png": {
+      "url": "/media/cceedb0e9c29d03b80b9054029ca4540bafec0e4badffdd3c47a9c00945dcbdb.webp",
+      "sourceSha256": "9c25fe19f128d9fc355dd56e424f067e95e09851b4ecca37af2b0d30758efe52",
+      "sha256": "cceedb0e9c29d03b80b9054029ca4540bafec0e4badffdd3c47a9c00945dcbdb",
+      "sourceBytes": 2323924,
+      "bytes": 180678,
+      "kind": "background"
+    },
+    "/assets/poems/he-saiqu/narration.wav": {
+      "url": "/media/de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68.wav",
+      "sourceSha256": "de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68",
+      "sha256": "de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68",
+      "sourceBytes": 237218,
+      "bytes": 237218,
+      "kind": "narration"
+    },
+    "/assets/poems/he-saiqu/timing.json": {
+      "url": "/media/82b736964d624dcd866ba0d0679576c29577e6ecbf76affd715e6715a3660d63.json",
+      "sourceSha256": "82b736964d624dcd866ba0d0679576c29577e6ecbf76affd715e6715a3660d63",
+      "sha256": "82b736964d624dcd866ba0d0679576c29577e6ecbf76affd715e6715a3660d63",
+      "sourceBytes": 483,
+      "bytes": 483,
+      "kind": "timing"
+    },
+    "/assets/poems/he-saiqu/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/hong-canghai/background.png": {
+      "url": "/media/ed1fa84c53841d11e385285cfa6c7b9497fb157115b85a3607d9bc6e467fe392.webp",
+      "sourceSha256": "90f3ba3fc41e9245c4368427ae92119e3c63237e4c273384cc2493d4ec4b9d58",
+      "sha256": "ed1fa84c53841d11e385285cfa6c7b9497fb157115b85a3607d9bc6e467fe392",
+      "sourceBytes": 2305565,
+      "bytes": 175240,
+      "kind": "background"
+    },
+    "/assets/poems/hong-canghai/narration.wav": {
+      "url": "/media/c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1.wav",
+      "sourceSha256": "c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1",
+      "sha256": "c4a33ea6283a8b936a52fda6f6aca63c5978c2643dfd5bb788f696357a0093b1",
+      "sourceBytes": 220988,
+      "bytes": 220988,
+      "kind": "narration"
+    },
+    "/assets/poems/hong-canghai/timing.json": {
+      "url": "/media/02e3d4e2bd0d81f47dde0400d937f5573fc9c82880b52ca3636cd66bd48033b7.json",
+      "sourceSha256": "02e3d4e2bd0d81f47dde0400d937f5573fc9c82880b52ca3636cd66bd48033b7",
+      "sha256": "02e3d4e2bd0d81f47dde0400d937f5573fc9c82880b52ca3636cd66bd48033b7",
+      "sourceBytes": 476,
+      "bytes": 476,
+      "kind": "timing"
+    },
+    "/assets/poems/hong-canghai/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/jiang-jiande/background.png": {
+      "url": "/media/e83adfc278dac80639f5a41f17563966a248ced533aad2a3879f765d7ece40f4.webp",
+      "sourceSha256": "08365cf60d4cb61705db7da2fc3ae620eb7490a4eb3fd2d4293e0f33fc15d62e",
+      "sha256": "e83adfc278dac80639f5a41f17563966a248ced533aad2a3879f765d7ece40f4",
+      "sourceBytes": 2144285,
+      "bytes": 126290,
+      "kind": "background"
+    },
+    "/assets/poems/jiang-jiande/narration.wav": {
+      "url": "/media/faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f.wav",
+      "sourceSha256": "faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f",
+      "sha256": "faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f",
+      "sourceBytes": 228172,
+      "bytes": 228172,
+      "kind": "narration"
+    },
+    "/assets/poems/jiang-jiande/timing.json": {
+      "url": "/media/6d82497c29120631ea4743e0df6dcc23b3166aef4e162ea9964ab26b3b444050.json",
+      "sourceSha256": "6d82497c29120631ea4743e0df6dcc23b3166aef4e162ea9964ab26b3b444050",
+      "sha256": "6d82497c29120631ea4743e0df6dcc23b3166aef4e162ea9964ab26b3b444050",
+      "sourceBytes": 482,
+      "bytes": 482,
+      "kind": "timing"
+    },
+    "/assets/poems/jiang-jiande/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/lei-xiyu/background.png": {
+      "url": "/media/604ecd9d1718a1d75b424b0bb8c38ab8f90163095f52f57ca79001c504e4350f.webp",
+      "sourceSha256": "13c3a5a7bee01714e437eb15b79c07d5fe83ab2cbef72e43a7bd87fd086bad62",
+      "sha256": "604ecd9d1718a1d75b424b0bb8c38ab8f90163095f52f57ca79001c504e4350f",
+      "sourceBytes": 2161555,
+      "bytes": 132852,
+      "kind": "background"
+    },
+    "/assets/poems/lei-xiyu/narration.wav": {
+      "url": "/media/a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d.wav",
+      "sourceSha256": "a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d",
+      "sha256": "a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d",
+      "sourceBytes": 294194,
+      "bytes": 294194,
+      "kind": "narration"
+    },
+    "/assets/poems/lei-xiyu/timing.json": {
+      "url": "/media/2eb6494a04f5b9399dc0a686d7e426acdb430e36ff04260ec794b47d6d04f580.json",
+      "sourceSha256": "2eb6494a04f5b9399dc0a686d7e426acdb430e36ff04260ec794b47d6d04f580",
+      "sha256": "2eb6494a04f5b9399dc0a686d7e426acdb430e36ff04260ec794b47d6d04f580",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/lei-xiyu/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/li-ganyu-jiangnan/background.png": {
+      "url": "/media/994fb5a99549ee7345f8a16b165562e1a780f2fa22454e3b48e53bab951a129c.webp",
+      "sourceSha256": "bcfae3adb0ccf8b326ebf0c064c469f3cb7d82510b29db23a431fe346750f21f",
+      "sha256": "994fb5a99549ee7345f8a16b165562e1a780f2fa22454e3b48e53bab951a129c",
+      "sourceBytes": 1973217,
+      "bytes": 95550,
+      "kind": "background"
+    },
+    "/assets/poems/li-ganyu-jiangnan/narration.wav": {
+      "url": "/media/61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c.wav",
+      "sourceSha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
+      "sha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
+      "sourceBytes": 271832,
+      "bytes": 271832,
+      "kind": "narration"
+    },
+    "/assets/poems/li-ganyu-jiangnan/timing.json": {
+      "url": "/media/e1d25084ffb42510625708505e87ea62286f86c5b1ef832f491607fee84b2146.json",
+      "sourceSha256": "e1d25084ffb42510625708505e87ea62286f86c5b1ef832f491607fee84b2146",
+      "sha256": "e1d25084ffb42510625708505e87ea62286f86c5b1ef832f491607fee84b2146",
+      "sourceBytes": 483,
+      "bytes": 483,
+      "kind": "timing"
+    },
+    "/assets/poems/li-ganyu-jiangnan/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/li-ganyu-jiangnan/orange-companion.png": {
+      "url": "/media/b9004ac455271c83ed234a434cb6f7c92f38c9f3c765399c9d4ef13a8b84d848.webp",
+      "sourceSha256": "03c54201efc862e11a6412035aa089553dce4139aa7db0a0c2dce5b9fe066903",
+      "sha256": "b9004ac455271c83ed234a434cb6f7c92f38c9f3c765399c9d4ef13a8b84d848",
+      "sourceBytes": 1120224,
+      "bytes": 380244,
+      "kind": "companion"
+    },
+    "/assets/poems/li-nanlin/background.png": {
+      "url": "/media/9ae877ecfd8281798a306c10fa21f87467b0a94f370904bf94c49ac4b53f7cf9.webp",
+      "sourceSha256": "58eeb930206ece102317e4994c015f289735c87f3ecd1c9243969f5b2ed19b32",
+      "sha256": "9ae877ecfd8281798a306c10fa21f87467b0a94f370904bf94c49ac4b53f7cf9",
+      "sourceBytes": 2395529,
+      "bytes": 199126,
+      "kind": "background"
+    },
+    "/assets/poems/li-nanlin/narration.wav": {
+      "url": "/media/5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c.wav",
+      "sourceSha256": "5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c",
+      "sha256": "5dfd17cf6eb9d91b818193703f6aba2205048c4f4355a19e46b0d67a0bb4ea3c",
+      "sourceBytes": 243438,
+      "bytes": 243438,
+      "kind": "narration"
+    },
+    "/assets/poems/li-nanlin/timing.json": {
+      "url": "/media/e21e39057ef9d87ecccf5c555cb57e58239f7151d311fb9d3730c1b4a4bfe2d5.json",
+      "sourceSha256": "e21e39057ef9d87ecccf5c555cb57e58239f7151d311fb9d3730c1b4a4bfe2d5",
+      "sha256": "e21e39057ef9d87ecccf5c555cb57e58239f7151d311fb9d3730c1b4a4bfe2d5",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/li-nanlin/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/liao-minglue/background.png": {
+      "url": "/media/4e40b45777a3f90daa15146ebc579a97ee29ad683f63c346f0ef5c8d3e253ab8.webp",
+      "sourceSha256": "f9e3e982505f7ce6de854e7ebfe2e28e26c5cfed8beca85ac1479ee8ac528a05",
+      "sha256": "4e40b45777a3f90daa15146ebc579a97ee29ad683f63c346f0ef5c8d3e253ab8",
+      "sourceBytes": 2281057,
+      "bytes": 168416,
+      "kind": "background"
+    },
+    "/assets/poems/liao-minglue/narration.wav": {
+      "url": "/media/d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2.wav",
+      "sourceSha256": "d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2",
+      "sha256": "d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2",
+      "sourceBytes": 242100,
+      "bytes": 242100,
+      "kind": "narration"
+    },
+    "/assets/poems/liao-minglue/timing.json": {
+      "url": "/media/b6b521bb22a16f692e876c4d16fd9b2f9bfe87d338bf01b0b94da3953288b540.json",
+      "sourceSha256": "b6b521bb22a16f692e876c4d16fd9b2f9bfe87d338bf01b0b94da3953288b540",
+      "sha256": "b6b521bb22a16f692e876c4d16fd9b2f9bfe87d338bf01b0b94da3953288b540",
+      "sourceBytes": 493,
+      "bytes": 493,
+      "kind": "timing"
+    },
+    "/assets/poems/liao-minglue/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/liu-xuandu/background.png": {
+      "url": "/media/2512d250c988970c80fae85a6538f06d4e78b0ff2a59e5aca24858e61214ff77.webp",
+      "sourceSha256": "4b21818350db80dc6b494c4d80378cf3f5e0e6f039bb85e37240fd2dcd9ebcad",
+      "sha256": "2512d250c988970c80fae85a6538f06d4e78b0ff2a59e5aca24858e61214ff77",
+      "sourceBytes": 2584012,
+      "bytes": 232124,
+      "kind": "background"
+    },
+    "/assets/poems/liu-xuandu/narration.wav": {
+      "url": "/media/abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a.wav",
+      "sourceSha256": "abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a",
+      "sha256": "abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a",
+      "sourceBytes": 283530,
+      "bytes": 283530,
+      "kind": "narration"
+    },
+    "/assets/poems/liu-xuandu/timing.json": {
+      "url": "/media/d786361ac77061979fa014d718c0b6596f224124076b080f8d0018379208609e.json",
+      "sourceSha256": "d786361ac77061979fa014d718c0b6596f224124076b080f8d0018379208609e",
+      "sha256": "d786361ac77061979fa014d718c0b6596f224124076b080f8d0018379208609e",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/liu-xuandu/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/ma-dengkehou/background.png": {
+      "url": "/media/b5b0bdef596e3706365f7df07e93f52b8f842bdc42adef2d2392652951ea02f8.webp",
+      "sourceSha256": "c3c7aa7069dae432dc7c1ffe6a575c6e5c23f9443abf1538b5c7df34eeb09cc0",
+      "sha256": "b5b0bdef596e3706365f7df07e93f52b8f842bdc42adef2d2392652951ea02f8",
+      "sourceBytes": 2040535,
+      "bytes": 125500,
+      "kind": "background"
+    },
+    "/assets/poems/ma-dengkehou/narration.wav": {
+      "url": "/media/7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22.wav",
+      "sourceSha256": "7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22",
+      "sha256": "7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22",
+      "sourceBytes": 292100,
+      "bytes": 292100,
+      "kind": "narration"
+    },
+    "/assets/poems/ma-dengkehou/timing.json": {
+      "url": "/media/ede350529cd527e23b4b5539a7d4c49acf9b38ac02feedf1cd9901fab5941c6b.json",
+      "sourceSha256": "ede350529cd527e23b4b5539a7d4c49acf9b38ac02feedf1cd9901fab5941c6b",
+      "sha256": "ede350529cd527e23b4b5539a7d4c49acf9b38ac02feedf1cd9901fab5941c6b",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/ma-dengkehou/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/ma-dengkehou/horse.png": {
+      "url": "/media/31f54f2435f263059194a6e30d3c9a9492dffd852ccb87e320f2e5b0618bcf1a.webp",
+      "sourceSha256": "8095d1a207ff3496b1264fb8005a7427e8ac35a503faf7984efc9437fc93fdfe",
+      "sha256": "31f54f2435f263059194a6e30d3c9a9492dffd852ccb87e320f2e5b0618bcf1a",
+      "sourceBytes": 2114893,
+      "bytes": 296774,
+      "kind": "companion"
+    },
+    "/assets/poems/wang-wuyixiang/background.png": {
+      "url": "/media/8bc79c4a3891649304bb5a01b61b40200dccbad9e37bdb982412b8fd51e84512.webp",
+      "sourceSha256": "e9656b810c0ecdf762099e49b80d2c01d1a496734aac3daa7f90530d151cf7b5",
+      "sha256": "8bc79c4a3891649304bb5a01b61b40200dccbad9e37bdb982412b8fd51e84512",
+      "sourceBytes": 2122703,
+      "bytes": 129846,
+      "kind": "background"
+    },
+    "/assets/poems/wang-wuyixiang/narration.wav": {
+      "url": "/media/0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331.wav",
+      "sourceSha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
+      "sha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
+      "sourceBytes": 253092,
+      "bytes": 253092,
+      "kind": "narration"
+    },
+    "/assets/poems/wang-wuyixiang/timing.json": {
+      "url": "/media/3cfa387dcc32ee67c3f483ace6e48c58e2610a4fa0a445c0a8aa94c1ae03ab19.json",
+      "sourceSha256": "3cfa387dcc32ee67c3f483ace6e48c58e2610a4fa0a445c0a8aa94c1ae03ab19",
+      "sha256": "3cfa387dcc32ee67c3f483ace6e48c58e2610a4fa0a445c0a8aa94c1ae03ab19",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/wang-wuyixiang/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/wang-wuyixiang/swallow-buddy.png": {
+      "url": "/media/c1fcd306d8264498699f1cf27e6821da361fa8a42696aa35d560d8cebd9bc7b5.webp",
+      "sourceSha256": "5c70cfcbec0a7f406436e1733cffdef2f6efbfb4c24d5b14ee58b12bfe7214f8",
+      "sha256": "c1fcd306d8264498699f1cf27e6821da361fa8a42696aa35d560d8cebd9bc7b5",
+      "sourceBytes": 889831,
+      "bytes": 293178,
+      "kind": "companion"
+    },
+    "/assets/poems/wang-zengwanglun/background.png": {
+      "url": "/media/6151a4e4782692086975988883d9e9c5d952f8eb7020617037133e95979cf98d.webp",
+      "sourceSha256": "ec02d2a4f353a5926e4da8033be2b8623f8e2677ec7e78f542506bff34db9f64",
+      "sha256": "6151a4e4782692086975988883d9e9c5d952f8eb7020617037133e95979cf98d",
+      "sourceBytes": 2441006,
+      "bytes": 201284,
+      "kind": "background"
+    },
+    "/assets/poems/wang-zengwanglun/narration.wav": {
+      "url": "/media/0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06.wav",
+      "sourceSha256": "0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06",
+      "sha256": "0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06",
+      "sourceBytes": 272234,
+      "bytes": 272234,
+      "kind": "narration"
+    },
+    "/assets/poems/wang-zengwanglun/timing.json": {
+      "url": "/media/2d512cb2d8dfe49255c76d31b50b4e57b46943eef7b599ed77805d88f7d8527e.json",
+      "sourceSha256": "2d512cb2d8dfe49255c76d31b50b4e57b46943eef7b599ed77805d88f7d8527e",
+      "sha256": "2d512cb2d8dfe49255c76d31b50b4e57b46943eef7b599ed77805d88f7d8527e",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/wang-zengwanglun/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/wen-songzizhou/background.png": {
+      "url": "/media/42da54b6f09c7eceba4b72097a86225989fb5bdae9531f930fb4518e1a477d72.webp",
+      "sourceSha256": "6ea1f5f1834c4d5d5cc8d91da80253fbb595e8b7a29ae2bcb0da9c999db592e0",
+      "sha256": "42da54b6f09c7eceba4b72097a86225989fb5bdae9531f930fb4518e1a477d72",
+      "sourceBytes": 2475579,
+      "bytes": 219568,
+      "kind": "background"
+    },
+    "/assets/poems/wen-songzizhou/narration.wav": {
+      "url": "/media/9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5.wav",
+      "sourceSha256": "9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5",
+      "sha256": "9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5",
+      "sourceBytes": 217084,
+      "bytes": 217084,
+      "kind": "narration"
+    },
+    "/assets/poems/wen-songzizhou/timing.json": {
+      "url": "/media/d56a7996765eb7b4a856f44d2be0144818447f5a1406ea266c8647ba557464b4.json",
+      "sourceSha256": "d56a7996765eb7b4a856f44d2be0144818447f5a1406ea266c8647ba557464b4",
+      "sha256": "d56a7996765eb7b4a856f44d2be0144818447f5a1406ea266c8647ba557464b4",
+      "sourceBytes": 481,
+      "bytes": 481,
+      "kind": "timing"
+    },
+    "/assets/poems/wen-songzizhou/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/weng-jiangxue/background.png": {
+      "url": "/media/4172802dda48a22326d0bb876a5d3c1f6ece342c387dbbbf56b2c418d5efd29f.webp",
+      "sourceSha256": "d4b4141d47a29aba64e706bd8d6feae58fa74e3518e42d082c3e83c11c44842e",
+      "sha256": "4172802dda48a22326d0bb876a5d3c1f6ece342c387dbbbf56b2c418d5efd29f",
+      "sourceBytes": 2359384,
+      "bytes": 186240,
+      "kind": "background"
+    },
+    "/assets/poems/weng-jiangxue/narration.wav": {
+      "url": "/media/86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d.wav",
+      "sourceSha256": "86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d",
+      "sha256": "86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d",
+      "sourceBytes": 248722,
+      "bytes": 248722,
+      "kind": "narration"
+    },
+    "/assets/poems/weng-jiangxue/timing.json": {
+      "url": "/media/21343717aad40e9bc99e276d3bac2240632e384d8d310a19b7102bd650bd46a9.json",
+      "sourceSha256": "21343717aad40e9bc99e276d3bac2240632e384d8d310a19b7102bd650bd46a9",
+      "sha256": "21343717aad40e9bc99e276d3bac2240632e384d8d310a19b7102bd650bd46a9",
+      "sourceBytes": 482,
+      "bytes": 482,
+      "kind": "timing"
+    },
+    "/assets/poems/weng-jiangxue/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/wu-furong/background.png": {
+      "url": "/media/07f6be8252b5c2fc18941ff8c34023e0bfe09c9f5e54df5ef7d57cf177bf9a10.webp",
+      "sourceSha256": "1df2e7cf305424519d655734d3a81a20c4b09b340386fbaffa04d944850ac80c",
+      "sha256": "07f6be8252b5c2fc18941ff8c34023e0bfe09c9f5e54df5ef7d57cf177bf9a10",
+      "sourceBytes": 2502044,
+      "bytes": 202264,
+      "kind": "background"
+    },
+    "/assets/poems/wu-furong/narration.wav": {
+      "url": "/media/fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97.wav",
+      "sourceSha256": "fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97",
+      "sha256": "fe1ed93b6f2373f3a144be5f39192ced526400e52cf40ae7428c2c9fcfe5ac97",
+      "sourceBytes": 307000,
+      "bytes": 307000,
+      "kind": "narration"
+    },
+    "/assets/poems/wu-furong/timing.json": {
+      "url": "/media/703c9afcc5548aa5e30ca79d3f364682e306ac419bc2f198102a19c8e679f8fe.json",
+      "sourceSha256": "703c9afcc5548aa5e30ca79d3f364682e306ac419bc2f198102a19c8e679f8fe",
+      "sha256": "703c9afcc5548aa5e30ca79d3f364682e306ac419bc2f198102a19c8e679f8fe",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/wu-furong/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/xiao-hongqiao/background.png": {
+      "url": "/media/22d9368678965f351987055788e3fccc0db1208d62a4e2d8d4d83375cda1aa66.webp",
+      "sourceSha256": "6b1f55db8363e96d320900f07949e11dfdd28de549afee6ad6cd2c2c22b3bb0a",
+      "sha256": "22d9368678965f351987055788e3fccc0db1208d62a4e2d8d4d83375cda1aa66",
+      "sourceBytes": 2259763,
+      "bytes": 165000,
+      "kind": "background"
+    },
+    "/assets/poems/xiao-hongqiao/narration.wav": {
+      "url": "/media/00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac.wav",
+      "sourceSha256": "00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac",
+      "sha256": "00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac",
+      "sourceBytes": 263192,
+      "bytes": 263192,
+      "kind": "narration"
+    },
+    "/assets/poems/xiao-hongqiao/timing.json": {
+      "url": "/media/649b104bf1913c0bfdee6b42310934c4c64e3e0128740f913b13d3183ebee731.json",
+      "sourceSha256": "649b104bf1913c0bfdee6b42310934c4c64e3e0128740f913b13d3183ebee731",
+      "sha256": "649b104bf1913c0bfdee6b42310934c4c64e3e0128740f913b13d3183ebee731",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/xiao-hongqiao/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/xing-chaou/background.png": {
+      "url": "/media/7bb790bc8c58d3af2b4976ef5b8ab3bdbcdc7ac5ca410d54f2dfa77862ef5260.webp",
+      "sourceSha256": "c2a7b716c3a13de6d9307c086a9f98bfff5fffb5d0a01bd91ae27db8cbd08887",
+      "sha256": "7bb790bc8c58d3af2b4976ef5b8ab3bdbcdc7ac5ca410d54f2dfa77862ef5260",
+      "sourceBytes": 2352075,
+      "bytes": 170892,
+      "kind": "background"
+    },
+    "/assets/poems/xing-chaou/narration.wav": {
+      "url": "/media/eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58.wav",
+      "sourceSha256": "eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58",
+      "sha256": "eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58",
+      "sourceBytes": 171240,
+      "bytes": 171240,
+      "kind": "narration"
+    },
+    "/assets/poems/xing-chaou/timing.json": {
+      "url": "/media/7f114040c53976054630d8c5596e1311504b06d12cc2cbb4b49060a7d82e0c5b.json",
+      "sourceSha256": "7f114040c53976054630d8c5596e1311504b06d12cc2cbb4b49060a7d82e0c5b",
+      "sha256": "7f114040c53976054630d8c5596e1311504b06d12cc2cbb4b49060a7d82e0c5b",
+      "sourceBytes": 481,
+      "bytes": 481,
+      "kind": "timing"
+    },
+    "/assets/poems/xing-chaou/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/xu-dingfengbo/background.png": {
+      "url": "/media/14bd4235fac0f6807eb29b9935ad212ff414e14848e92e91c9c057fdd967e866.webp",
+      "sourceSha256": "7f7f07e51223b2d09c2cc19e24005a298af662df65bcecab41e8befb7d14105a",
+      "sha256": "14bd4235fac0f6807eb29b9935ad212ff414e14848e92e91c9c057fdd967e866",
+      "sourceBytes": 2313897,
+      "bytes": 161112,
+      "kind": "background"
+    },
+    "/assets/poems/xu-dingfengbo/narration.wav": {
+      "url": "/media/cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a.wav",
+      "sourceSha256": "cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a",
+      "sha256": "cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a",
+      "sourceBytes": 253734,
+      "bytes": 253734,
+      "kind": "narration"
+    },
+    "/assets/poems/xu-dingfengbo/timing.json": {
+      "url": "/media/974c328f8e9a551085ea874e734519816f6323268ee4ff32c25e723a91e08706.json",
+      "sourceSha256": "974c328f8e9a551085ea874e734519816f6323268ee4ff32c25e723a91e08706",
+      "sha256": "974c328f8e9a551085ea874e734519816f6323268ee4ff32c25e723a91e08706",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/xu-dingfengbo/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/yin-wangxiantai/background.png": {
+      "url": "/media/37623c4afdee36d31a2edb2fd87944ba0ccbf54011c609443e0df602d02d6a5c.webp",
+      "sourceSha256": "a63159b739caf664dd8cdf34ea5413c910f443da80621d99fdeafc74f5d0419a",
+      "sha256": "37623c4afdee36d31a2edb2fd87944ba0ccbf54011c609443e0df602d02d6a5c",
+      "sourceBytes": 2304656,
+      "bytes": 167486,
+      "kind": "background"
+    },
+    "/assets/poems/yin-wangxiantai/narration.wav": {
+      "url": "/media/2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7.wav",
+      "sourceSha256": "2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7",
+      "sha256": "2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7",
+      "sourceBytes": 322396,
+      "bytes": 322396,
+      "kind": "narration"
+    },
+    "/assets/poems/yin-wangxiantai/timing.json": {
+      "url": "/media/f54ab08c225a937c1d5d7c36c46f8a2bf3e797d597f72558f8938c82ed514071.json",
+      "sourceSha256": "f54ab08c225a937c1d5d7c36c46f8a2bf3e797d597f72558f8938c82ed514071",
+      "sha256": "f54ab08c225a937c1d5d7c36c46f8a2bf3e797d597f72558f8938c82ed514071",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/yin-wangxiantai/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/yu-shudao/background.png": {
+      "url": "/media/5c5a45ef5497e3545511590fca417b82d057fe03dd35131cc0206d2ae63e3512.webp",
+      "sourceSha256": "31cfbb808d3dee8429962bb7d7a2d90d10c89f1e4a594dabf914c4ac88d56228",
+      "sha256": "5c5a45ef5497e3545511590fca417b82d057fe03dd35131cc0206d2ae63e3512",
+      "sourceBytes": 2153491,
+      "bytes": 140252,
+      "kind": "background"
+    },
+    "/assets/poems/yu-shudao/narration.wav": {
+      "url": "/media/a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b.wav",
+      "sourceSha256": "a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b",
+      "sha256": "a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b",
+      "sourceBytes": 168548,
+      "bytes": 168548,
+      "kind": "narration"
+    },
+    "/assets/poems/yu-shudao/timing.json": {
+      "url": "/media/f69927871242edd3b896c77eee3364e4cb269cc3936a2ab73f27cd5539404b6e.json",
+      "sourceSha256": "f69927871242edd3b896c77eee3364e4cb269cc3936a2ab73f27cd5539404b6e",
+      "sha256": "f69927871242edd3b896c77eee3364e4cb269cc3936a2ab73f27cd5539404b6e",
+      "sourceBytes": 479,
+      "bytes": 479,
+      "kind": "timing"
+    },
+    "/assets/poems/yu-shudao/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/zhang-lushan/background.png": {
+      "url": "/media/cc3f6aa67ef946abfa5706f1cc7186325a26d004acca5434cb0b9cb98fcdb101.webp",
+      "sourceSha256": "79fe9f4a36af1bf3fb175b0c9247b85fac1ff124e56f3f0f20b1a77945c62346",
+      "sha256": "cc3f6aa67ef946abfa5706f1cc7186325a26d004acca5434cb0b9cb98fcdb101",
+      "sourceBytes": 2134833,
+      "bytes": 146666,
+      "kind": "background"
+    },
+    "/assets/poems/zhang-lushan/narration.wav": {
+      "url": "/media/f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13.wav",
+      "sourceSha256": "f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13",
+      "sha256": "f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13",
+      "sourceBytes": 282038,
+      "bytes": 282038,
+      "kind": "narration"
+    },
+    "/assets/poems/zhang-lushan/timing.json": {
+      "url": "/media/78c328f61e8e0ac49826ccd20b9cfffbb5cd9d75532527e3398b15ce382bcd2e.json",
+      "sourceSha256": "78c328f61e8e0ac49826ccd20b9cfffbb5cd9d75532527e3398b15ce382bcd2e",
+      "sha256": "78c328f61e8e0ac49826ccd20b9cfffbb5cd9d75532527e3398b15ce382bcd2e",
+      "sourceBytes": 495,
+      "bytes": 495,
+      "kind": "timing"
+    },
+    "/assets/poems/zhang-lushan/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/zhou-tingzheng/background.png": {
+      "url": "/media/a00369b79975ab48102be55ea7b90713a786e7c46ff3f3b6af2d587bfe66846f.webp",
+      "sourceSha256": "33edbdcaa0ba73f5d825b6490d612459ce42138b27327d4fe77b8eb143fd070b",
+      "sha256": "a00369b79975ab48102be55ea7b90713a786e7c46ff3f3b6af2d587bfe66846f",
+      "sourceBytes": 2233825,
+      "bytes": 154452,
+      "kind": "background"
+    },
+    "/assets/poems/zhou-tingzheng/narration.wav": {
+      "url": "/media/a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a.wav",
+      "sourceSha256": "a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a",
+      "sha256": "a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a",
+      "sourceBytes": 216878,
+      "bytes": 216878,
+      "kind": "narration"
+    },
+    "/assets/poems/zhou-tingzheng/timing.json": {
+      "url": "/media/32d63d38105cde7c737444ca9afd1699d94f407509b36b217cc8be8e660719c1.json",
+      "sourceSha256": "32d63d38105cde7c737444ca9afd1699d94f407509b36b217cc8be8e660719c1",
+      "sha256": "32d63d38105cde7c737444ca9afd1699d94f407509b36b217cc8be8e660719c1",
+      "sourceBytes": 483,
+      "bytes": 483,
+      "kind": "timing"
+    },
+    "/assets/poems/zhou-tingzheng/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    },
+    "/assets/poems/zhu-wuyixiang/background.png": {
+      "url": "/media/43e13988648334829f7ac46d5bc7e2cd4557cc4ce35aa8de7cd17b98f85b3f4d.webp",
+      "sourceSha256": "1b28c85130c623ed8da35cc8410807193c15ed40281c96afa0e4f6396a0d8c0b",
+      "sha256": "43e13988648334829f7ac46d5bc7e2cd4557cc4ce35aa8de7cd17b98f85b3f4d",
+      "sourceBytes": 2295917,
+      "bytes": 165444,
+      "kind": "background"
+    },
+    "/assets/poems/zhu-wuyixiang/narration.wav": {
+      "url": "/media/798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6.wav",
+      "sourceSha256": "798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6",
+      "sha256": "798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6",
+      "sourceBytes": 269278,
+      "bytes": 269278,
+      "kind": "narration"
+    },
+    "/assets/poems/zhu-wuyixiang/timing.json": {
+      "url": "/media/d8b0bcfde1d9f97d87e0aa424f0be41adf6d47aa2e862aebf6df9fcc88624992.json",
+      "sourceSha256": "d8b0bcfde1d9f97d87e0aa424f0be41adf6d47aa2e862aebf6df9fcc88624992",
+      "sha256": "d8b0bcfde1d9f97d87e0aa424f0be41adf6d47aa2e862aebf6df9fcc88624992",
+      "sourceBytes": 494,
+      "bytes": 494,
+      "kind": "timing"
+    },
+    "/assets/poems/zhu-wuyixiang/music-instrumental-v3.mp3": {
+      "url": "/media/365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7.mp3",
+      "sourceSha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sha256": "365ef3acf2198f1a73003f380c8dbfd974370937a3b862e85c80b7c574ff19c7",
+      "sourceBytes": 405045,
+      "bytes": 405045,
+      "kind": "music"
+    }
+  },
+  "homeBackground": {
+    "url": "/media/0c68c78b143917a6f5ee68f41c4eeb297a7c512c202c5167790f17c04fd301c9.webp",
+    "sourceSha256": "11c64c5ab1caa4abc3ee5bfa117c3e91b313c805018eef95d326539d43619d97",
+    "sha256": "0c68c78b143917a6f5ee68f41c4eeb297a7c512c202c5167790f17c04fd301c9",
+    "sourceBytes": 255889,
+    "bytes": 163702,
+    "kind": "home"
+  },
+  "totals": {
+    "originalPoemBytes": 80695285,
+    "optimizedPoemBytes": 12341413,
+    "homeOriginalBytes": 255889,
+    "homeOptimizedBytes": 163702
+  }
+}

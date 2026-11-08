@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<symbol id="check" viewBox="0 0 32 32"><path d="m7 16 6 6L26 9"/></symbol>
+<symbol id="cross" viewBox="0 0 32 32"><path d="m9 9 14 14M23 9 9 23"/></symbol>
+<symbol id="undo" viewBox="0 0 32 32"><path d="M12 8 5 15l7 7M5 15h13c10 0 10 12 0 12"/></symbol>
+<symbol id="eraser" viewBox="0 0 32 32"><path d="m6 18 12-13a3 3 0 0 1 4 0l6 6a3 3 0 0 1 0 4L17 27H12l-6-5a3 3 0 0 1 0-4Z"/><path d="m11 13 11 10M16 27h12"/></symbol>
+<symbol id="pencil" viewBox="0 0 32 32"><path d="m8 20-2 7 7-2L27 11a3 3 0 0 0 0-4l-2-2a3 3 0 0 0-4 0Z"/><path d="m18 8 6 6M8 20l5 5"/></symbol>
+<symbol id="back" viewBox="0 0 32 32"><path d="M14 7 5 16l9 9M5 16h22"/></symbol>
+<symbol id="retry" viewBox="0 0 32 32"><path d="M26 12A11 11 0 1 0 27 21M26 5v7h-7"/></symbol>
+<symbol id="speaker" viewBox="0 0 32 32"><path d="m15 6-7 6H4v8h4l7 6ZM21 11a7 7 0 0 1 0 10M25 7a12 12 0 0 1 0 18"/></symbol>
+<symbol id="pause" viewBox="0 0 32 32"><path d="M11 7v18M21 7v18" stroke-width="5"/></symbol>
+<symbol id="search" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8"/><path d="m20 20 7 7M10 14h8M14 10v8"/></symbol>
+<symbol id="bulb" viewBox="0 0 32 32"><path d="M11 21c0-4-4-5-4-11a9 9 0 0 1 18 0c0 6-4 7-4 11Z" fill="#f4d68a" fill-opacity=".65"/><path d="M12 25h8M14 29h4M16 1v-1M3 5 1 3M29 5l2-2M2 14H0M30 14h2M13 13l3 3 3-3M16 16v5"/></symbol>
+<symbol id="touch" viewBox="0 0 32 32"><path d="M12 17V7a3 3 0 0 1 6 0v9-4a3 3 0 0 1 5 2v1a3 3 0 0 1 5 2v5c0 5-3 8-8 8h-2c-4 0-6-3-8-6l-4-5a3 3 0 0 1 4-4l4 4" fill="#fff4d5"/><path d="M5 8 3 7M6 3 5 1M23 4l2-2"/></symbol>
+<symbol id="expand" viewBox="0 0 32 32"><path d="M12 5H5v7M20 5h7v7M5 20v7h7M27 20v7h-7"/></symbol>
+<symbol id="collapse" viewBox="0 0 32 32"><path d="M5 12h7V5M27 12h-7V5M12 27v-7H5M20 27v-7h7"/></symbol>
+<symbol id="gear" viewBox="0 0 32 32"><path d="m13 4-1 4-3 2-4-1-2 5 3 3 1 3-1 4 5 3 3-2h4l3 2 5-3-1-4 1-3 3-3-2-5-4 1-3-2-1-4Z"/><circle cx="16" cy="16" r="4"/></symbol>
+<symbol id="arrow" viewBox="0 0 32 32"><path d="M5 16h22M19 8l8 8-8 8"/></symbol>
+<symbol id="hourglass" viewBox="0 0 32 32"><path d="M7 4h18M7 28h18M9 4c0 6 2 8 7 12-5 4-7 6-7 12M23 4c0 6-2 8-7 12 5 4 7 6 7 12M12 25l4-4 4 4Z"/></symbol>
+<symbol id="cloud-off" viewBox="0 0 32 32"><path d="M10 23H8a6 6 0 0 1-1-12 9 9 0 0 1 17-1 7 7 0 0 1 1 13h-3M13 21l6 6M19 21l-6 6"/></symbol>
+<symbol id="question" viewBox="0 0 32 32"><path d="M11 11a5 5 0 1 1 8 4c-3 2-3 3-3 5"/><circle cx="16" cy="25" r="1" fill="currentColor" stroke="none"/></symbol>
+<symbol id="books" viewBox="0 0 32 32"><path d="M16 27V8c-3-4-8-4-13-2v19c5-2 10-2 13 2ZM16 8c3-4 8-4 13-2v19c-5-2-10-2-13 2"/><path d="M7 11h4M21 11h4M7 16h4M21 16h4"/></symbol>
+</svg>

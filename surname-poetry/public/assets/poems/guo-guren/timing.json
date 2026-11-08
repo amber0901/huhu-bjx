@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "d2399714182fcd5b578d5f3544bb276292bb30c332e511ceca87e69c4160d6ed",
+  "lines": [
+    {
+      "text": "绿树村边合，",
+      "start": 0.25,
+      "end": 2.079
+    },
+    {
+      "text": "青山郭外斜。",
+      "start": 2.631,
+      "end": 4.548
+    }
+  ]
+}

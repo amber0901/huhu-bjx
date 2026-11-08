@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "d135cdf9c6a05c0d99bbf39111502ea07216bf4dd1f76108ddcdf6d3526c20d2",
+  "lines": [
+    {
+      "text": "物诚有之士则然，",
+      "start": 0.277,
+      "end": 2.198
+    },
+    {
+      "text": "晚得廖子喜往还。",
+      "start": 2.761,
+      "end": 4.8
+    }
+  ]
+}

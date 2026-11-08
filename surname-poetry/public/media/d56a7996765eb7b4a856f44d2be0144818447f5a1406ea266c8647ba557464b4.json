@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "9d00a55c954412952ab164fe05554667c59622417a0b167267c03da20d3373a5",
+  "lines": [
+    {
+      "text": "文翁翻教授，",
+      "start": 0.34,
+      "end": 2.05
+    },
+    {
+      "text": "不敢倚先贤。",
+      "start": 2.604,
+      "end": 4.324
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "aa761bdf1911fe55301b165f3908b3e757b8c5846baf526dadbf0a2534909ebe",
+  "lines": [
+    {
+      "text": "陈侯立身何坦荡，",
+      "start": 0.254,
+      "end": 2.867
+    },
+    {
+      "text": "虬须虎眉仍大颡。",
+      "start": 3.455,
+      "end": 6.302
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "sceneLoads": [
+    {
+      "surname": "周",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "pluck-melody",
+      "title": "听筝",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "徐",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "slow-walk",
+      "title": "定风波·莫听穿林打叶声",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "文",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "book-flip",
+      "title": "送梓州李使君",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "何",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "footprint-path",
+      "title": "回乡偶书",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "张",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "cloud-unfold",
+      "title": "庐山谣寄卢侍御虚舟",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "江",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "moon-reflection",
+      "title": "宿建德江",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "陈",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "portrait-parts",
+      "title": "送陈章甫",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "翁",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "fishing-timing",
+      "title": "江雪",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "邢",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "pottery-shape",
+      "title": "茶中杂咏·茶瓯",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "尹",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "gate-pass",
+      "title": "九日登望仙台呈刘明府",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "贺",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "drum-rhythm",
+      "title": "塞下曲·其四",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "朱",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "flower-color",
+      "title": "乌衣巷",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "肖",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "bridge-mirror",
+      "title": "再题文园狮子林十六景·其二·虹桥",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "雷",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "weather-hold",
+      "title": "无题·飒飒东风细雨来",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "马",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "pony-loop",
+      "title": "长干行",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "廖",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "friend-exchange",
+      "title": "再次韵呈廖明略",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "邓",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "tower-stack",
+      "title": "邓州城楼",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "汪",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "friendship-depth",
+      "title": "赠汪伦",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "刘",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "return-trail",
+      "title": "再游玄都观",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "于",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "cloud-steps",
+      "title": "蜀道难",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "洪",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "wave-sweep",
+      "title": "观沧海",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "郭",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "outside-wall",
+      "title": "过故人庄",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "栗",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "harvest-sort",
+      "title": "南邻",
+      "verseCount": 2,
+      "visible": true
+    },
+    {
+      "surname": "吴",
+      "background": true,
+      "board": true,
+      "found": "true",
+      "game": "lantern-route",
+      "title": "芙蓉楼送辛渐",
+      "verseCount": 2,
+      "visible": true
+    }
+  ],
+  "activityCompletions": [
+    {
+      "surname": "何",
+      "complete": true
+    },
+    {
+      "surname": "张",
+      "complete": true
+    },
+    {
+      "surname": "江",
+      "complete": true
+    },
+    {
+      "surname": "尹",
+      "complete": true
+    },
+    {
+      "surname": "肖",
+      "complete": true
+    },
+    {
+      "surname": "廖",
+      "complete": true
+    },
+    {
+      "surname": "邓",
+      "complete": true
+    },
+    {
+      "surname": "汪",
+      "complete": true
+    },
+    {
+      "surname": "朱",
+      "complete": true
+    },
+    {
+      "surname": "陈",
+      "complete": true
+    },
+    {
+      "surname": "马",
+      "complete": true
+    },
+    {
+      "surname": "于",
+      "complete": true
+    },
+    {
+      "surname": "郭",
+      "complete": true
+    },
+    {
+      "surname": "栗",
+      "complete": true
+    },
+    {
+      "surname": "吴",
+      "complete": true
+    },
+    {
+      "surname": "徐",
+      "complete": true
+    },
+    {
+      "surname": "雷",
+      "complete": true
+    },
+    {
+      "surname": "邢",
+      "complete": true
+    },
+    {
+      "surname": "周",
+      "complete": true
+    },
+    {
+      "surname": "刘",
+      "complete": true
+    },
+    {
+      "surname": "洪",
+      "complete": true
+    },
+    {
+      "surname": "贺",
+      "complete": true
+    },
+    {
+      "surname": "翁",
+      "complete": true
+    },
+    {
+      "surname": "文",
+      "complete": true
+    }
+  ],
+  "existingLiWang": "both completed",
+  "cache": {
+    "completed": 82,
+    "total": 82,
+    "hits": 82
+  },
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "note": "Browser visual/DOM and interaction checks; not a 65-inch hardware trial or a human audio review."
+}

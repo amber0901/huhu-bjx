@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "8d21aad5ee7205fb4f2e95fecc838cd52c3520bd13032e488a5f372154a8dcce",
+  "lines": [
+    {
+      "text": "邓州城楼高百尺，",
+      "start": 0.271,
+      "end": 2.519
+    },
+    {
+      "text": "楚岫秦云不相隔。",
+      "start": 3.129,
+      "end": 5.526
+    }
+  ]
+}

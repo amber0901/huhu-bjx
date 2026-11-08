@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-11-08",
+  "status": "materials-approved-app-flow-implemented",
+  "qaReport": "QA_REPORT.md",
+  "preview": {
+    "url": "http://127.0.0.1:8877/",
+    "testedViewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "testedOnHuawei65Inch": false,
+    "testedViewports": [
+      {
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "presentation": {
+      "sceneInstructions": false,
+      "floatingSurnameSeal": false,
+      "birdSurnameBadge": false,
+      "referenceCues": [
+        "header",
+        "poem",
+        "per-surname-interaction"
+      ]
+    },
+    "surnameUrls": {
+      "王": "http://127.0.0.1:8877/",
+      "李": "http://127.0.0.1:8877/?surname=li"
+    }
+  },
+  "projects": [
+    {
+      "id": "li-ganyu-jiangnan",
+      "title": "感遇·江南有丹橘",
+      "status": "approved-materials",
+      "materialVersion": 4,
+      "interactionVersion": 5,
+      "published": true,
+      "deployPath": "../surname-poetry/public/assets/poems/li-ganyu-jiangnan",
+      "voice": {
+        "id": 403000,
+        "name": "小伙伴 · 云小朵",
+        "speed": -0.65,
+        "sampleRate": 24000
+      },
+      "displayedLines": [
+        "徒言树桃李，",
+        "此木岂无阴。"
+      ],
+      "excerpt": {
+        "lineNumbers": [
+          9,
+          10
+        ],
+        "label": "选句"
+      },
+      "readingOrder": [
+        "lines",
+        "title",
+        "author"
+      ],
+      "followAlong": false,
+      "assets": {
+        "background": {
+          "generated": true,
+          "file": "projects/li-ganyu-jiangnan/release/background.png",
+          "bytes": 1973217,
+          "sha256": "bcfae3adb0ccf8b326ebf0c064c469f3cb7d82510b29db23a431fe346750f21f",
+          "width": 1672,
+          "height": 941
+        },
+        "narration": {
+          "generated": true,
+          "file": "projects/li-ganyu-jiangnan/release/narration.wav",
+          "bytes": 271832,
+          "sha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
+          "durationSeconds": 5.661542,
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "24000",
+              "channels": 1
+            }
+          ],
+          "loudness": {
+            "integratedLufs": -20.78,
+            "truePeakDbtp": -2.0
+          }
+        },
+        "timing": {
+          "generated": true,
+          "file": "projects/li-ganyu-jiangnan/release/timing.json",
+          "bytes": 483,
+          "sha256": "e1d25084ffb42510625708505e87ea62286f86c5b1ef832f491607fee84b2146"
+        },
+        "music": {
+          "generated": true,
+          "file": "projects/li-ganyu-jiangnan/release/music-instrumental-v2.mp3",
+          "bytes": 1537296,
+          "sha256": "a5c6e2b170f0453b1e7d873fda027b2f75e643ea4674dd58358f1380c2d3ad67",
+          "durationSeconds": 64.0,
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "44100",
+              "channels": 2
+            }
+          ],
+          "loudness": {
+            "integratedLufs": -28.79,
+            "truePeakDbtp": -16.4
+          }
+        },
+        "companion": {
+          "generated": true,
+          "file": "projects/li-ganyu-jiangnan/release/orange-companion.png",
+          "bytes": 1120224,
+          "sha256": "03c54201efc862e11a6412035aa089553dce4139aa7db0a0c2dce5b9fe066903",
+          "hasAlphaChannel": true,
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "timingCheck": {
+        "lineCount": 2,
+        "minimumGapSeconds": 0.601,
+        "lastLineEndSeconds": 5.495,
+        "withinAudioDuration": true
+      },
+      "phonemeChecks": [],
+      "phonemeNote": "当前童声音色未返回音素，不声称通过服务端音素检查；另保留未提供原文提示的独立转写。",
+      "independentAsr": {
+        "narration": {
+          "text": "圖言樹桃裡,此目起無音。"
+        }
+      },
+      "interactionMode": "surname-character-build",
+      "interaction": {
+        "targetSurname": "李",
+        "game": "assemble-character",
+        "parts": [
+          "木",
+          "子"
+        ],
+        "requireSurnameDiscovery": true,
+        "spokenFeedback": false,
+        "companionLabel": "小橘子",
+        "motif": "orange"
+      },
+      "musicProduction": {
+        "method": "original-plucked-string-synthesis",
+        "title": "江南暮归",
+        "durationSeconds": 64,
+        "vocals": false,
+        "instrument": "合成拨弦琴音",
+        "notes": "原创五声音阶，只用琴弦振荡器和短混响，不使用人声或合唱采样。"
+      },
+      "musicReusesApprovedWangInstrumental": true,
+      "browserChecks": {
+        "testedViewports": [
+          {
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "surnameDiscoveryRequired": true,
+        "noDoorGame": true,
+        "wrongPartDragDoesNotComplete": true,
+        "correctPartDragWorks": true,
+        "partTapWorks": true,
+        "bothPartsRequired": true,
+        "hintDoesNotComplete": true,
+        "resetClearsPartsAndAudio": true,
+        "switchingRestoresIndependentGames": true,
+        "noFollowAlong": true,
+        "narrationEndsThenMusicFades": true,
+        "minimumPartTargetPixelsAt720p": 70,
+        "screenshots": [
+          "preview/screenshots/li-character-build-v5.jpg",
+          "preview/screenshots/li-character-build-complete-v5.jpg"
+        ],
+        "consoleErrorsOrWarnings": 0
+      },
+      "reviewScope": "两句素材、音色、纯音乐与独立拼字互动已获用户确认；65寸课堂实机待验收。",
+      "history": [
+        {
+          "version": 2,
+          "archive": "projects/li-ganyu-jiangnan/source/previous-release-v2/"
+        }
+      ],
+      "audioAndArtworkApprovedByUser": true,
+      "interactionApprovedByUser": true
+    },
+    {
+      "id": "wang-wuyixiang",
+      "title": "乌衣巷",
+      "status": "approved-materials",
+      "materialVersion": 4,
+      "published": true,
+      "deployPath": "../surname-poetry/public/assets/poems/wang-wuyixiang",
+      "voice": {
+        "id": 403000,
+        "name": "小伙伴 · 云小朵",
+        "speed": -0.65,
+        "sampleRate": 24000
+      },
+      "displayedLines": [
+        "旧时王谢堂前燕，",
+        "飞入寻常百姓家。"
+      ],
+      "excerpt": {
+        "lineNumbers": [
+          3,
+          4
+        ],
+        "label": "选句"
+      },
+      "followAlong": false,
+      "assets": {
+        "background": {
+          "generated": true,
+          "file": "projects/wang-wuyixiang/release/background.png",
+          "bytes": 2122703,
+          "sha256": "e9656b810c0ecdf762099e49b80d2c01d1a496734aac3daa7f90530d151cf7b5",
+          "width": 1672,
+          "height": 941
+        },
+        "narration": {
+          "generated": true,
+          "file": "projects/wang-wuyixiang/release/narration.wav",
+          "bytes": 253092,
+          "sha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
+          "durationSeconds": 5.271125,
+          "loudness": {
+            "integratedLufs": -21.4,
+            "truePeakDbtp": -2.0
+          }
+        },
+        "timing": {
+          "generated": true,
+          "file": "projects/wang-wuyixiang/release/timing.json",
+          "bytes": 495,
+          "sha256": "3cfa387dcc32ee67c3f483ace6e48c58e2610a4fa0a445c0a8aa94c1ae03ab19"
+        },
+        "music": {
+          "generated": true,
+          "file": "projects/wang-wuyixiang/release/music-instrumental-v2.mp3",
+          "bytes": 1537296,
+          "sha256": "a5c6e2b170f0453b1e7d873fda027b2f75e643ea4674dd58358f1380c2d3ad67",
+          "durationSeconds": 64.0,
+          "loudness": {
+            "integratedLufs": -28.79,
+            "truePeakDbtp": -16.4
+          }
+        },
+        "companion": {
+          "generated": true,
+          "file": "projects/wang-wuyixiang/release/swallow-buddy.png",
+          "bytes": 889831,
+          "sha256": "5c70cfcbec0a7f406436e1733cffdef2f6efbfb4c24d5b14ee58b12bfe7214f8",
+          "hasAlphaChannel": true,
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "timingCheck": {
+        "lineCount": 2,
+        "minimumGapSeconds": 0.556,
+        "lastLineEndSeconds": 4.954,
+        "withinAudioDuration": true
+      },
+      "phonemeNote": "当前童声音色未返回音素，不声称通过服务端音素检查；另保留未提供原文提示的独立转写。",
+      "independentAsr": {
+        "narration": {
+          "text": "就食王谢堂前宴,飞入寻常百姓家。"
+        }
+      },
+      "browserChecks": {
+        "testedViewports": [
+          {
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "surnameDiscoveryRequired": true,
+        "wrongHouseTapDoesNotComplete": true,
+        "wrongHouseDragDoesNotComplete": true,
+        "correctHouseTapCompletes": true,
+        "correctHouseDragCompletes": true,
+        "hintDoesNotComplete": true,
+        "targetMovesOnReplay": true,
+        "resetCancelsFlight": true,
+        "pauseResume": true,
+        "noFollowAlong": true,
+        "consoleErrorsOrWarnings": 0,
+        "screenshots": [
+          "preview/screenshots/wang-surname-clean-v6.jpg"
+        ],
+        "referenceSurnameInHeaderAndPoem": true,
+        "sceneInstructionRemoved": true,
+        "floatingSealRemoved": true,
+        "birdBadgeRemoved": true
+      },
+      "history": [
+        {
+          "version": 2,
+          "archive": "projects/wang-wuyixiang/source/previous-release-v2/"
+        },
+        {
+          "version": 3,
+          "voiceSelected": "child-403000",
+          "archive": "projects/wang-wuyixiang/drafts/voice-review-v3/"
+        },
+        {
+          "interactionVersion": 4,
+          "archive": "projects/wang-wuyixiang/drafts/interaction-v4/"
+        }
+      ],
+      "interactionVersion": 5,
+      "interaction": {
+        "targetSurname": "王",
+        "homeChoices": [
+          "王",
+          "李",
+          "张"
+        ],
+        "requireSurnameDiscovery": true,
+        "randomizeHomes": true,
+        "spokenFeedback": false
+      },
+      "audioAndArtworkApprovedByUser": true,
+      "presentationRevision": 6,
+      "musicProduction": {
+        "method": "original-plucked-string-synthesis",
+        "title": "江南暮归",
+        "durationSeconds": 64,
+        "vocals": false,
+        "instrument": "合成拨弦琴音",
+        "notes": "原创五声音阶，只用琴弦振荡器和短混响，不使用人声或合唱采样。"
+      },
+      "musicApproval": "approved-by-user",
+      "oldMusicVocalCheckRetracted": true,
+      "interactionApprovedByUser": true
+    }
+  ],
+  "latestReviewReport": "LI_COUPLET_V4.md",
+  "latestMusicReport": "INSTRUMENTAL_MUSIC.md",
+  "application": {
+    "path": "../surname-poetry",
+    "url": "http://127.0.0.1:8899/",
+    "recognition": "hy-vision-2.0-instruct",
+    "liveSamples": {
+      "王": 2,
+      "李": 1,
+      "林": 1
+    },
+    "deployment": "awaiting-server-and-git-details",
+    "acceptanceReport": "../surname-poetry/docs/ACCEPTANCE.md",
+    "displayName": "百家姓",
+    "version": "0.3.0",
+    "interface": "icons",
+    "performanceReport": "../surname-poetry/docs/UI_CACHE_REVIEW.md",
+    "mediaBytes": {
+      "originalPoemBytes": 9706469,
+      "optimizedPoemBytes": 2962016,
+      "homeOriginalBytes": 255889,
+      "homeOptimizedBytes": 163702
+    },
+    "cacheVerification": {
+      "items": 10,
+      "reusedAfterReload": 10
+    },
+    "testedViewports": [
+      {
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "width": 3840,
+        "height": 2160
+      }
+    ]
+  }
+}

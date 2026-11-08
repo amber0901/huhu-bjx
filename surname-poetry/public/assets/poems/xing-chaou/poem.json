@@ -1,0 +1,76 @@
+{
+  "id": "xing-chaou",
+  "title": "茶中杂咏·茶瓯",
+  "author": "皮日休",
+  "dynasty": "唐",
+  "status": "ready",
+  "surnames": [
+    "邢"
+  ],
+  "lines": [
+    "邢客与越人，",
+    "皆能造兹器。"
+  ],
+  "excerpt": {
+    "label": "选句",
+    "sourceText": "邢客与越人，皆能造兹器。"
+  },
+  "source": {
+    "collection": "全唐诗",
+    "url": "https://zh.wikisource.org/wiki/全唐詩/卷611",
+    "note": "正文保留姓氏原字；用户已允许必要时扩展经典古诗词。游戏是诗意联想，不作姓氏起源解读。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3"
+  },
+  "materialVersion": 4,
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "followAlong": false,
+  "interactionVersion": 7,
+  "interactionMode": "surname-poem-play",
+  "interaction": {
+    "game": "pottery-shape",
+    "targetSurname": "邢",
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "motif": "pottery-shape",
+    "backgroundAlt": "a charming ancient pottery workshop, creamy white porcelain bowls and celadon bowls, rounded clay wheel, soft green window scenery, no fire",
+    "description": "邢：横向拖动陶土，把窄碗拉成轮廓中的圆碗；接近目标自动吸附，不考验精确松手时机，关联邢地制瓷。"
+  },
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

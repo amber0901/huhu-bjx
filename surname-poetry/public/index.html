@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f3e9">
+  <title>百家姓</title>
+  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="/home-background.css">
+  <link rel="stylesheet" href="/ui.css">
+  <link rel="stylesheet" href="/brand.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body data-view="write">
+  <div class="home-backdrop" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="/" aria-label="百家姓首页"><img class="brand-mark" src="/brand-mark.svg" alt="" aria-hidden="true" width="48" height="48"><strong>百家姓</strong></a><button id="fullscreen" class="plain icon-button" aria-label="全屏" title="全屏"><svg class="icon" aria-hidden="true"><use href="/icons.svg#expand"></use></svg></button></header>
+  <main>
+    <section id="write-view" class="write-layout" aria-labelledby="write-heading">
+      <div class="invitation"><h1 id="write-heading" class="sr-only">用手指写下你的姓</h1><div class="writing-cue" aria-hidden="true"><svg class="cue-stroke" viewBox="0 0 160 160"><path d="M28 119c25-47 27 17 60-37s14 48 45 1"/></svg><svg class="icon cue-pencil"><use href="/icons.svg#pencil"></use></svg></div></div>
+      <div class="writing-card"><div class="paper"><span class="paper-corner" aria-hidden="true"></span><canvas id="handwriting" width="800" height="800" aria-label="姓氏手写区，用手指或触控笔写下自己的姓"></canvas><div id="canvas-placeholder" aria-hidden="true"><svg class="icon"><use href="/icons.svg#pencil"></use></svg></div></div><div class="writing-actions"><button id="undo" class="icon-button" aria-label="撤一笔" title="撤一笔" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#undo"></use></svg></button><button id="clear" class="icon-button" aria-label="重写" title="重写" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#eraser"></use></svg></button><button id="recognize" class="primary icon-button" aria-label="写好了" title="写好了" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#check"></use></svg></button></div></div>
+    </section>
+    <section id="result-view" class="center-view" aria-labelledby="result-heading" hidden><h1 id="result-heading" class="sr-only">这是你的姓吗？</h1><div class="recognized-paper"><img id="written-sample" alt="刚刚写下的笔迹"><svg class="icon result-arrow" aria-hidden="true"><use href="/icons.svg#arrow"></use></svg><strong id="recognized-character"></strong></div><div class="button-row"><button id="rewrite" class="icon-button" aria-label="重新写" title="重新写"><svg class="icon" aria-hidden="true"><use href="/icons.svg#cross"></use></svg></button><button id="confirm" class="primary icon-button" aria-label="确认姓氏，去看诗" title="确认姓氏，去看诗"><svg class="icon" aria-hidden="true"><use href="/icons.svg#check"></use></svg></button></div></section>
+    <section id="message-view" class="center-view" aria-labelledby="message-heading" hidden><div class="message-illustration" aria-hidden="true"><span id="message-symbol"></span><svg id="message-icon" class="icon"><use href="/icons.svg#hourglass"></use></svg></div><h1 id="message-heading" class="sr-only"></h1><p id="message-copy" class="sr-only"></p><div class="button-row"><button id="try-again" class="primary icon-button" aria-label="再写一次" title="再写一次"><svg class="icon" aria-hidden="true"><use href="/icons.svg#pencil"></use></svg></button><button id="retry-network" class="icon-button" aria-label="再试一下" title="再试一下" hidden><svg class="icon" aria-hidden="true"><use href="/icons.svg#retry"></use></svg></button></div></section>
+    <section id="loading-view" class="center-view" aria-labelledby="loading-heading" hidden><div class="waiting-flower" aria-hidden="true"><svg class="icon"><use href="/icons.svg#bulb"></use></svg></div><h1 id="loading-heading" class="sr-only">小精灵正在看你的字</h1><button id="cancel" class="icon-button" aria-label="返回修改" title="返回修改"><svg class="icon" aria-hidden="true"><use href="/icons.svg#back"></use></svg></button></section>
+    <section id="gate-view" class="center-view" aria-labelledby="gate-heading" hidden><h1 id="gate-heading">请老师打开课堂</h1><form id="classroom-form"><label for="classroom-code">课堂口令</label><input id="classroom-code" type="password" autocomplete="current-password" maxlength="200" required><button class="primary" type="submit">打开课堂</button></form><p id="gate-error" role="alert"></p></section>
+    <p id="notice" class="notice sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <footer><details id="teacher-settings"><summary class="icon-summary" aria-label="老师设置" title="老师设置"><svg class="icon" aria-hidden="true"><use href="/icons.svg#gear"></use></svg><span class="sr-only">老师设置</span></summary><div class="teacher-content"><p id="service-status">正在连接……</p><p id="cache-status">正在准备素材缓存……</p><p id="teacher-notice"></p><p id="class-materials"></p><p><a href="/materials.html">老师：预览全部姓氏素材</a></p><p>笔迹发往腾讯云识别，本应用不保存笔迹图片。</p><p>箭头撤一笔，橡皮擦重写，绿色对勾进入；确认页叉号重写、对勾确认。</p><button id="refresh-status">检查连接</button></div></details></footer>
+  <section id="poem-view" class="poem-view" hidden><iframe id="poem-frame" title="姓氏诗词互动"></iframe></section>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

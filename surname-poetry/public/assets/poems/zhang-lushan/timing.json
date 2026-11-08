@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "f50f933adce52dd383c25853c7f39f1fc3a0b11bc9703077b06f907a85523b13",
+  "lines": [
+    {
+      "text": "庐山秀出南斗傍，",
+      "start": 0.256,
+      "end": 2.613
+    },
+    {
+      "text": "屏风九叠云锦张。",
+      "start": 3.284,
+      "end": 5.612
+    }
+  ]
+}

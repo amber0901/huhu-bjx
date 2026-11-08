@@ -1,0 +1,92 @@
+{
+  "id": "wang-wuyixiang",
+  "title": "乌衣巷",
+  "author": "刘禹锡",
+  "dynasty": "唐",
+  "status": "ready",
+  "surnames": [
+    "王"
+  ],
+  "lines": [
+    "旧时王谢堂前燕，",
+    "飞入寻常百姓家。"
+  ],
+  "source": {
+    "collection": "唐诗三百首",
+    "url": "https://zh.wikisource.org/wiki/烏衣巷",
+    "collectionUrl": "https://zh.wikisource.org/wiki/唐詩三百首",
+    "note": "仅展示、朗读原诗第三、四句；完整原诗保存在 fullPoemLines 供出处核对。题目和作者位于诗句之后，不参与朗诵；不播放跟读引导。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3",
+    "companion": "swallow-buddy.png"
+  },
+  "materialVersion": 4,
+  "pronunciationChecks": {
+    "王": "wang2",
+    "燕": "yan4"
+  },
+  "fullPoemLines": [
+    "朱雀桥边野草花，",
+    "乌衣巷口夕阳斜。",
+    "旧时王谢堂前燕，",
+    "飞入寻常百姓家。"
+  ],
+  "excerpt": {
+    "lineNumbers": [
+      3,
+      4
+    ],
+    "label": "选句"
+  },
+  "interactionMode": "surname-home-match",
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "followAlong": false,
+  "interactionVersion": 5,
+  "interaction": {
+    "targetSurname": "王",
+    "homeChoices": [
+      "王",
+      "李",
+      "张"
+    ],
+    "requireSurnameDiscovery": true,
+    "randomizeHomes": true,
+    "spokenFeedback": false
+  },
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

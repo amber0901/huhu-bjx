@@ -1,0 +1,14 @@
+.DS_Store
+**/.env
+**/.env.*
+!**/.env.example
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+material-workshop/**/drafts/*
+!material-workshop/**/drafts/.gitkeep
+material-workshop/**/source/*
+!material-workshop/**/source/.gitkeep
+material-workshop/**/release/*
+!material-workshop/**/release/.gitkeep
+material-workshop/tmp/

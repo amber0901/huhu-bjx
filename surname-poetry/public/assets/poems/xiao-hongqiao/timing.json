@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "00109d440627b0f63baf8829081d017da3f3752d65a904dd571fd3814800f6ac",
+  "lines": [
+    {
+      "text": "石桥湖口长虹肖，",
+      "start": 0.249,
+      "end": 2.563
+    },
+    {
+      "text": "来往都凭镜影中。",
+      "start": 3.099,
+      "end": 5.205
+    }
+  ]
+}

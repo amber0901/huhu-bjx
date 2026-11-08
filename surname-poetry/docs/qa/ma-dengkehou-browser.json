@@ -1,0 +1,52 @@
+{
+  "project": "ma-dengkehou",
+  "interactionVersion": 8,
+  "checks": {
+    "bodySurname": true,
+    "onlyTwoLines": true,
+    "titleAuthorAfter": true,
+    "voice403000": true,
+    "voiceSpeed": -0.65,
+    "narrationDuration": 6.083792,
+    "musicDuration": 64,
+    "companionLoaded": true,
+    "noDuplicateGlobalCompanion": true,
+    "dragSecondFlower": true,
+    "tapThirdThenFirst": true,
+    "freeOrder": true,
+    "threeBloomsComplete": true,
+    "hintNoAutowin": true,
+    "helpDisabledAfterWin": true,
+    "resetClearsBlooms": true,
+    "resetStopsAudio": true,
+    "resetCancelsPendingTravel": true,
+    "liWangCompanionRegression": true,
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 720,
+        "visual": true
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "visual": true,
+        "noOverflow": true,
+        "insideScene": true
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "domBoundsOnly": true,
+        "noOverflow": true,
+        "insideScene": true
+      }
+    ],
+    "cache": {
+      "cached": 83,
+      "expected": 83,
+      "reused": 83
+    }
+  },
+  "notes": "浏览器功能与布局检查；不代表真实幼儿/华为触屏体验或人工听感验收。"
+}

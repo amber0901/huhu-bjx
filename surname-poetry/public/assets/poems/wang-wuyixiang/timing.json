@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "0057902639183915b98433cca0dab13847785b98e3ab9feba85c781537378331",
+  "lines": [
+    {
+      "text": "旧时王谢堂前燕，",
+      "start": 0.261,
+      "end": 2.362
+    },
+    {
+      "text": "飞入寻常百姓家。",
+      "start": 2.918,
+      "end": 4.954
+    }
+  ]
+}

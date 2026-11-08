@@ -1,0 +1,100 @@
+{
+  "id": "li-ganyu-jiangnan",
+  "title": "感遇·江南有丹橘",
+  "author": "张九龄",
+  "dynasty": "唐",
+  "status": "ready",
+  "surnames": [
+    "李"
+  ],
+  "lines": [
+    "徒言树桃李，",
+    "此木岂无阴。"
+  ],
+  "source": {
+    "collection": "唐诗三百首",
+    "url": "https://zh.wikisource.org/wiki/感遇_(江南有丹橘)",
+    "collectionUrl": "https://zh.wikisource.org/wiki/唐詩三百首",
+    "note": "仅展示、朗读原诗第九、十句；完整原诗保存在 fullPoemLines 供出处核对。题目和作者位于诗句之后，不参与朗诵；不播放跟读引导。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3",
+    "companion": "orange-companion.png"
+  },
+  "materialVersion": 4,
+  "pronunciationChecks": {
+    "李": "li3",
+    "树": "shu4",
+    "阴": "yin1"
+  },
+  "fullPoemLines": [
+    "江南有丹橘，",
+    "经冬犹绿林。",
+    "岂伊地气暖，",
+    "自有岁寒心。",
+    "可以荐嘉客，",
+    "奈何阻重深。",
+    "运命唯所遇，",
+    "循环不可寻。",
+    "徒言树桃李，",
+    "此木岂无阴。"
+  ],
+  "excerpt": {
+    "lineNumbers": [
+      9,
+      10
+    ],
+    "label": "选句"
+  },
+  "interactionMode": "surname-character-build",
+  "interactionVersion": 5,
+  "interaction": {
+    "targetSurname": "李",
+    "game": "assemble-character",
+    "parts": [
+      "木",
+      "子"
+    ],
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "companionLabel": "小橘子",
+    "motif": "orange"
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "followAlong": false,
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

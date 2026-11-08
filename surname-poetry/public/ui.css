@@ -1,0 +1,10 @@
+.icon{width:40px;height:40px;display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+button.icon-button:not(.bird):not(.home){display:inline-flex;align-items:center;justify-content:center;gap:0;width:96px;height:88px;min-height:88px;padding:0;border-radius:28px;font-size:inherit;flex:none}
+button.icon-button:not(.bird):not(.home).primary{width:140px}
+button.icon-button:not(.bird):not(.home):disabled{opacity:.4}
+summary.icon-summary{display:flex;align-items:center;justify-content:center;margin:auto;width:52px;height:52px;border-radius:18px;list-style:none;cursor:pointer}
+summary.icon-summary::-webkit-details-marker{display:none}summary.icon-summary .icon{width:25px;height:25px}details[open]>summary.icon-summary{background:#e6eddb}
+@media(max-height:800px),(max-width:850px){button.icon-button:not(.bird):not(.home){width:84px;height:76px;min-height:76px;border-radius:24px}button.icon-button:not(.bird):not(.home).primary{width:124px}.icon{width:36px;height:36px}}
+@media(min-width:2400px) and (min-height:1350px){.icon{width:80px;height:80px}button.icon-button:not(.bird):not(.home){width:192px;height:176px;min-height:176px;border-radius:56px}button.icon-button:not(.bird):not(.home).primary{width:280px}summary.icon-summary{width:104px;height:104px;border-radius:36px}summary.icon-summary .icon{width:50px;height:50px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

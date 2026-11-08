@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "abba934cc40440c3b8da5612789d3d46fb8cadd09880a86b77a0b1339328781a",
+  "lines": [
+    {
+      "text": "种桃道士归何处？",
+      "start": 0.257,
+      "end": 2.599
+    },
+    {
+      "text": "前度刘郎今又来。",
+      "start": 3.239,
+      "end": 5.588
+    }
+  ]
+}

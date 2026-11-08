@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "a25168168800dbdb393f1a2763423f66c4dad32f8d0a2d9d912f57efaca8517b",
+  "lines": [
+    {
+      "text": "蜀道之难，",
+      "start": 0.278,
+      "end": 1.51
+    },
+    {
+      "text": "难于上青天！",
+      "start": 1.824,
+      "end": 3.292
+    }
+  ]
+}

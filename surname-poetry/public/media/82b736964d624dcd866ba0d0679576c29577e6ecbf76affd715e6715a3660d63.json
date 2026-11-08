@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "de72def3811d52764e84e66fb03652c3dfb95f6a702da9292ba8500a56866d68",
+  "lines": [
+    {
+      "text": "野幕敞琼筵，",
+      "start": 0.261,
+      "end": 2.125
+    },
+    {
+      "text": "羌戎贺劳旋。",
+      "start": 2.631,
+      "end": 4.671
+    }
+  ]
+}

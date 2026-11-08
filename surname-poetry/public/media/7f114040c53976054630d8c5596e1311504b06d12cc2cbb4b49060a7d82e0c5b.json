@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "eade87743961efef9820624f27a33a7acbeab375d9155c0394491a9a0d969b58",
+  "lines": [
+    {
+      "text": "邢客与越人，",
+      "start": 0.274,
+      "end": 1.66
+    },
+    {
+      "text": "皆能造兹器。",
+      "start": 1.94,
+      "end": 3.281
+    }
+  ]
+}

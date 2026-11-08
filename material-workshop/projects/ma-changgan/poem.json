@@ -1,0 +1,63 @@
+{
+  "id": "ma-changgan",
+  "title": "长干行",
+  "author": "李白",
+  "dynasty": "唐",
+  "status": "archived",
+  "surnames": [
+    "马"
+  ],
+  "lines": [
+    "郎骑竹马来，",
+    "绕床弄青梅。"
+  ],
+  "excerpt": {
+    "label": "选句",
+    "sourceText": "郎骑竹马来，绕床弄青梅。"
+  },
+  "source": {
+    "collection": "唐诗三百首",
+    "url": "https://zh.wikisource.org/wiki/長干行_(妾髮初覆額)",
+    "collectionUrl": "https://zh.wikisource.org/wiki/唐詩三百首",
+    "note": "原文选句含姓氏原字；只展示朗读选句。互动为诗意/字义联想，不作为姓氏起源说明。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v2.mp3"
+  },
+  "materialVersion": 4,
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "followAlong": false,
+  "interactionVersion": 7,
+  "interactionMode": "surname-poem-play",
+  "interaction": {
+    "game": "pony-loop",
+    "targetSurname": "马",
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "motif": "pony-loop",
+    "backgroundAlt": "two little children in simple Tang clothing playing with a bamboo hobby horse beside a low wooden seat and a green plum tree, a welcoming courtyard",
+    "description": "马：拖着一匹竹马，沿青梅路标绕矮凳一圈；也可点亮下一个青梅让竹马前进，关联骑竹马与绕。"
+  },
+  "musicProduction": {
+    "method": "original-plucked-string-synthesis",
+    "title": "江南暮归",
+    "durationSeconds": 64,
+    "vocals": false,
+    "instrument": "合成拨弦琴音",
+    "notes": "原创五声音阶，只用琴弦振荡器和短混响，不使用人声或合唱采样。"
+  },
+  "supersededBy": "ma-dengkehou"
+}

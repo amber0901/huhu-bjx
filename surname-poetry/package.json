@@ -1,0 +1,15 @@
+{
+  "name": "surname-poetry",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "check:assets": "node scripts/check-assets.mjs",
+    "test": "node --test",
+    "setup": "node scripts/setup.mjs"
+  }
+}

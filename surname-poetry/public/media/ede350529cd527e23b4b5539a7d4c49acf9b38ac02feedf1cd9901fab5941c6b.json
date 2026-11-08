@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "7eb5065725843ae457c809b1012e2c365f5a5ff40b5cf0bbadc7d1b020530f22",
+  "lines": [
+    {
+      "text": "春风得意马蹄疾，",
+      "start": 0.383,
+      "end": 2.747
+    },
+    {
+      "text": "一日看尽长安花。",
+      "start": 3.389,
+      "end": 5.812
+    }
+  ]
+}

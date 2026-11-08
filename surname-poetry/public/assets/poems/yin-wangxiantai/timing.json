@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "2c7ef818c3aacd9a7c86d446a7d4440f3222c31bbd86e9211ea7581d1fbfeff7",
+  "lines": [
+    {
+      "text": "关门令尹谁能识，",
+      "start": 0.242,
+      "end": 2.969
+    },
+    {
+      "text": "河上仙翁去不回。",
+      "start": 3.615,
+      "end": 6.587
+    }
+  ]
+}

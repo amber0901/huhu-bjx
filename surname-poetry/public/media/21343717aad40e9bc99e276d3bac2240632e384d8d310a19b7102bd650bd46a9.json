@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "86f7f78c31f769ca77a9f3b6e8e3da63a1501c83a57ff1ab4982951ef141d90d",
+  "lines": [
+    {
+      "text": "孤舟蓑笠翁，",
+      "start": 0.257,
+      "end": 2.12
+    },
+    {
+      "text": "独钓寒江雪。",
+      "start": 2.723,
+      "end": 5.019
+    }
+  ]
+}

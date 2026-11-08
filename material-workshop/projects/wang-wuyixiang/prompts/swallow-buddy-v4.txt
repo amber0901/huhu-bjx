@@ -1,0 +1,6 @@
+Use case: illustration-story. Asset type: a single transparent PNG touch-interactive swallow companion for a Chinese kindergarten poetry scene, children aged 5–6.
+Input image role: reference only for palette and soft children's watercolor / colored ink painting style. Do not recreate the background.
+Primary request: draw one complete small friendly swallow in mid-flight, facing gently to the upper right. Round, plump cream belly; soft indigo-blue head, back and wings; a recognizable gently forked swallow tail; a small warm orange beak, subtle peach cheeks, bright kind dark eyes. Wings gently open, compact readable silhouette, inviting rather than hyperactive.
+Style: tender children's picture-book watercolor, wet-on-wet soft edges, translucent pigment, subtle paper grain only inside painted areas, no hard ink outlines, no stiff brush strokes. Match the blue and cream swallows in the reference.
+Composition: single bird centered, whole wings and tail comfortably inside frame, fills about 75 percent of a square canvas, no crop. Good readability when displayed at 140–190 CSS pixels.
+Backdrop: genuine alpha transparency outside the bird. No beige rectangle, no checkerboard painted into pixels, no scenery, nest, flowers, text, sparkles, icon border, or floor shadow. Only the bird.

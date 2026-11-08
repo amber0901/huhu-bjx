@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
+tmp/
+.cache/
+.venv*/
+preview/assets/
+preview/materials.json
+projects/*/source/*
+!projects/*/source/.gitkeep
+projects/*/drafts/*
+!projects/*/drafts/.gitkeep
+projects/*/release/*
+!projects/*/release/.gitkeep

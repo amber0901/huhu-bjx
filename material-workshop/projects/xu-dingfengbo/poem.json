@@ -1,0 +1,75 @@
+{
+  "id": "xu-dingfengbo",
+  "title": "定风波·莫听穿林打叶声",
+  "author": "苏轼",
+  "dynasty": "宋",
+  "status": "draft",
+  "surnames": [
+    "徐"
+  ],
+  "lines": [
+    "莫听穿林打叶声，",
+    "何妨吟啸且徐行。"
+  ],
+  "excerpt": {
+    "label": "选句",
+    "sourceText": "莫听穿林打叶声，何妨吟啸且徐行。"
+  },
+  "source": {
+    "collection": "宋词",
+    "url": "https://zh.wikisource.org/wiki/定風波_(莫聽穿林打葉聲)",
+    "note": "正文保留姓氏原字；用户已允许必要时扩展经典古诗词。游戏是诗意联想，不作姓氏起源解读。"
+  },
+  "assets": {
+    "background": "background.png",
+    "narration": "narration.wav",
+    "timing": "timing.json",
+    "music": "music-instrumental-v3.mp3"
+  },
+  "materialVersion": 4,
+  "voice": {
+    "id": 403000,
+    "name": "小伙伴 · 云小朵",
+    "speed": -0.65,
+    "sampleRate": 24000
+  },
+  "readingOrder": [
+    "lines",
+    "title",
+    "author"
+  ],
+  "followAlong": false,
+  "interactionVersion": 7,
+  "interactionMode": "surname-poem-play",
+  "interaction": {
+    "game": "slow-walk",
+    "targetSurname": "徐",
+    "requireSurnameDiscovery": true,
+    "spokenFeedback": false,
+    "motif": "slow-walk",
+    "backgroundAlt": "a friendly scholar with bamboo walking stick slowly strolling on a leafy path in soft spring rain, rounded green bamboo and pastel sun",
+    "description": "徐：按住树叶陪诗人徐徐前行，松开暂停，再按继续；以慢步表现徐行，不要求手速。"
+  },
+  "musicProduction": {
+    "method": "tokenhub-instrumental-excerpt",
+    "title": "燕归花巷",
+    "model": "minimax-music-v2.6",
+    "durationSeconds": 16.8,
+    "vocals": false,
+    "instrument": "模型生成古风弦乐，古琴与轻古筝方向",
+    "sourceSelectionSeconds": [
+      [
+        30.2,
+        49.5
+      ]
+    ],
+    "loopCrossfadeSeconds": 2.5,
+    "integratedLufs": -27.27,
+    "vocalReviewStatus": "approved-by-user",
+    "notes": "用户确认王姓试听版后，同步用于本班全部26姓。选用已筛查的器乐间奏循环，原始整曲疑似人声部分未采用。",
+    "gainDb": -0.5500000000000007,
+    "edgeTaperSeconds": 0.005
+  },
+  "musicVersion": 3,
+  "musicReviewStatus": "approved-by-user"
+}

@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "a49e76edb1c6e7fb0f827ff091796a91016f896b3b0ae36a70b01289ad3ccf1a",
+  "lines": [
+    {
+      "text": "欲得周郎顾，",
+      "start": 0.263,
+      "end": 1.742
+    },
+    {
+      "text": "时时误拂弦。",
+      "start": 2.246,
+      "end": 4.227
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "4f47eb7fd7d81a575979ed1be8c7f9d85a2b6d5b52b4598faea1725065eca69d",
+  "lines": [
+    {
+      "text": "儿童相见不相识，",
+      "start": 0.265,
+      "end": 2.152
+    },
+    {
+      "text": "笑问客从何处来。",
+      "start": 2.65,
+      "end": 4.529
+    }
+  ]
+}

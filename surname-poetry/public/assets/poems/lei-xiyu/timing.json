@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "a2d35e73f9970780fde64f342294dae11392afe4bcc20a8726ee0c3d16de074d",
+  "lines": [
+    {
+      "text": "飒飒东风细雨来，",
+      "start": 0.333,
+      "end": 2.712
+    },
+    {
+      "text": "芙蓉塘外有轻雷。",
+      "start": 3.318,
+      "end": 5.841
+    }
+  ]
+}

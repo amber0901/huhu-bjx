@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "0c3fd2e627025af69467cf5e3c8813321f64d9f5aff9563c3d2d86049e1d3b06",
+  "lines": [
+    {
+      "text": "桃花潭水深千尺，",
+      "start": 0.253,
+      "end": 2.765
+    },
+    {
+      "text": "不及汪伦送我情。",
+      "start": 3.456,
+      "end": 5.515
+    }
+  ]
+}

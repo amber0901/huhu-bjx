@@ -1,0 +1,7 @@
+/* One calm, consistent book-and-leaf wordmark across the application. */
+:root{--brand-unit:1px}
+.brand{display:flex;align-items:center;gap:calc(10*var(--brand-unit));color:var(--ink,#34564a);text-decoration:none}
+.brand .brand-mark{display:block;flex:none;width:calc(48*var(--brand-unit));height:calc(48*var(--brand-unit));border-radius:0;background:transparent}
+.brand strong{font-family:"Kaiti SC","STKaiti","KaiTi",serif;font-size:calc(30*var(--brand-unit));font-weight:600;line-height:1.15;letter-spacing:calc(2*var(--brand-unit));white-space:nowrap;color:#3d604f}
+@media(max-width:850px){.brand .brand-mark{width:42px;height:42px}.brand strong{font-size:26px;letter-spacing:1.5px}.brand{gap:9px}}
+@media(min-width:2400px) and (min-height:1350px){:root{--brand-unit:2px}}

@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "cf2097c1769902a2c4840db91e71c17cd8be84041fc3d70992f2ec631a7c484a",
+  "lines": [
+    {
+      "text": "莫听穿林打叶声，",
+      "start": 0.258,
+      "end": 2.346
+    },
+    {
+      "text": "何妨吟啸且徐行。",
+      "start": 2.841,
+      "end": 5.153
+    }
+  ]
+}

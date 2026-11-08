@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "798e9f3754d620f70f464ef818a75b21218a0792848de2ae38271f05abe2aef6",
+  "lines": [
+    {
+      "text": "朱雀桥边野草花，",
+      "start": 0.238,
+      "end": 2.53
+    },
+    {
+      "text": "乌衣巷口夕阳斜。",
+      "start": 3.139,
+      "end": 5.398
+    }
+  ]
+}

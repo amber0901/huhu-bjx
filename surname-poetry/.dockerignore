@@ -1,0 +1,14 @@
+**
+!package.json
+!src/
+!src/**
+!public/
+!public/**
+!data/
+!data/**
+!scripts/
+!scripts/check-assets.mjs
+**/.env
+**/.env.*
+**/.git
+**/.DS_Store

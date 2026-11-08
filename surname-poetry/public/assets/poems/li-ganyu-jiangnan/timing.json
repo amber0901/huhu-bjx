@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "61f17c722704339657268d07ad75f67df3c868a1c7e6a63710f3b8e19f48868c",
+  "lines": [
+    {
+      "text": "徒言树桃李，",
+      "start": 0.254,
+      "end": 2.468
+    },
+    {
+      "text": "此木岂无阴。",
+      "start": 3.069,
+      "end": 5.495
+    }
+  ]
+}

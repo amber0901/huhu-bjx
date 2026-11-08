@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>小小诗词园 · 王的小燕子</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">诗</span><strong>小小诗词园</strong></div>
+    <nav class="surname-selector" aria-label="选择姓氏"><button id="choose-wang" class="surname-badge" aria-pressed="true">我姓王</button><button id="choose-li" class="surname-badge" aria-pressed="false">我姓李</button></nav>
+  </header>
+  <main>
+    <section id="scene" class="scene" aria-label="乌衣巷诗词画面" data-phase="idle">
+      <img id="background" class="background" alt="小燕子、石桥和夕阳下的人家">
+      <div class="reading">
+        <div id="verses" class="verses"></div>
+        <div class="poem-credit"><h1 id="title"></h1><p id="author"></p></div>
+      </div>
+      <div id="homes" class="homes" role="group" aria-label="找相同姓氏的小屋" hidden></div>
+      <div id="character-game" class="character-game" role="group" aria-label="木和子拼成李" hidden>
+        <div id="character-target" class="character-target"><span id="assembled-character" class="assembled-character" aria-hidden="true">李</span><div class="part-slot upper" data-part="木" aria-label="上面的木字位置"><span>木</span></div><div class="part-slot lower" data-part="子" aria-label="下面的子字位置"><span>子</span></div></div>
+        <button class="character-part part-mu" data-part="木" aria-label="木字部件，点按或拖到上面">木</button>
+        <button class="character-part part-zi" data-part="子" aria-label="子字部件，点按或拖到下面">子</button>
+      </div>
+      <button id="bird" class="bird" aria-label="小燕子，先在诗里找到你的姓"><img id="companion" alt="柔和水墨风的小燕子伙伴" draggable="false"></button>
+      <div id="celebration" class="celebration" aria-hidden="true"></div>
+    </section>
+    <section class="controls" aria-label="诗画互动">
+      <button id="play" class="primary"><span aria-hidden="true">▶</span> 听一听</button>
+      <button id="help-home"><span aria-hidden="true">◇</span> 看看我的姓</button>
+      <button id="reset" class="quiet"><span aria-hidden="true">↻</span> 再玩一次</button>
+    </section>
+    <p id="phase" class="phase sr-only" aria-live="polite">先在诗里找到自己的姓</p>
+    <details class="teacher-settings"><summary>老师设置</summary><div class="settings-content">
+      <label><input id="music-toggle" type="checkbox" checked>古风轻音乐</label>
+      <label>配乐音量<input id="music-volume" type="range" min="0" max="1" step="0.05" value="0.45"></label>
+      <label class="seek-label">朗诵进度<input id="seek" type="range" min="0" max="1" step="0.01" value="0"></label><output id="clock">0:00 / 0:00</output>
+    </div></details>
+  </main>
+  <audio id="narration" preload="auto"></audio><audio id="music" preload="auto" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>

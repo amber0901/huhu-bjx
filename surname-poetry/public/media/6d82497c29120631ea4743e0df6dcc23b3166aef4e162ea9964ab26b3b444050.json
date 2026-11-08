@@ -1,0 +1,18 @@
+{
+  "unit": "seconds",
+  "source": "本地Whisper跨注意力DTW强制对齐已核定诗文，并用实际波形静音边界校准；未等分时长。",
+  "model": "mlx-community/whisper-small-mlx",
+  "audioSha256": "faf18049b6bd5d4a918edf59a5e58c3aebedb74de523030592f50910d806551f",
+  "lines": [
+    {
+      "text": "野旷天低树，",
+      "start": 0.267,
+      "end": 2.147
+    },
+    {
+      "text": "江清月近人。",
+      "start": 2.725,
+      "end": 4.44
+    }
+  ]
+}
