@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "portrait-parts",
@@ -48,7 +48,13 @@
     "spokenFeedback": false,
     "motif": "portrait-parts",
     "backgroundAlt": "a kind dignified smiling ancient gentleman with broad forehead, softly curled beard and expressive eyebrows, beside a painter desk in green courtyard",
-    "description": "陈：根据轮廓给陈侯贴上弯眉与卷须，人物五官清楚；每轮重排选项、正确位置变化，关联虬须虎眉。"
+    "description": "陈：给陈伯伯贴虎眉和卷胡子。虬须虎眉描写陈侯外貌；人物称呼仍需老师介绍。",
+    "cueWords": [
+      "虬须",
+      "虎眉"
+    ],
+    "autoDemo": true,
+    "childGoal": "给陈伯伯贴虎眉和卷胡子"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +78,6 @@
   },
   "teacherNote": "姓氏原字约束下，选句较少见且有生僻字，适合先听诗、看图互动，由老师补充解释；不声称幼儿能独立理解全文。",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

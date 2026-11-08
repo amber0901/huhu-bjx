@@ -55,7 +55,7 @@
     "sampleRate": 24000
   },
   "followAlong": false,
-  "interactionVersion": 5,
+  "interactionVersion": 9,
   "interaction": {
     "targetSurname": "王",
     "homeChoices": [
@@ -65,7 +65,15 @@
     ],
     "requireSurnameDiscovery": true,
     "randomizeHomes": true,
-    "spokenFeedback": false
+    "spokenFeedback": false,
+    "cueWords": [
+      "燕",
+      "飞入",
+      "家"
+    ],
+    "autoDemo": true,
+    "childGoal": "把小燕子送到同字门牌的小屋",
+    "description": "王：把小燕子送到同字门牌的小屋。正文王字匹配，飞入百姓家。"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -88,5 +96,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

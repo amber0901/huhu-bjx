@@ -11,6 +11,8 @@ test('class materials cover the confirmed 26 literal surnames, with two spoken l
   const surname=poem.surnames[0];assert.equal(poem.lines.length,2);assert.ok(poem.lines.join('').includes(surname),surname+'必须出现在展示正文');
   assert.equal(poem.followAlong,false);assert.equal(poem.voice.id,403000);assert.equal(poem.voice.speed,-.65);
   assert.equal(poem.interaction.targetSurname,surname);assert.ok(!games.has(poem.interaction.game),'每个姓氏应有独立玩法');games.add(poem.interaction.game);
+  assert.equal(poem.interactionTiming,'after-narration');assert.equal(poem.interaction.autoDemo,true);assert.ok(poem.interaction.childGoal);
+  assert.ok(poem.interaction.cueWords.every(word=>poem.lines.join('').includes(word)));
   if(poem.interactionMode==='surname-poem-play')assert.ok(sceneGames.has(poem.interaction.game));
   assert.equal(poem.musicProduction.vocals,false);assert.ok(poem.assets.music.endsWith('.mp3'));
  }

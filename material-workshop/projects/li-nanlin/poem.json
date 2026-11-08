@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "harvest-sort",
@@ -48,7 +48,12 @@
     "spokenFeedback": false,
     "motif": "harvest-sort",
     "backgroundAlt": "a welcoming rural autumn garden, kind man with black cloth headscarf, basket of small chestnuts and tubers, rounded fruit tree, two smiling little children, warm gold jade and peach",
-    "description": "把栗果放入圆形果篮，把叶子留在树上，收满三颗；关联诗中园收芋栗。"
+    "description": "栗：把树上的三颗栗果收进篮子。园收芋栗中的收栗果。",
+    "cueWords": [
+      "园收"
+    ],
+    "autoDemo": true,
+    "childGoal": "把树上的三颗栗果收进篮子"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -71,5 +76,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

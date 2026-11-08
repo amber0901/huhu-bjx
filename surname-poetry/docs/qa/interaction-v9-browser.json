@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-08",
+  "viewport": "1280x720",
+  "method": "通过真实触摸操作逐姓完成；批量场景用老师设置中的真实音频进度条跳到结尾，未伪造ended事件。王、周另外验证自然朗诵结束。",
+  "naturalNarration": {
+    "wang": "朗诵结束后显示互动；暂停期间不显示",
+    "zhou": "重播立即隐藏；暂停仍隐藏；继续播放自然结束后出现互动；重玩隐藏并回到待播放状态"
+  },
+  "negativeChecks": {
+    "guoInsideHill": "未通关",
+    "liaoWrongDrop": "回到原位，未通关",
+    "lightbulb": "只示范，不代通关"
+  },
+  "checks": [
+    {
+      "surname": "陈",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "尹",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "廖",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "汪",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "吴",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "肖",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "邢",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "何",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "徐",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "刘",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "翁",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "邓",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "栗",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "于",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "张",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "江",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "郭",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "周",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "文",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "朱",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "雷",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "马",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "贺",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "洪",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "王",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    },
+    {
+      "surname": "李",
+      "lockedBeforeNarration": true,
+      "unlockedAfterEnd": true,
+      "completion": "passed"
+    }
+  ],
+  "limits": "浏览器模拟操作与画面复查，尚未由真实儿童或65寸华为一体机验收。"
+}

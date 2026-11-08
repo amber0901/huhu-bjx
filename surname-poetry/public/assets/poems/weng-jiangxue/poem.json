@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "fishing-timing",
@@ -49,7 +49,13 @@
     "spokenFeedback": false,
     "motif": "fishing-timing",
     "backgroundAlt": "a kindly elderly fisherman with straw cape and bamboo hat on a tiny boat, warm pastel snowy river, soft rounded snowy mountains, gentle comforting snow",
-    "description": "鱼漂轻轻下沉时点钓竿，观察后收竿；关联翁与独钓。"
+    "description": "翁：点鱼漂下竿，鱼咬钩后再提竿。蓑笠翁独钓。",
+    "cueWords": [
+      "孤舟",
+      "独钓"
+    ],
+    "autoDemo": true,
+    "childGoal": "点鱼漂下竿，鱼咬钩后再提竿"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +79,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

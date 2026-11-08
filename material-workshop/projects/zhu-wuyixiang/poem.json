@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "flower-color",
@@ -49,7 +49,13 @@
     "spokenFeedback": false,
     "motif": "flower-color",
     "backgroundAlt": "a small old stone bridge with wildflowers in sunset, peach pink apricot light, little swallows far away, welcoming Jiangnan lane",
-    "description": "选朱红颜料给桥边三朵小花上色；朱字有红色义，是字义联想，不宣称朱雀桥因花得名。"
+    "description": "朱：选朱红颜料，给桥边花涂色。朱红颜色义与朱雀桥边野草花的联想，不解释桥名来源。",
+    "cueWords": [
+      "桥边",
+      "野草花"
+    ],
+    "autoDemo": true,
+    "childGoal": "选朱红颜料，给桥边花涂色"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +78,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

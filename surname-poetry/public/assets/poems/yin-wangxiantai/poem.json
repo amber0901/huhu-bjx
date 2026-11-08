@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "gate-pass",
@@ -48,7 +48,13 @@
     "spokenFeedback": false,
     "motif": "gate-pass",
     "backgroundAlt": "a friendly rounded ancient mountain pass gate, a small gentle ox beside an elderly traveler, peach morning clouds and distant jade river, no fantasy combat",
-    "description": "尹：转动右半青牛图案，让两半相合，关门透出亮光；关联令尹关令的古典故事，老师可补充故事，不当姓氏起源。"
+    "description": "尹：拉门闩，打开关隘送仙翁到河边。关门是关隘，令尹是人物称谓；开关隘为场景任务，不作词义或字源解释。",
+    "cueWords": [
+      "关门",
+      "仙翁"
+    ],
+    "autoDemo": true,
+    "childGoal": "拉门闩，打开关隘送仙翁到河边"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +79,6 @@
   "teacherNote": "姓氏原字约束下，选句较少见且有生僻字，适合先听诗、看图互动，由老师补充解释；不声称幼儿能独立理解全文。",
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

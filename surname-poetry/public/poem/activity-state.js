@@ -17,5 +17,9 @@ export function createHoldProgress({duration,onProgress,onFull,now=()=>performan
 }
 
 // Keep matching meaningful on replay: change the correct option slot.
+export function surfaceValue({position,delta=0,initial=0,range=[0,100],relative=false,stretch=false,travel=50}){
+ const value=relative?initial+(stretch?Math.abs(delta):delta)/travel*100:(position-range[0])/(range[1]-range[0])*100;
+ return Math.max(0,Math.min(100,value));
+}
 const previousSlots=new Map();
 export const shuffleChoices=(values,key,correct)=>{const result=[...values];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]];}if(key){let slot=result.indexOf(correct);if(slot===previousSlots.get(key)){const other=(slot+1+Math.floor(Math.random()*(result.length-1)))%result.length;[result[slot],result[other]]=[result[other],result[slot]];slot=other;}previousSlots.set(key,slot);}return result;};

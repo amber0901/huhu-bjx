@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "outside-wall",
@@ -49,7 +49,14 @@
     "spokenFeedback": false,
     "motif": "outside-wall",
     "backgroundAlt": "a tiny friendly village enclosed by a low rounded ancient wall, green trees inside, blue green mountains visibly outside, mellow sunny countryside",
-    "description": "选择城郭外的山影，点亮郭外青山；区分内外，关联郭与城郭。"
+    "description": "郭：点亮村庄城墙外的青山。郭指城郭，青山在郭外，不作姓氏起源。",
+    "cueWords": [
+      "村边",
+      "青山",
+      "外"
+    ],
+    "autoDemo": true,
+    "childGoal": "点亮村庄城墙外的青山"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +79,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

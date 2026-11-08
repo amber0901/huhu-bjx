@@ -2,6 +2,7 @@
 import { setIconButton } from '/ui.js';
 import { cacheMaterials } from '/cache-client.js';
 import { createPlayground, sceneGames } from './playground.js';
+import {createNarrationGate} from './narration-gate.js';
 
 const $ = id => document.getElementById(id);
 const narration = $('narration'), music = $('music'), scene = $('scene'), bird = $('bird');
@@ -17,6 +18,38 @@ const placedParts = new Set();
 let partDrag = null, partClickUntil = 0;
 let raf, fadeRaf, flightTimer, hintTimer, hintButtonTimer, feedbackTimer, generation = 0;
 let drag = null, suppressClickUntil = 0, previousTargetSlot = -1;
+const narrationGate=createNarrationGate();let narrationRound,legacyCoachTimer;
+
+function hideInteraction(){
+  scene.dataset.interactive='false';
+  for(const id of ['homes','character-game','poem-game','bird'])$(id).hidden=true;
+  clearTimeout(legacyCoachTimer);playground?.pause?.();
+  scene.querySelector('.legacy-gesture')?.remove();
+}
+function drawLegacyGuide(){
+  scene.querySelector('.legacy-gesture')?.remove();
+  if(!narrationGate.open||atHome)return;
+  const part=isBuildGame()?document.querySelector('.character-part:not([hidden])'):null;
+  const from=part||bird,to=part?document.querySelector(`.part-slot[data-part="${part.dataset.part}"]`):document.querySelector(`.home[data-surname="${surname}"]`);
+  if(!from||!to||from.hidden)return;
+  const a=scene.getBoundingClientRect(),b=from.getBoundingClientRect(),t=to.getBoundingClientRect();
+  const cue=document.createElement('span');cue.className='legacy-gesture';cue.setAttribute('aria-hidden','true');cue.innerHTML='<svg viewBox="0 0 32 32"><use href="/icons.svg#touch"></use></svg>';
+  cue.style.left=(b.x+b.width/2-a.x)+'px';cue.style.top=(b.y+b.height/2-a.y)+'px';cue.style.setProperty('--guide-x',(t.x+t.width/2-b.x-b.width/2)+'px');cue.style.setProperty('--guide-y',(t.y+t.height/2-b.y-b.height/2)+'px');scene.append(cue);
+  setTimeout(()=>cue.remove(),3400);
+}
+function legacyGuide(){
+  if(!narrationGate.open||atHome)return;
+  showHint();clearTimeout(legacyCoachTimer);legacyCoachTimer=setTimeout(legacyGuide,7000);
+}
+function revealInteraction(){
+  if(!narrationGate.open)return;
+  found=true;scene.dataset.found='true';scene.dataset.interactive='true';
+  $('homes').hidden=isBuildGame()||isSceneGame();$('character-game').hidden=!isBuildGame();$('poem-game').hidden=!isSceneGame();
+  bird.hidden=isSceneGame()||!poem.assets.companion||!$('companion').naturalWidth;
+  bird.setAttribute('aria-label',isBuildGame()?'拼好李字后，小橘子会出现':`把${companionLabel()}拖到${surname}字的小屋，也可以点小屋`);
+  if(isSceneGame())playground.start();else legacyGuide();
+  activityHint();
+}
 
 const format = time => `${Math.floor(time / 60)}:${String(Math.floor(time % 60)).padStart(2, '0')}`;
 
@@ -28,7 +61,8 @@ function setPhase(next, message) {
 }
 
 function activityHint(message) {
-  $('help-home').disabled = atHome;
+  $('help-home').disabled = !narrationGate.open||atHome;
+  if(!narrationGate.open){$('phase').textContent=message||'先听诗，读完会出现小游戏';return;}
   scene.dataset.stage = atHome ? 'complete' : found ? 'match' : 'discover';
   $('phase').textContent = message || (isSceneGame() ? (atHome ? '互动完成啦' : found ? poem.interaction.description : `先在诗里找到${surname}字`) : isBuildGame() ? (atHome ? '木和子拼成了李' : found ? '把木放上面，子放下面，拼成李字' : '先在诗里找到李字') : atHome
     ? `找到“${surname}”字的家啦！`
@@ -78,6 +112,7 @@ function fadeMusic() {
 
 async function start(from = 0) {
   stopAudio();
+  narrationRound=narrationGate.begin();hideInteraction();
   const run = generation;
   narration.currentTime = from;
   setPhase('loading', '准备听诗');
@@ -116,27 +151,17 @@ function sparkle(x, y) {
 }
 
 function showHint() {
-  if(atHome)return;
+  if(atHome||!narrationGate.open)return;
   clearTimeout(hintButtonTimer);$('help-home').classList.add('hint-active');hintButtonTimer=setTimeout(()=>$('help-home').classList.remove('hint-active'),900);
   if(isSceneGame()&&found){playground?.hint();return;}
   clearTimeout(hintTimer);
   document.body.classList.add('hinting');
   activityHint(found ? (isBuildGame() ? '木在上，子在下，拼成诗句里的李字' : `找到和诗句中“${surname}”字相同的门牌`) : `诗里藏着“${surname}”字`);
   hintTimer = setTimeout(() => document.body.classList.remove('hinting'), 1500);
+  drawLegacyGuide();
 }
 
 function findSurname() {
-  if (!found) {
-    found = true;
-    scene.dataset.found = 'true';
-    $('homes').hidden = isBuildGame() || isSceneGame();
-    $('character-game').hidden = !isBuildGame();
-    $('poem-game').hidden = !isSceneGame();
-    if(isSceneGame())playground.start();
-    bird.setAttribute('aria-label', isBuildGame() ? '拼好李字后，小橘子会出现' : `${companionLabel()}，拖到${surname}字的小屋，也可点小屋选择`);
-    sparkle(25, 37);
-  }
-  activityHint();
   if (phase !== 'narrating' && phase !== 'loading') start();
 }
 
@@ -181,13 +206,14 @@ function finishHome(house, position) {
   house.classList.add('correct');
   bird.setAttribute('aria-label', `已找到${surname}字的小屋`);
   positionBird(position);
-  sparkle(position.x, position.y);
+  scene.querySelector('.legacy-gesture')?.remove();
+  if(narrationGate.open)sparkle(position.x, position.y);
   activityHint();
   $('phase').textContent = `找到了和自己姓氏相同的门牌：${surname}`;
 }
 
 function attemptHome(house) {
-  if (atHome || scene.classList.contains('flying')) return;
+  if (!narrationGate.open||atHome || scene.classList.contains('flying')) return;
   clearTimeout(feedbackTimer);
   document.querySelectorAll('.home').forEach(item => item.classList.remove('try-again', 'ready'));
   if (!found) return showHint();
@@ -209,6 +235,7 @@ function attemptHome(house) {
 function reset() {
   clearTimeout(hintButtonTimer);$('help-home').classList.remove('hint-active');
   stopAudio();
+  narrationGate.reset();hideInteraction();
   clearTimeout(flightTimer);
   clearTimeout(feedbackTimer);
   clearTimeout(hintTimer);
@@ -226,7 +253,7 @@ function reset() {
   $('character-game').hidden = true;
   $('poem-game').hidden = true;
   playground?.destroy();playground=undefined;
-  if(isSceneGame())playground=createPlayground({element:$('poem-game'),poem,onComplete(){atHome=true;scene.dataset.home='true';sparkle(79,55);activityHint();}});
+  if(isSceneGame())playground=createPlayground({element:$('poem-game'),poem,onComplete(){atHome=true;scene.dataset.home='true';if(narrationGate.open){sparkle(79,55);activityHint();}}});
   $('character-target').classList.remove('complete');
   scene.dataset.assembled = 'false';
   placedParts.clear(); partDrag = null; partClickUntil = 0;
@@ -250,6 +277,7 @@ function hitHouse(event) {
 }
 
 bird.addEventListener('pointerdown', event => {
+  if(!narrationGate.open)return;
   if (isBuildGame()) {if (!atHome) showHint(); return;}
   if (atHome || scene.classList.contains('flying')) return;
   if (!found) return showHint();
@@ -303,7 +331,7 @@ $('play').onclick = async () => {
 };
 narration.onloadedmetadata = paint;
 narration.ontimeupdate = () => {if (phase === 'narrating') paint();};
-narration.onended = () => {if (!narration.ended) return; cancelAnimationFrame(raf); setPhase('explore', '诗句读完了'); activityHint(); paint(); fadeMusic();};
+narration.onended = () => {if (!narration.ended||!narrationGate.finish(narrationRound)) return; cancelAnimationFrame(raf); setPhase('explore', '诗句读完了');revealInteraction();paint();fadeMusic();};
 $('music-toggle').onchange = () => {
   cancelAnimationFrame(fadeRaf);
   if (!$('music-toggle').checked) music.pause();
@@ -312,14 +340,14 @@ $('music-toggle').onchange = () => {
 $('music-volume').oninput = () => {cancelAnimationFrame(fadeRaf); music.volume = Number($('music-volume').value);};
 $('seek').oninput = () => {narration.currentTime = Number($('seek').value); paint();};
 $('seek').onchange = () => {if (!['narrating', 'paused'].includes(phase)) start(Number($('seek').value));};
-window.addEventListener('pagehide', () => {loadRun++;clearTimeout(preloadTimer);clearTimeout(hintButtonTimer); playground?.destroy(); stopAudio(); clearTimeout(flightTimer); clearTimeout(hintTimer); clearTimeout(feedbackTimer);});
+window.addEventListener('pagehide', () => {narrationGate.reset();clearTimeout(legacyCoachTimer);loadRun++;clearTimeout(preloadTimer);clearTimeout(hintButtonTimer); playground?.destroy(); stopAudio(); clearTimeout(flightTimer); clearTimeout(hintTimer); clearTimeout(feedbackTimer);});
 
 function verseNode(text) {
   const line = document.createElement('div');
   line.className = 'verse';
   let offset = 0, index;
   while ((index = text.indexOf(surname, offset)) !== -1) {
-    line.append(document.createTextNode(text.slice(offset, index)));
+    appendSceneWords(line,text.slice(offset,index));
     const button = document.createElement('button');
     button.className = 'surname-char';
     button.textContent = surname;
@@ -328,8 +356,14 @@ function verseNode(text) {
     line.append(button);
     offset = index + surname.length;
   }
-  line.append(document.createTextNode(text.slice(offset)));
+  appendSceneWords(line,text.slice(offset));
   return line;
+}
+function appendSceneWords(parent,text){
+  const words=(poem.interaction.cueWords||[]).filter(word=>word&&!word.includes(surname));
+  if(!words.length){parent.append(document.createTextNode(text));return;}
+  const escaped=words.map(word=>word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  for(const chunk of text.split(new RegExp('('+escaped.join('|')+')','g'))){if(words.includes(chunk)){const span=document.createElement('span');span.className='poem-cue-word';span.textContent=chunk;parent.append(span);}else parent.append(document.createTextNode(chunk));}
 }
 
 function choosePoem(id) {
@@ -358,7 +392,7 @@ function choosePoem(id) {
   background.src = poem.assets.background;
   $('background').alt = poem.interaction.backgroundAlt || (surname === '李' ? '柔和水墨橘园' : '小燕子、石桥和夕阳下的人家');
   bird.hidden=true;
-  $('companion').onload=()=>{bird.hidden=isSceneGame()||!poem.assets.companion;};
+  $('companion').onload=()=>{bird.hidden=!narrationGate.open||isSceneGame()||!poem.assets.companion;if(!bird.hidden)drawLegacyGuide();};
   if(!isSceneGame()&&poem.assets.companion)$('companion').src = poem.assets.companion;else $('companion').removeAttribute('src');
   $('companion').alt = `柔和水墨风的${companionLabel()}`;
   narration.src = poem.assets.narration;
@@ -367,6 +401,7 @@ function choosePoem(id) {
   reset();
   scene.dataset.content='ready';
   for(const id of ['play','help-home','reset'])$(id).disabled=false;
+  activityHint();
   clearTimeout(preloadTimer);preloadTimer=setTimeout(prepareAudio,1600);
 }
 async function loadPoemPage(){
@@ -396,7 +431,7 @@ $('back-to-write').onclick = () => {
 };
 
 function placePart(piece, slot) {
-  if (!found || !isBuildGame() || atHome) return;
+  if (!narrationGate.open||!found || !isBuildGame() || atHome) return;
   piece.style.transform='';
   if (!slot || slot.dataset.part!==piece.dataset.part) {
     piece.classList.add('retry');
@@ -409,15 +444,17 @@ function placePart(piece, slot) {
     $('character-target').classList.add('complete');
     bird.setAttribute('aria-label', '李字拼好了，小橘子成熟啦');
     sparkle(79,55);activityHint('木和子拼成李，橘子成熟啦');
-  }
+    scene.querySelector('.legacy-gesture')?.remove();
+  }else showHint();
 }
 function partSlotAt(event) {
   return [...document.querySelectorAll('.part-slot')].find(slot=>{const r=slot.getBoundingClientRect();return event.clientX>=r.left-12&&event.clientX<=r.right+12&&event.clientY>=r.top-12&&event.clientY<=r.bottom+12;});
 }
 document.querySelectorAll('.character-part').forEach(piece=>{
   piece.onclick=()=>{if(Date.now()<partClickUntil)return;placePart(piece,document.querySelector(`.part-slot[data-part="${piece.dataset.part}"]`));};
-  piece.onpointerdown=event=>{if(!found||atHome)return;partDrag={piece,id:event.pointerId,x:event.clientX,y:event.clientY,moved:false};piece.setPointerCapture(event.pointerId);};
+  piece.onpointerdown=event=>{if(!narrationGate.open||!found||atHome)return;partDrag={piece,id:event.pointerId,x:event.clientX,y:event.clientY,moved:false};piece.setPointerCapture(event.pointerId);};
   piece.onpointermove=event=>{if(!partDrag||partDrag.piece!==piece||partDrag.id!==event.pointerId)return;const dx=event.clientX-partDrag.x,dy=event.clientY-partDrag.y;if(Math.hypot(dx,dy)>8)partDrag.moved=true;if(!partDrag.moved)return;piece.style.transform=`translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px))`;const target=partSlotAt(event);document.querySelectorAll('.part-slot').forEach(slot=>slot.classList.toggle('ready',slot===target));};
   piece.onpointerup=event=>{if(!partDrag||partDrag.piece!==piece)return;const moved=partDrag.moved;partDrag=null;partClickUntil=Date.now()+350;document.querySelectorAll('.part-slot').forEach(slot=>slot.classList.remove('ready'));placePart(piece,moved?partSlotAt(event):document.querySelector(`.part-slot[data-part="${piece.dataset.part}"]`));};
   piece.onpointercancel=()=>{partDrag=null;piece.style.transform='';document.querySelectorAll('.part-slot').forEach(slot=>slot.classList.remove('ready'));};
 });
+scene.addEventListener('pointerdown',event=>{if(!event.target.closest('.home,.bird,.character-part'))return;scene.querySelector('.legacy-gesture')?.remove();clearTimeout(legacyCoachTimer);if(narrationGate.open&&!atHome)legacyCoachTimer=setTimeout(legacyGuide,7000);},{capture:true});

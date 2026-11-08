@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "footprint-path",
@@ -49,7 +49,14 @@
     "spokenFeedback": false,
     "motif": "footprint-path",
     "backgroundAlt": "two smiling small children greeting a kind elderly traveler near a little bridge and willow tree",
-    "description": "沿亮起的脚印找来路，让归乡老人和孩子相见；关联何处。"
+    "description": "何：点脚印，让老人和孩子见面。儿童相见、问客来处。",
+    "cueWords": [
+      "儿童",
+      "相见",
+      "客"
+    ],
+    "autoDemo": true,
+    "childGoal": "点脚印，让老人和孩子见面"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +80,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

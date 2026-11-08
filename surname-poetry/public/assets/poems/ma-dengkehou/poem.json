@@ -44,7 +44,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 8,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "horse-flowers",
@@ -54,7 +54,13 @@
     "motif": "spring-horse",
     "companionLabel": "小马",
     "backgroundAlt": "儿童彩色水墨春日长安花道，温和诗人骑马赏花",
-    "description": "马：带小马去看长安花，拖到任意花旁或点花让它跑过去，三处花会逐一开放；顺序自由，不计时、不比赛，关联马蹄与看花。"
+    "description": "马：带小马逐一走近花苞，看它们开放。马蹄疾、看尽长安花。",
+    "cueWords": [
+      "看尽",
+      "花"
+    ],
+    "autoDemo": true,
+    "childGoal": "带小马逐一走近花苞，看它们开放"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -85,5 +91,6 @@
   "teacherNote": "诗人写的是登科后的喜悦；和孩子体验春风、骑马看花即可，不需要解释科举制度。",
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

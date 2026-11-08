@@ -49,7 +49,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "pluck-melody",
@@ -63,7 +63,13 @@
     ],
     "motif": "zheng",
     "backgroundAlt": "儿童水墨春日庭院与古筝",
-    "description": "周：看三根琴弦先后亮起，再轻拨相同顺序，触摸时发出轻琴音；灯泡重演尚未完成的部分，已完成步骤保留，关联周郎听曲。"
+    "description": "周：拨响三根琴弦，让周郎转头听琴。诗中周郎听琴、顾盼。",
+    "cueWords": [
+      "顾",
+      "拂弦"
+    ],
+    "autoDemo": true,
+    "childGoal": "拨响三根琴弦，让周郎转头听琴"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -90,5 +96,6 @@
     "弦": "xian2"
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

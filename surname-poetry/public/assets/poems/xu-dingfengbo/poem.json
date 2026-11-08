@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "slow-walk",
@@ -48,7 +48,12 @@
     "spokenFeedback": false,
     "motif": "slow-walk",
     "backgroundAlt": "a friendly scholar with bamboo walking stick slowly strolling on a leafy path in soft spring rain, rounded green bamboo and pastel sun",
-    "description": "徐：按住树叶陪诗人徐徐前行，松开暂停，再按继续；以慢步表现徐行，不要求手速。"
+    "description": "徐：按住诗人，陪他走过小路。徐行就是慢慢走的诗意联想。",
+    "cueWords": [
+      "行"
+    ],
+    "autoDemo": true,
+    "childGoal": "按住诗人，陪他走过小路"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +77,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

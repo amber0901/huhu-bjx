@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "moon-reflection",
@@ -49,7 +49,12 @@
     "spokenFeedback": false,
     "motif": "moon-reflection",
     "backgroundAlt": "a clear jade river at gentle twilight, a full moon, distant low trees and a tiny wooden boat, luminous rather than dark",
-    "description": "滑动月影，与江面月亮轮廓重合；关联江水与近人的月。"
+    "description": "江：把江上月影拖到船边诗人附近。江清月近人。",
+    "cueWords": [
+      "月近人"
+    ],
+    "autoDemo": true,
+    "childGoal": "把江上月影拖到船边诗人附近"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +78,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

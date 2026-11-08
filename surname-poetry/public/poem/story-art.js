@@ -1,0 +1,25 @@
+// Small original vector props for touch scenes, not replacement poetry artwork.
+const wrap=body=>`<svg viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="#668474" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
+export function personPicture(kind='traveler'){
+ const child=kind==='child',old=['elder','traveler'].includes(kind),robe=child?'#ecc48d':kind==='friend'?'#b3c7b1':'#a9c6ce';
+ return `<svg viewBox="0 0 100 120" aria-hidden="true" class="story-person-picture"><path d="M33 82L25 114H74L67 82" fill="${robe}"/><path d="M37 109L34 118M63 109L67 118" stroke="#7c806b" stroke-width="5" stroke-linecap="round"/><path class="person-arm" d="M33 84Q18 81 14 66" fill="none" stroke="${robe}" stroke-width="11" stroke-linecap="round"/><path d="M67 84L82 94" stroke="${robe}" stroke-width="11" stroke-linecap="round"/><g class="person-head"><ellipse cx="50" cy="53" rx="28" ry="31" fill="#f6ddbc"/><path d="M22 48Q16 10 50 15Q83 10 79 47L69 31Q45 38 31 31Z" fill="${old?'#b7b7aa':'#657e77'}"/><path d="M32 17L36 6H66L70 22Z" fill="${child?'#b4c69a':'#8cabb0'}"/><path d="M33 52q5-5 9 0M58 52q5-5 9 0" stroke="#688071" stroke-width="2.5" fill="none"/><ellipse cx="30" cy="65" rx="6" ry="4" fill="#e9ae9c"/><ellipse cx="70" cy="65" rx="6" ry="4" fill="#e9ae9c"/><path d="M42 69q8 10 16 0" fill="none" stroke="#b88f73" stroke-width="2"/>${old?'<path d="M33 76Q50 99 67 76Q65 106 50 111Q34 103 33 76Z" fill="#e8e1cf"/>':''}</g></svg>`;
+}
+const props={
+ traveler:()=>personPicture('traveler'),elder:()=>personPicture('elder'),child:()=>personPicture('child'),friend:()=>personPicture('friend'),
+ sun:()=>wrap('<g stroke="#e3bd76"><path d="M50 4V14M50 86V96M4 50H14M86 50H96M18 18L25 25M75 75L82 82M18 82L25 75M75 25L82 18"/></g><circle cx="50" cy="50" r="29" fill="#f3d89b" stroke="#ddbb77"/><path d="M36 47q4-4 8 0M56 47q4-4 8 0M43 59q7 7 14 0" stroke="#aa9866"/>'),
+ bud:()=>wrap('<path d="M50 57V95M50 80Q22 64 26 81Q36 92 50 86M50 72Q74 53 76 72Q65 84 50 80" fill="#b8cea4"/><path d="M50 64Q16 48 32 25Q40 30 50 15Q60 30 68 25Q84 48 50 64Z" fill="#e8b5b0"/>'),
+ lotus:()=>wrap('<ellipse cx="48" cy="86" rx="43" ry="10" fill="#acc59a" stroke="none"/><path d="M50 78Q7 66 12 35Q32 37 50 64Q30 26 50 8Q70 26 50 64Q69 34 88 35Q93 66 50 78Z" fill="#edb8bc" stroke="#c696a1"/><path d="M50 77Q24 62 29 43Q43 50 50 69Q57 49 72 43Q76 64 50 77Z" fill="#f5d0ca"/>'),
+ teabowl:()=>wrap('<ellipse cx="50" cy="30" rx="40" ry="12" fill="#f7f4df"/><path d="M10 30Q14 80 50 83Q86 80 90 30Q50 53 10 30Z" fill="#dce8d7"/><path d="M34 84H66M21 49Q50 65 79 49"/><ellipse cx="50" cy="29" rx="30" ry="6" fill="#bed3b7" stroke="none"/>'),
+ browpair:()=>wrap('<path d="M7 44Q23 23 44 39L42 48Q24 37 9 51ZM56 39Q77 23 93 44L91 51Q76 37 58 48Z" fill="#7b8070"/>'),
+ curlbeard:()=>wrap('<path d="M19 19Q15 66 50 91Q85 66 81 19Q65 46 50 43Q33 47 19 19Z" fill="#a5a798"/><path d="M27 40q-10 23 6 28q11 0 4-12M42 51q-9 30 8 31q11-3 2-13M65 41q16 19 0 28q-11 3-7-10" stroke="#e1dfca" stroke-width="3"/>'),
+ gate:()=>wrap('<path d="M7 95V29H93V95Z" fill="#e4d5af"/><path d="M2 29L20 10H80L98 29Z" fill="#91b3a0"/><path d="M30 95V54Q50 32 70 54V95" fill="#a4bcb0"/><path d="M30 95V55Q50 34 70 55V95" stroke="#a68e6c" stroke-width="5"/>'),
+ latch:()=>wrap('<path d="M5 38H95V63H5Z" fill="#d3ad74"/><path d="M20 30V72M80 30V72" stroke="#9d966e" stroke-width="5"/><circle cx="52" cy="50" r="8" fill="#f5dc98"/>'),
+ tier:()=>wrap('<path d="M16 84V43H84V84Z" fill="#e6d5ad"/><path d="M5 44L20 25H80L95 44Z" fill="#93b3a5"/><path d="M45 84V62Q50 55 55 62V84M28 57V68M72 57V68"/>'),
+ flag:()=>wrap('<path d="M26 92V9" stroke="#b49670" stroke-width="5"/><path d="M28 12H87L72 35L87 57H28Z" fill="#e7b19a"/><path d="M44 28L61 38L44 47Z" fill="#f5d68b" stroke="none"/>'),
+ basket:()=>wrap('<path d="M18 41Q19 5 50 7Q81 5 82 41" stroke="#c2a073" stroke-width="7"/><path d="M6 40H94L82 91H18Z" fill="#e2c591"/><path d="M8 47H92M15 62H87M20 77H82M29 44L34 88M50 44V88M71 44L66 88" stroke="#c0a271"/>'),
+ paint:()=>wrap('<path d="M26 49H76L72 89H30Z" fill="currentColor"/><ellipse cx="51" cy="48" rx="25" ry="9" fill="currentColor"/><path d="M66 45L81 6" stroke="#b79e7b" stroke-width="7"/><path d="M59 53L67 32L75 36L69 57Z" fill="currentColor"/>'),
+ screen:()=>wrap('<path d="M3 91V18L14 10L25 18L36 10L47 18L58 10L69 18L80 10L97 18V91L80 83L69 91L58 83L47 91L36 83L25 91L14 83Z" fill="#e6eedb"/><path d="M5 76L20 40L34 67L48 29L64 63L81 34L96 76Z" fill="#a9c8b4"/><path d="M14 13V87M25 19V89M36 13V87M47 20V87M58 13V87M69 19V87M80 13V83" stroke="#c6b997"/>'),
+ rod:()=>wrap('<path d="M9 94L43 7Q79 8 83 39" stroke="#bb9b73" stroke-width="5"/><path d="M82 39V86" stroke="#9ea59a"/><path d="M75 62H89V80H75Z" fill="#e8b28f"/>'),
+ float:()=>wrap('<path d="M50 2V35M50 85V98" stroke="#a2b3a4"/><path d="M39 32Q50 23 61 32V76Q50 92 39 76Z" fill="#e7a080"/><path d="M39 54H61V76Q50 92 39 76Z" fill="#f8e7bc"/><path d="M20 79Q30 84 37 80M64 80Q77 85 85 79" stroke="#9bbfbc"/>'),
+};
+export const storySvg=kind=>{const image=props[kind]?.();return image?(kind==='tier'?image.replace('<svg ','<svg preserveAspectRatio="none" '):image):null;};

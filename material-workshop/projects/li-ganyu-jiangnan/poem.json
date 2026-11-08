@@ -50,7 +50,7 @@
     "label": "选句"
   },
   "interactionMode": "surname-character-build",
-  "interactionVersion": 5,
+  "interactionVersion": 9,
   "interaction": {
     "targetSurname": "李",
     "game": "assemble-character",
@@ -61,7 +61,15 @@
     "requireSurnameDiscovery": true,
     "spokenFeedback": false,
     "companionLabel": "小橘子",
-    "motif": "orange"
+    "motif": "orange",
+    "cueWords": [
+      "树",
+      "木",
+      "阴"
+    ],
+    "autoDemo": true,
+    "childGoal": "把木和子拼成李，展开树荫",
+    "description": "李：把木和子拼成李，展开树荫。李字构形与树、此木岂无阴的诗句联想。"
   },
   "readingOrder": [
     "lines",
@@ -96,5 +104,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

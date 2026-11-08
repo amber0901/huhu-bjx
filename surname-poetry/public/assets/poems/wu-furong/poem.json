@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "lantern-route",
@@ -49,7 +49,14 @@
     "spokenFeedback": false,
     "motif": "lantern-route",
     "backgroundAlt": "a riverside Chinese pavilion in light dawn rain, pale apricot sunrise on blue river, little departing boat, rounded distant mountains, friendly not melancholy",
-    "description": "吴：手指左右移动小灯，照亮江上小船，再点船送友人出发；关联雨夜入吴与平明送客，支持画面直接触摸。"
+    "description": "吴：向上推太阳，天亮后点船送客。夜入吴到平明送客的时间与送别场景。",
+    "cueWords": [
+      "夜入",
+      "平明",
+      "送客"
+    ],
+    "autoDemo": true,
+    "childGoal": "向上推太阳，天亮后点船送客"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +80,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

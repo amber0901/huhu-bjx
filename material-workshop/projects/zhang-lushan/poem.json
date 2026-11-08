@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "cloud-unfold",
@@ -49,7 +49,12 @@
     "spokenFeedback": false,
     "motif": "cloud-unfold",
     "backgroundAlt": "layered rounded Lushan blue green mountains wrapped in pastel rainbow clouds like an unfolding silk screen",
-    "description": "向外拉开云帘，展开九叠青山画屏；关联张开与云锦张。"
+    "description": "张：拉小云朵，展开山水屏风。云锦张，张开画屏。",
+    "cueWords": [
+      "云锦"
+    ],
+    "autoDemo": true,
+    "childGoal": "拉小云朵，展开山水屏风"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +77,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

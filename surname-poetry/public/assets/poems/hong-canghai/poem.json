@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "wave-sweep",
@@ -48,7 +48,13 @@
     "spokenFeedback": false,
     "motif": "wave-sweep",
     "backgroundAlt": "a friendly vast blue jade sea with rounded sparkling waves, little island and soft autumn trees to the right, peach sky, no storm boats in danger or giant scary waves",
-    "description": "洪：随手势提示左右来回划水，推起三层浪花；连续同方向划动不累计，关联洪波涌起，不画灾害。"
+    "description": "洪：划海面或点秋叶，让三层浪涌起来。秋风与洪波涌起。",
+    "cueWords": [
+      "秋风",
+      "涌起"
+    ],
+    "autoDemo": true,
+    "childGoal": "划海面或点秋叶，让三层浪涌起来"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +78,6 @@
   },
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

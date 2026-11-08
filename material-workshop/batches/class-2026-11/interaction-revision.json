@@ -1,22 +1,394 @@
 {
-  "version": 7,
-  "hint": "每页只保留底部一颗小灯泡，点亮姓字或以手势、图案动画提示下一步；完成后提示按钮停用，重玩重新启用。",
+  "version": 9,
+  "interactionTiming": "after-narration",
+  "approach": "场景中的对象、目标、结果可见；图标手势示范，不增加跟读或额外语音。",
   "games": {
-    "book-flip": "文：翻动书页，让文字的四个笔画依次着墨；关联文翁学堂与教授，不再机械重复三个文字。",
-    "pony-loop": "马：拖着一匹竹马，沿青梅路标绕矮凳一圈；也可点亮下一个青梅让竹马前进，关联骑竹马与绕。",
-    "friendship-depth": "汪：手指向下拉探水绳，潭水由浅入深，最后浮现送别情谊的爱心；关联桃花潭水与汪伦送我情。",
-    "pottery-shape": "邢：横向拖动陶土，把窄碗拉成轮廓中的圆碗；接近目标自动吸附，不考验精确松手时机，关联邢地制瓷。",
-    "weather-hold": "雷：手势示范按住云朵，细雨让荷花慢慢展开；松开暂停、再按继续，无惊吓雷声。",
-    "slow-walk": "徐：按住树叶陪诗人徐徐前行，松开暂停，再按继续；以慢步表现徐行，不要求手速。",
-    "pluck-melody": "周：看三根琴弦先后亮起，再轻拨相同顺序，触摸时发出轻琴音；灯泡重演尚未完成的部分，已完成步骤保留，关联周郎听曲。",
-    "return-trail": "刘：看三处路标先后亮起，再按原来的路线重新走一遍；灯泡只重演剩余路线，已走过的步骤保留，关联刘郎今又来。",
-    "wave-sweep": "洪：随手势提示左右来回划水，推起三层浪花；连续同方向划动不累计，关联洪波涌起，不画灾害。",
-    "lantern-route": "吴：手指左右移动小灯，照亮江上小船，再点船送友人出发；关联雨夜入吴与平明送客，支持画面直接触摸。",
-    "gate-pass": "尹：转动右半青牛图案，让两半相合，关门透出亮光；关联令尹关令的古典故事，老师可补充故事，不当姓氏起源。",
-    "drum-rhythm": "贺：看鼓面光圈示范后敲鼓庆贺，触摸会发出轻柔合成鼓音；鼓点分明，三次轻敲即可庆贺，不以毫秒误差扣分；不展示战斗与饮酒。",
-    "portrait-parts": "陈：根据轮廓给陈侯贴上弯眉与卷须，人物五官清楚；每轮重排选项、正确位置变化，关联虬须虎眉。",
-    "bridge-mirror": "肖：挑选与石桥相肖的倒影，每轮改变正确选项的位置，感受相似；诗中肖读xiào、姓氏读xiāo。",
-    "tower-stack": "邓：按从宽到窄的顺序叠起城楼，楼层选项每轮重新排列；关联邓州城楼高百尺。",
-    "horse-flowers": "马：带小马去看长安花，拖到任意花旁或点花让它跑过去，三处花会逐一开放；顺序自由，不计时、不比赛，关联马蹄与看花。"
-  }
+    "pluck-melody": "周：拨响三根琴弦，让周郎转头听琴。诗中周郎听琴、顾盼。",
+    "slow-walk": "徐：按住诗人，陪他走过小路。徐行就是慢慢走的诗意联想。",
+    "surname-home-match": "王：把小燕子送到同字门牌的小屋。正文王字匹配，飞入百姓家。",
+    "book-flip": "文：翻四页，看到文的四笔逐渐着墨。文翁讲学与文字学习的联想，不当字源。",
+    "footprint-path": "何：点脚印，让老人和孩子见面。儿童相见、问客来处。",
+    "cloud-unfold": "张：拉小云朵，展开山水屏风。云锦张，张开画屏。",
+    "moon-reflection": "江：把江上月影拖到船边诗人附近。江清月近人。",
+    "portrait-parts": "陈：给陈伯伯贴虎眉和卷胡子。虬须虎眉描写陈侯外貌；人物称呼仍需老师介绍。",
+    "fishing-timing": "翁：点鱼漂下竿，鱼咬钩后再提竿。蓑笠翁独钓。",
+    "pottery-shape": "邢：拉圆茶碗，再印一朵花。邢地工匠造茶瓯；地点背景不作为姓氏起源。",
+    "gate-pass": "尹：拉门闩，打开关隘送仙翁到河边。关门是关隘，令尹是人物称谓；开关隘为场景任务，不作词义或字源解释。",
+    "drum-rhythm": "贺：敲鼓，让三条彩带展开。贺有庆贺义，表现归来庆贺的场景，不展示战斗或饮酒。",
+    "assemble-character": "李：把木和子拼成李，展开树荫。李字构形与树、此木岂无阴的诗句联想。",
+    "flower-color": "朱：选朱红颜料，给桥边花涂色。朱红颜色义与朱雀桥边野草花的联想，不解释桥名来源。",
+    "bridge-mirror": "肖：把倒影拼到桥下，圆圆桥洞里游出小鱼。相肖表示相似，镜影指倒影；诗中肖读xiào、姓氏读xiāo。",
+    "weather-hold": "雷：按住云朵，细雨浇开荷花。芙蓉塘外轻雷、细雨来。",
+    "horse-flowers": "马：带小马逐一走近花苞，看它们开放。马蹄疾、看尽长安花。",
+    "friend-exchange": "廖：先送书卷，再接朋友回赠的花。与廖子朋友往还；人物称呼需老师一句介绍。",
+    "tower-stack": "邓：把宽中窄三层搭好，屋顶升起旗子。邓州城楼高百尺。",
+    "friendship-depth": "汪：按住岸边朋友挥手，送船慢慢离开。汪伦送我情与潭水送别。",
+    "return-trail": "刘：把刘郎沿旧脚印带回园门。刘郎今又来；不把菜花场景误画成桃花盛开。",
+    "cloud-steps": "于：点亮云阶，让小人一步步上青天。难于上青天的登高意象。",
+    "wave-sweep": "洪：划海面或点秋叶，让三层浪涌起来。秋风与洪波涌起。",
+    "outside-wall": "郭：点亮村庄城墙外的青山。郭指城郭，青山在郭外，不作姓氏起源。",
+    "harvest-sort": "栗：把树上的三颗栗果收进篮子。园收芋栗中的收栗果。",
+    "lantern-route": "吴：向上推太阳，天亮后点船送客。夜入吴到平明送客的时间与送别场景。"
+  },
+  "reviews": [
+    {
+      "surname": "周",
+      "projectId": "zhou-tingzheng",
+      "game": "pluck-melody",
+      "gesture": "自由拨弦",
+      "childGoal": "拨响三根琴弦，让周郎转头听琴",
+      "previousProblem": "原先变成无关的顺序记忆考试",
+      "change": "取消固定顺序，三根都能拨响；人物转头、音符升起，完成后仍能自由弹琴。",
+      "poemConnection": "诗中周郎听琴、顾盼。",
+      "cueWords": [
+        "顾",
+        "拂弦"
+      ]
+    },
+    {
+      "surname": "徐",
+      "projectId": "xu-dingfengbo",
+      "game": "slow-walk",
+      "gesture": "按住慢行",
+      "childGoal": "按住诗人，陪他走过小路",
+      "previousProblem": "按树叶却出现脚印，操控对象与结果脱节",
+      "change": "改为按住诗人本身，人物慢慢走；松开停，终点关隘清晰。",
+      "poemConnection": "徐行就是慢慢走的诗意联想。",
+      "cueWords": [
+        "行"
+      ]
+    },
+    {
+      "surname": "王",
+      "projectId": "wang-wuyixiang",
+      "game": "surname-home-match",
+      "gesture": "送燕匹配",
+      "childGoal": "把小燕子送到同字门牌的小屋",
+      "previousProblem": "看见门牌却不清楚要操作燕子还是字",
+      "change": "保留已确认的同字匹配；朗诵结束才出现燕子和三屋，手势从燕子直达目标。",
+      "poemConnection": "正文王字匹配，飞入百姓家。",
+      "cueWords": [
+        "燕",
+        "飞入",
+        "家"
+      ]
+    },
+    {
+      "surname": "文",
+      "projectId": "wen-songzizhou",
+      "game": "book-flip",
+      "gesture": "翻书显字",
+      "childGoal": "翻四页，看到文的四笔逐渐着墨",
+      "previousProblem": "书页缺少可翻动的视觉线索",
+      "change": "增加卷角、滑动翻页，点按也可；手势落在书页上。",
+      "poemConnection": "文翁讲学与文字学习的联想，不当字源。",
+      "cueWords": [
+        "教授"
+      ]
+    },
+    {
+      "surname": "何",
+      "projectId": "he-huixiang",
+      "game": "footprint-path",
+      "gesture": "迎客脚印",
+      "childGoal": "点脚印，让老人和孩子见面",
+      "previousProblem": "只有脚印爱心，缺少迎客的人和去向",
+      "change": "出现归乡老人、两名儿童和连续脚印，老人随点按真正走近孩子。",
+      "poemConnection": "儿童相见、问客来处。",
+      "cueWords": [
+        "儿童",
+        "相见",
+        "客"
+      ]
+    },
+    {
+      "surname": "张",
+      "projectId": "zhang-lushan",
+      "game": "cloud-unfold",
+      "gesture": "展开画屏",
+      "childGoal": "拉小云朵，展开山水屏风",
+      "previousProblem": "只有移动的云，难看出张开什么",
+      "change": "加入折叠山水屏和真实云朵手柄，手指位置与手柄行程一致。",
+      "poemConnection": "云锦张，张开画屏。",
+      "cueWords": [
+        "云锦"
+      ]
+    },
+    {
+      "surname": "江",
+      "projectId": "jiang-jiande",
+      "game": "moon-reflection",
+      "gesture": "月近小船",
+      "childGoal": "把江上月影拖到船边诗人附近",
+      "previousProblem": "抽象月亮对齐缺少人",
+      "change": "在河面补小船与诗人，月亮靠近后水光变亮。",
+      "poemConnection": "江清月近人。",
+      "cueWords": [
+        "月近人"
+      ]
+    },
+    {
+      "surname": "陈",
+      "projectId": "chen-zhangfu",
+      "game": "portrait-parts",
+      "gesture": "人物贴贴",
+      "childGoal": "给陈伯伯贴虎眉和卷胡子",
+      "previousProblem": "眉须旋转选项抽象，像答方向题",
+      "change": "大脸、眉须轮廓和两件可拖配件；任意先后、点按也可，贴上后人物招手。",
+      "poemConnection": "虬须虎眉描写陈侯外貌；人物称呼仍需老师介绍。",
+      "cueWords": [
+        "虬须",
+        "虎眉"
+      ]
+    },
+    {
+      "surname": "翁",
+      "projectId": "weng-jiangxue",
+      "game": "fishing-timing",
+      "gesture": "下竿提竿",
+      "childGoal": "点鱼漂下竿，鱼咬钩后再提竿",
+      "previousProblem": "缺少渔翁和钓竿，精确卡时机难懂",
+      "change": "补渔翁、船、竿与鱼；鱼咬钩后提示保留，取消稍慢就失败的时机窗。",
+      "poemConnection": "蓑笠翁独钓。",
+      "cueWords": [
+        "孤舟",
+        "独钓"
+      ]
+    },
+    {
+      "surname": "邢",
+      "projectId": "xing-chaou",
+      "game": "pottery-shape",
+      "gesture": "拉坯印花",
+      "childGoal": "拉圆茶碗，再印一朵花",
+      "previousProblem": "旧图更像带把杯，制作结果不明显",
+      "change": "改为无把茶瓯，拉坯后出现印花操作，成品可见。",
+      "poemConnection": "邢地工匠造茶瓯；地点背景不作为姓氏起源。",
+      "cueWords": [
+        "造兹器"
+      ]
+    },
+    {
+      "surname": "尹",
+      "projectId": "yin-wangxiantai",
+      "game": "gate-pass",
+      "gesture": "关隘送行",
+      "childGoal": "拉门闩，打开关隘送仙翁到河边",
+      "previousProblem": "青牛半图旋转依赖未讲述的典故",
+      "change": "移除青牛拼图，改为清楚的关隘、守关人、门闩、仙翁和河边小船。",
+      "poemConnection": "关门是关隘，令尹是人物称谓；开关隘为场景任务，不作词义或字源解释。",
+      "cueWords": [
+        "关门",
+        "仙翁"
+      ]
+    },
+    {
+      "surname": "贺",
+      "projectId": "he-saiqu",
+      "game": "drum-rhythm",
+      "gesture": "敲鼓庆贺",
+      "childGoal": "敲鼓，让三条彩带展开",
+      "previousProblem": "一大两小却不考节拍，目标反馈只在小圆点",
+      "change": "取消伪节拍考核，每敲一次展开彩带；完成后可继续轻敲。",
+      "poemConnection": "贺有庆贺义，表现归来庆贺的场景，不展示战斗或饮酒。",
+      "cueWords": [
+        "劳旋"
+      ]
+    },
+    {
+      "surname": "李",
+      "projectId": "li-ganyu-jiangnan",
+      "game": "assemble-character",
+      "gesture": "木子拼李",
+      "childGoal": "把木和子拼成李，展开树荫",
+      "previousProblem": "初次出现不知道先拖哪一块",
+      "change": "保留已确认木子拼李，手势逐块指向位置，完成后树荫展开。",
+      "poemConnection": "李字构形与树、此木岂无阴的诗句联想。",
+      "cueWords": [
+        "树",
+        "木",
+        "阴"
+      ]
+    },
+    {
+      "surname": "朱",
+      "projectId": "zhu-wuyixiang",
+      "game": "flower-color",
+      "gesture": "朱红涂花",
+      "childGoal": "选朱红颜料，给桥边花涂色",
+      "previousProblem": "颜料也画成花，难分清工具和对象",
+      "change": "改颜料罐和画笔，桥边花簇清楚；完成朱红任务后可自由配色。",
+      "poemConnection": "朱红颜色义与朱雀桥边野草花的联想，不解释桥名来源。",
+      "cueWords": [
+        "桥边",
+        "野草花"
+      ]
+    },
+    {
+      "surname": "肖",
+      "projectId": "xiao-hongqiao",
+      "game": "bridge-mirror",
+      "gesture": "石桥倒影",
+      "childGoal": "把倒影拼到桥下，圆圆桥洞里游出小鱼",
+      "previousProblem": "只有旋转卡片，缺少水面和拼合目标",
+      "change": "补桥、水面与倒影轮廓，拖动或点按正确倒影后真实接上。",
+      "poemConnection": "相肖表示相似，镜影指倒影；诗中肖读xiào、姓氏读xiāo。",
+      "cueWords": [
+        "石桥",
+        "镜影"
+      ]
+    },
+    {
+      "surname": "雷",
+      "projectId": "lei-xiyu",
+      "game": "weather-hold",
+      "gesture": "细雨开荷",
+      "childGoal": "按住云朵，细雨浇开荷花",
+      "previousProblem": "通用花形不像荷花，云雨与池塘层次弱",
+      "change": "改荷花与荷叶、雨云在上荷花在下；松开停雨，保持无惊吓声音。",
+      "poemConnection": "芙蓉塘外轻雷、细雨来。",
+      "cueWords": [
+        "细雨",
+        "芙蓉"
+      ]
+    },
+    {
+      "surname": "马",
+      "projectId": "ma-dengkehou",
+      "game": "horse-flowers",
+      "gesture": "小马赏花",
+      "childGoal": "带小马逐一走近花苞，看它们开放",
+      "previousProblem": "初始花已经开着，成功变化不明显",
+      "change": "花朵初始改花苞，走近才开花；手势从马到花，完成后仍可自由赏花。",
+      "poemConnection": "马蹄疾、看尽长安花。",
+      "cueWords": [
+        "看尽",
+        "花"
+      ]
+    },
+    {
+      "surname": "廖",
+      "projectId": "liao-minglue",
+      "game": "friend-exchange",
+      "gesture": "朋友互赠",
+      "childGoal": "先送书卷，再接朋友回赠的花",
+      "previousProblem": "两个图标左右平移，缺少朋友与交换对象",
+      "change": "两位人物各站一边，书卷送到朋友手中才出现回赠花枝。",
+      "poemConnection": "与廖子朋友往还；人物称呼需老师一句介绍。",
+      "cueWords": [
+        "喜往还"
+      ]
+    },
+    {
+      "surname": "邓",
+      "projectId": "deng-chenglou",
+      "game": "tower-stack",
+      "gesture": "搭起城楼",
+      "childGoal": "把宽中窄三层搭好，屋顶升起旗子",
+      "previousProblem": "每块都是完整楼，不像在搭同一座楼",
+      "change": "改为独立楼层与三层轮廓，逐层落位，完成出现小旗和远山。",
+      "poemConnection": "邓州城楼高百尺。",
+      "cueWords": [
+        "城楼",
+        "高百尺"
+      ]
+    },
+    {
+      "surname": "汪",
+      "projectId": "wang-zengwanglun",
+      "game": "friendship-depth",
+      "gesture": "岸边送别",
+      "childGoal": "按住岸边朋友挥手，送船慢慢离开",
+      "previousProblem": "探水绳和爱心的因果牵强，诗意是送别",
+      "change": "取消探水绳，岸边人物挥手，船上朋友远行，爱心沿途出现。",
+      "poemConnection": "汪伦送我情与潭水送别。",
+      "cueWords": [
+        "潭水",
+        "送我情"
+      ]
+    },
+    {
+      "surname": "刘",
+      "projectId": "liu-xuandu",
+      "game": "return-trail",
+      "gesture": "重返花园",
+      "childGoal": "把刘郎沿旧脚印带回园门",
+      "previousProblem": "三种无关图标与任意记忆顺序不贴诗意",
+      "change": "取消记忆考核，旧脚印、返回诗人和花园门直接组成来路。",
+      "poemConnection": "刘郎今又来；不把菜花场景误画成桃花盛开。",
+      "cueWords": [
+        "今又来"
+      ]
+    },
+    {
+      "surname": "于",
+      "projectId": "yu-shudao",
+      "game": "cloud-steps",
+      "gesture": "云梯登高",
+      "childGoal": "点亮云阶，让小人一步步上青天",
+      "previousProblem": "云阶尽头是月亮，与诗意不一致",
+      "change": "改为太阳与高处云端，人物随点按真实登高，不设坠落。",
+      "poemConnection": "难于上青天的登高意象。",
+      "cueWords": [
+        "上青天"
+      ]
+    },
+    {
+      "surname": "洪",
+      "projectId": "hong-canghai",
+      "game": "wave-sweep",
+      "gesture": "秋风推浪",
+      "childGoal": "划海面或点秋叶，让三层浪涌起来",
+      "previousProblem": "必须换向的隐藏规则，孩子猜不出来",
+      "change": "移除强制换向，秋叶作为吹风入口，浪真实升起；没有灾害画面。",
+      "poemConnection": "秋风与洪波涌起。",
+      "cueWords": [
+        "秋风",
+        "涌起"
+      ]
+    },
+    {
+      "surname": "郭",
+      "projectId": "guo-guren",
+      "game": "outside-wall",
+      "gesture": "城郭内外",
+      "childGoal": "点亮村庄城墙外的青山",
+      "previousProblem": "只有虚线框，城郭边界不清楚",
+      "change": "补城墙、村门和村树，外山与内山可见，选择外山有明确亮色反馈。",
+      "poemConnection": "郭指城郭，青山在郭外，不作姓氏起源。",
+      "cueWords": [
+        "村边",
+        "青山",
+        "外"
+      ]
+    },
+    {
+      "surname": "栗",
+      "projectId": "li-nanlin",
+      "game": "harvest-sort",
+      "gesture": "栗果入篮",
+      "childGoal": "把树上的三颗栗果收进篮子",
+      "previousProblem": "只有图标排队，不像在果园采栗",
+      "change": "补树冠、悬挂栗果与篮子，拖动入篮或点按掉入，叶子轻摇留树。",
+      "poemConnection": "园收芋栗中的收栗果。",
+      "cueWords": [
+        "园收"
+      ]
+    },
+    {
+      "surname": "吴",
+      "projectId": "wu-furong",
+      "game": "lantern-route",
+      "gesture": "天亮送船",
+      "childGoal": "向上推太阳，天亮后点船送客",
+      "previousProblem": "移动灯光找船的目标不清，和句子联系弱",
+      "change": "改成夜到晨的可见变化：太阳上升、河面变亮、船可出发。",
+      "poemConnection": "夜入吴到平明送客的时间与送别场景。",
+      "cueWords": [
+        "夜入",
+        "平明",
+        "送客"
+      ]
+    }
+  ]
 }

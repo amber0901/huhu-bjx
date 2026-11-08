@@ -10,17 +10,20 @@
     }
   },
   "poem": {
-    "url": "/build/poem-GSTUMUA7.js",
-    "bytes": 41147,
-    "sha256": "ea64ef47d6f580a60a3b550b159221097039590bddb9a4719567922d0786a96f",
+    "url": "/build/poem-BWVADMLX.js",
+    "bytes": 64533,
+    "sha256": "31b621dda3c891e11f8c1d07d943f4bb42c9a5ef3a7e8f7d2adcd4eeae2832bf",
     "sourceHashes": {
       "ui.js": "0d589963864795fdb2f2e4b946eec385c155d9f54bace1e5e97fd3652a5cd28d",
       "cache-client.js": "006ac1e15d86b5a92ccd291deb8b59bdeedb780d630d853cfe7b62e01bc9b685",
-      "poem/activity-state.js": "70b367c3970456dd4e6b46ce1493194de2b0d0451358c41c7661e0fa0986489e",
+      "poem/activity-state.js": "e93bfd9c08cb2a402fb908cadf4ab8b7452bd1ef77228451378add64bd0f106c",
       "poem/activity-feedback.js": "d699a230a6c71c12a25a415b229c5a754193ceb9343f62911336940f43ac97a8",
-      "poem/activities.js": "003bae5dd86bb036ffedbad519f0fab72bc6ead5d1436ae61c2f3a608cca0fbf",
-      "poem/playground.js": "1d055c09113f8d22d1bdaf44b9e7bf46941739108a4c004d0dc612f69af50ae6",
-      "poem/app.js": "54ebac2b0d3149b9e04af8fb1907d2f3d1d8f0c42f1a4610ad431cf2add156b3"
+      "poem/story-art.js": "4c53937c81200be2487259d2889ee6a1188b1a55972a4d27765316dc818cf7bb",
+      "poem/story-scenes.js": "4304eee85806ae6a2b08ceb209b25a81ebef39d4ff8a15a478a2e7795fc6bd6f",
+      "poem/activities.js": "5f304872e4e559cb756b5e466c7bec7fc7706c385d33980fcb84a3ed3fb6023d",
+      "poem/playground.js": "a35165bcb08a78cfc6cc594f95f219b67e712865539444b9363cfe2585cbf27e",
+      "poem/narration-gate.js": "49f540bd14fbcb2e13d3b6d381058138ff2feef8acbf61b662a7a9b6a234989a",
+      "poem/app.js": "7162b18127720b906bb6a56e74eceeac6a9f8cee78e28fdf0d4da10ca7616631"
     }
   },
   "materials": {

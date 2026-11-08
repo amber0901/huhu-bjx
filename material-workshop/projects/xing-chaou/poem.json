@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "pottery-shape",
@@ -48,7 +48,12 @@
     "spokenFeedback": false,
     "motif": "pottery-shape",
     "backgroundAlt": "a charming ancient pottery workshop, creamy white porcelain bowls and celadon bowls, rounded clay wheel, soft green window scenery, no fire",
-    "description": "邢：横向拖动陶土，把窄碗拉成轮廓中的圆碗；接近目标自动吸附，不考验精确松手时机，关联邢地制瓷。"
+    "description": "邢：拉圆茶碗，再印一朵花。邢地工匠造茶瓯；地点背景不作为姓氏起源。",
+    "cueWords": [
+      "造兹器"
+    ],
+    "autoDemo": true,
+    "childGoal": "拉圆茶碗，再印一朵花"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -71,5 +76,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

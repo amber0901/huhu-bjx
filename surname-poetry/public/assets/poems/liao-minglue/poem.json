@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "friend-exchange",
@@ -49,7 +49,12 @@
     "spokenFeedback": false,
     "motif": "friend-exchange",
     "backgroundAlt": "two friendly ancient scholars happily exchanging a little scroll and flowering branch in a cozy garden, rounded trees, peach sunlight, warm friendship",
-    "description": "两位朋友交换卷轴与花枝，分别点亮来与还两条路线；关联廖子往还的友谊。"
+    "description": "廖：先送书卷，再接朋友回赠的花。与廖子朋友往还；人物称呼需老师一句介绍。",
+    "cueWords": [
+      "喜往还"
+    ],
+    "autoDemo": true,
+    "childGoal": "先送书卷，再接朋友回赠的花"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -74,5 +79,6 @@
   "teacherNote": "姓氏原字约束下，选句较少见且有生僻字，适合先听诗、看图互动，由老师补充解释；不声称幼儿能独立理解全文。",
   "reviewStatus": "generated-and-technical-checks-passed-awaiting-user-review",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

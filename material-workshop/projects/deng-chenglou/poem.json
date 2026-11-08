@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "tower-stack",
@@ -48,7 +48,13 @@
     "spokenFeedback": false,
     "motif": "tower-stack",
     "backgroundAlt": "a friendly tall rounded ancient city tower overlooking distant jade mountains and peach clouds, sunny pastel scenery, welcoming small flags",
-    "description": "邓：按从宽到窄的顺序叠起城楼，楼层选项每轮重新排列；关联邓州城楼高百尺。"
+    "description": "邓：把宽中窄三层搭好，屋顶升起旗子。邓州城楼高百尺。",
+    "cueWords": [
+      "城楼",
+      "高百尺"
+    ],
+    "autoDemo": true,
+    "childGoal": "把宽中窄三层搭好，屋顶升起旗子"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -71,5 +77,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

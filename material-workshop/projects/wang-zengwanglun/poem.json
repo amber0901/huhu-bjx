@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "friendship-depth",
@@ -48,7 +48,13 @@
     "spokenFeedback": false,
     "motif": "friendship-depth",
     "backgroundAlt": "two friendly travelers waving goodbye across a clear peach blossom pool, tiny wooden boat by bank, smiling faces and falling pink petals, soft spring jade and apricot",
-    "description": "汪：手指向下拉探水绳，潭水由浅入深，最后浮现送别情谊的爱心；关联桃花潭水与汪伦送我情。"
+    "description": "汪：按住岸边朋友挥手，送船慢慢离开。汪伦送我情与潭水送别。",
+    "cueWords": [
+      "潭水",
+      "送我情"
+    ],
+    "autoDemo": true,
+    "childGoal": "按住岸边朋友挥手，送船慢慢离开"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -71,5 +77,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

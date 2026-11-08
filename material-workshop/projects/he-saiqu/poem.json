@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "drum-rhythm",
@@ -48,7 +48,12 @@
     "spokenFeedback": false,
     "motif": "drum-rhythm",
     "backgroundAlt": "a peaceful outdoor celebratory gathering near a rounded tent with colorful ribbons, small ceremonial drum and friendly smiling people, pastel mountains, no weapons alcohol or battle",
-    "description": "贺：看鼓面光圈示范后敲鼓庆贺，触摸会发出轻柔合成鼓音；鼓点分明，三次轻敲即可庆贺，不以毫秒误差扣分；不展示战斗与饮酒。"
+    "description": "贺：敲鼓，让三条彩带展开。贺有庆贺义，表现归来庆贺的场景，不展示战斗或饮酒。",
+    "cueWords": [
+      "劳旋"
+    ],
+    "autoDemo": true,
+    "childGoal": "敲鼓，让三条彩带展开"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +77,6 @@
   },
   "teacherNote": "姓氏原字约束下，选句较少见且有生僻字，适合先听诗、看图互动，由老师补充解释；不声称幼儿能独立理解全文。",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

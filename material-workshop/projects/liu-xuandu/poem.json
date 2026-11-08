@@ -39,7 +39,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "return-trail",
@@ -48,7 +48,12 @@
     "spokenFeedback": false,
     "motif": "return-trail",
     "backgroundAlt": "a cheerful returning scholar at an old quiet garden gateway, soft moss and yellow rapeseed flowers blooming, green trees, warm sun, no pink peach blossoms",
-    "description": "刘：看三处路标先后亮起，再按原来的路线重新走一遍；灯泡只重演剩余路线，已走过的步骤保留，关联刘郎今又来。"
+    "description": "刘：把刘郎沿旧脚印带回园门。刘郎今又来；不把菜花场景误画成桃花盛开。",
+    "cueWords": [
+      "今又来"
+    ],
+    "autoDemo": true,
+    "childGoal": "把刘郎沿旧脚印带回园门"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -71,5 +76,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

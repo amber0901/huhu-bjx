@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "weather-hold",
@@ -49,7 +49,13 @@
     "spokenFeedback": false,
     "motif": "weather-hold",
     "backgroundAlt": "a soft lotus pond with pink lotus buds and tender round leaves, light spring rain, small fluffy bluish cloud, absolutely no dramatic storm",
-    "description": "雷：手势示范按住云朵，细雨让荷花慢慢展开；松开暂停、再按继续，无惊吓雷声。"
+    "description": "雷：按住云朵，细雨浇开荷花。芙蓉塘外轻雷、细雨来。",
+    "cueWords": [
+      "细雨",
+      "芙蓉"
+    ],
+    "autoDemo": true,
+    "childGoal": "按住云朵，细雨浇开荷花"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +78,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

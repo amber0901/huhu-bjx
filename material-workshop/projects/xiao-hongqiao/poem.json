@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "bridge-mirror",
@@ -49,7 +49,13 @@
     "spokenFeedback": false,
     "motif": "bridge-mirror",
     "backgroundAlt": "an elegant small rainbow-shaped stone arch bridge over a still garden lake, perfect soft reflection, pastel flowers and rounded garden rocks, peaceful storybook light",
-    "description": "肖：挑选与石桥相肖的倒影，每轮改变正确选项的位置，感受相似；诗中肖读xiào、姓氏读xiāo。"
+    "description": "肖：把倒影拼到桥下，圆圆桥洞里游出小鱼。相肖表示相似，镜影指倒影；诗中肖读xiào、姓氏读xiāo。",
+    "cueWords": [
+      "石桥",
+      "镜影"
+    ],
+    "autoDemo": true,
+    "childGoal": "把倒影拼到桥下，圆圆桥洞里游出小鱼"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -73,5 +79,6 @@
   },
   "pronunciationNote": "姓氏肖读xiāo；诗句“长虹肖”表示相似，应读xiào。朗诵遵循诗句语境。",
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }

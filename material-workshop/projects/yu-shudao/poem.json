@@ -40,7 +40,7 @@
     "author"
   ],
   "followAlong": false,
-  "interactionVersion": 7,
+  "interactionVersion": 9,
   "interactionMode": "surname-poem-play",
   "interaction": {
     "game": "cloud-steps",
@@ -49,7 +49,12 @@
     "spokenFeedback": false,
     "motif": "cloud-steps",
     "backgroundAlt": "rounded high green mountains with a gentle winding path ascending to pale blue sky, soft cotton clouds, no cliffs or danger",
-    "description": "按由低到高的云阶向上跳；关联于字所在的上青天句意，不冒充姓氏字源。"
+    "description": "于：点亮云阶，让小人一步步上青天。难于上青天的登高意象。",
+    "cueWords": [
+      "上青天"
+    ],
+    "autoDemo": true,
+    "childGoal": "点亮云阶，让小人一步步上青天"
   },
   "musicProduction": {
     "method": "tokenhub-instrumental-excerpt",
@@ -72,5 +77,6 @@
     "edgeTaperSeconds": 0.005
   },
   "musicVersion": 3,
-  "musicReviewStatus": "approved-by-user"
+  "musicReviewStatus": "approved-by-user",
+  "interactionTiming": "after-narration"
 }
