@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-12",
+  "checks": [
+    {
+      "card": {
+        "height": 448.3984375,
+        "width": 460,
+        "x": 730,
+        "y": 331.796875
+      },
+      "height": 1080,
+      "inputHeight": 60,
+      "overflowX": false,
+      "overflowY": false,
+      "width": 1920
+    },
+    {
+      "card": {
+        "height": 894.796875,
+        "width": 920,
+        "x": 1460,
+        "y": 664.6015625
+      },
+      "height": 2160,
+      "inputHeight": 120,
+      "overflowX": false,
+      "overflowY": false,
+      "width": 3840
+    },
+    {
+      "card": {
+        "height": 406.59375,
+        "width": 327,
+        "x": 24,
+        "y": 206.703125
+      },
+      "height": 812,
+      "inputHeight": 60,
+      "overflowX": false,
+      "overflowY": false,
+      "width": 375
+    },
+    {
+      "card": {
+        "height": 414.3984375,
+        "width": 460,
+        "x": 410,
+        "y": 156.796875
+      },
+      "height": 720,
+      "inputHeight": 60,
+      "overflowX": false,
+      "overflowY": false,
+      "width": 1280
+    }
+  ],
+  "wrongCode": {
+    "message": "显示错误提示",
+    "layout": {
+      "card": {
+        "height": 452.796875,
+        "width": 460,
+        "x": 410,
+        "y": 137.6015625
+      },
+      "height": 720,
+      "inputHeight": 60,
+      "overflowX": false,
+      "overflowY": false,
+      "width": 1280
+    }
+  },
+  "correctCode": "成功进入写字首页",
+  "limits": "桌面浏览器视口检查，未模拟真实设备软键盘"
+}
